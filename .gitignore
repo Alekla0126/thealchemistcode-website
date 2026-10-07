@@ -1,0 +1,23 @@
+# Material de investigación y capturas de QA (pesados, se regeneran)
+/research/
+/screens/
+/.nimbalyst/
+.DS_Store
+node_modules/
+
+# Datos del servidor (ver .env.deploy.example)
+.env.deploy
+
+# Fuera del repositorio público:
+# notas internas del negocio
+/docs/real-deal/
+# plugin de otro sitio (alekla.com) y su despliegue
+/alekla-award/
+/deploy.sh
+# fotos personales
+/tac-uploads/tac-site/team/
+# captura publicada por un cliente (IRISA): se usa en el sitio, pero no se redistribuye
+/tac-uploads/tac-site/cases/
+
+# Ajustes locales de Claude Code
+/.claude/

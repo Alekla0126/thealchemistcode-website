@@ -1,0 +1,180 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": false,
+    "useRootPaddingAwareAlignments": false,
+    "layout": {
+      "contentSize": "760px",
+      "wideSize": "1200px"
+    },
+    "color": {
+      "defaultPalette": false,
+      "defaultGradients": false,
+      "palette": [
+        {
+          "slug": "bg",
+          "name": "Fondo",
+          "color": "#F5F7FB"
+        },
+        {
+          "slug": "white",
+          "name": "Blanco",
+          "color": "#FFFFFF"
+        },
+        {
+          "slug": "ink",
+          "name": "Tinta",
+          "color": "#0B1324"
+        },
+        {
+          "slug": "gray",
+          "name": "Gris",
+          "color": "#56627A"
+        },
+        {
+          "slug": "line",
+          "name": "Línea",
+          "color": "#E3E8F1"
+        },
+        {
+          "slug": "azul",
+          "name": "Azul",
+          "color": "#0A5FB4"
+        },
+        {
+          "slug": "cian",
+          "name": "Cian",
+          "color": "#16B5E8"
+        },
+        {
+          "slug": "navy",
+          "name": "Marino",
+          "color": "#071A33"
+        }
+      ]
+    },
+    "typography": {
+      "defaultFontSizes": false,
+      "fontFamilies": [
+        {
+          "slug": "jakarta",
+          "name": "Plus Jakarta Sans",
+          "fontFamily": "\"Plus Jakarta Sans\", -apple-system, system-ui, sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Plus Jakarta Sans",
+              "fontWeight": "300 800",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/Jakarta-wght.woff2"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "plex-mono",
+          "name": "IBM Plex Mono",
+          "fontFamily": "\"IBM Plex Mono\", ui-monospace, Menlo, monospace",
+          "fontFace": [
+            {
+              "fontFamily": "IBM Plex Mono",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/PlexMono-Regular.woff2"
+              ]
+            },
+            {
+              "fontFamily": "IBM Plex Mono",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/PlexMono-Medium.woff2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#F5F7FB",
+      "text": "#0B1324"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--jakarta)",
+      "fontSize": "17px",
+      "lineHeight": "1.6"
+    },
+    "spacing": {
+      "blockGap": "0px",
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      }
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "#0A5FB4"
+        }
+      },
+      "heading": {
+        "typography": {
+          "fontWeight": "600",
+          "letterSpacing": "-0.02em",
+          "lineHeight": "1.15"
+        }
+      },
+      "button": {
+        "color": {
+          "background": "#0A5FB4",
+          "text": "#FFFFFF"
+        },
+        "border": {
+          "radius": "10px"
+        },
+        "typography": {
+          "fontWeight": "600"
+        }
+      }
+    }
+  },
+  "templateParts": [
+    {
+      "name": "topbar",
+      "title": "Barra superior",
+      "area": "uncategorized"
+    },
+    {
+      "name": "header",
+      "title": "Cabecera",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Pie",
+      "area": "footer"
+    }
+  ],
+  "customTemplates": [
+    {
+      "name": "page-landing",
+      "title": "Página de marca (Alchemist)",
+      "postTypes": [
+        "page"
+      ]
+    }
+  ]
+}

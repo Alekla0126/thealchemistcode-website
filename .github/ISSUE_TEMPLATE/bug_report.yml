@@ -1,0 +1,28 @@
+name: Bug report
+description: Something on the site doesn't look or work as expected
+labels: [bug]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Page
+      placeholder: https://thealchemistcode.org/...
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you expected and what you saw. Screenshots help a lot.
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Browser and device
+      placeholder: Safari 19 on iPhone 16, Chrome 141 on Windows…
+  - type: dropdown
+    id: theme
+    attributes:
+      label: Color mode
+      options: [Dark, Light, Not sure]

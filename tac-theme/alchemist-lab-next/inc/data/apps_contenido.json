@@ -1,0 +1,1204 @@
+{
+ "soccer24": {
+  "slug": "soccer24",
+  "es": {
+   "title": "Soccer24: resultados de fútbol en vivo y Liga MX",
+   "description": "Resultados de fútbol en vivo de más de 1,100 competencias, de la Liga MX a la Champions. Alertas de gol, alineaciones, tablas y estadísticas. Gratis.",
+   "h1": "Resultados de fútbol en vivo: entérate del gol al instante",
+   "intro": "Soccer24 es una app de resultados de fútbol en vivo para iPhone y Android. Sigue minuto a minuto los partidos de hoy de más de 1,100 competencias, de la Liga MX a la Champions League, con alineaciones, estadísticas, tablas de posiciones y alertas de gol solo de los equipos que tú eliges. Se descarga gratis.",
+   "features": [
+    {
+     "t": "Marcador minuto a minuto",
+     "d": "El marcador, el minuto de juego, los goleadores, las tarjetas y los cambios se actualizan en vivo en la misma pantalla."
+    },
+    {
+     "t": "Alertas solo de lo tuyo",
+     "d": "Sigue equipos, ligas o partidos sueltos y recibe un aviso al arranque, en cada gol y al final del juego."
+    },
+    {
+     "t": "El partido completo",
+     "d": "Alineaciones, formaciones, 16 estadísticas por equipo, historial de enfrentamientos directos y la forma de los últimos 5 partidos."
+    },
+    {
+     "t": "Widgets y Dynamic Island",
+     "d": "Ve el marcador en tu pantalla de inicio y, en iPhone, también en la pantalla bloqueada y la Dynamic Island con Live Activities."
+    }
+   ],
+   "keywords": [
+    "resultados de fútbol en vivo",
+    "marcadores de fútbol en vivo",
+    "partidos de hoy",
+    "resultados Liga MX",
+    "tabla de posiciones",
+    "alineaciones",
+    "livescore",
+    "pronósticos de fútbol"
+   ]
+  },
+  "en": {
+   "title": "Soccer24: Live Soccer Scores, Fixtures & Standings",
+   "description": "Live scores from 1,100+ competitions, from the Premier League to MLS and Liga MX. Goal alerts, lineups, stats and standings. Free on iPhone and Android.",
+   "h1": "Live soccer scores: know the second a goal goes in",
+   "intro": "Soccer24 is a free live football scores app for iPhone and Android. Follow today's matches minute by minute across more than 1,100 competitions, from the Premier League and Champions League to MLS and Liga MX, with lineups, match stats, league tables and goal alerts for only the teams you choose.",
+   "features": [
+    {
+     "t": "Minute-by-minute scores",
+     "d": "The score, match clock, goalscorers, cards and substitutions update live on a single screen."
+    },
+    {
+     "t": "Alerts for your teams only",
+     "d": "Follow teams, leagues or single matches and get notified at kick-off, for every goal and at full time."
+    },
+    {
+     "t": "Every match in detail",
+     "d": "Confirmed lineups, formations, 16 team stats, head-to-head history and last-5 form for every game."
+    },
+    {
+     "t": "Widgets and Live Activities",
+     "d": "Keep live scores on your Home Screen, and on iPhone follow the score from the Lock Screen and Dynamic Island."
+    }
+   ],
+   "keywords": [
+    "live soccer scores",
+    "football livescore app",
+    "soccer scores today",
+    "soccer standings",
+    "Premier League live scores",
+    "MLS scores",
+    "Liga MX scores",
+    "soccer predictions"
+   ]
+  },
+  "aso_gaps": "La App Store muestra solo inglés en «Idiomas» aunque la ficha presume 18 (Google Play dice 12): declara las localizaciones en el binario de iOS y unifica la cifra en ambas tiendas. El subtítulo de México («Marcadores en vivo y alertas») no nombra la Liga MX; pruébala ahí, y si los pronósticos de la afición que menciona Google Play también existen en iOS, añádelos a esa ficha."
+ },
+ "clutch": {
+  "slug": "clutch",
+  "es": {
+   "title": "Clutch: básquetbol en vivo, marcadores y alertas",
+   "description": "Marcadores de básquetbol profesional en vivo y alertas solo cuando el partido se pone bueno: finales cerrados, tiempo extra y remontadas. Sin spoilers.",
+   "h1": "Básquetbol en vivo: te avisamos cuando el final se pone cerrado",
+   "intro": "Clutch es una app de marcadores de básquetbol profesional en vivo para iPhone y Android, en español y sin registro. En lugar de avisarte por cada canasta, te alerta cuando el partido se pone bueno: últimos 5 minutos a 5 puntos o menos, tiempo extra y remontadas de 15 o más. ¿Lo verás grabado? Activa el modo sin spoilers.",
+   "features": [
+    {
+     "t": "Alertas de final cerrado",
+     "d": "Te avisa en los últimos 5 minutos con 5 puntos o menos de diferencia, en tiempo extra y en remontadas de 15 puntos o más."
+    },
+    {
+     "t": "Sin spoilers, de verdad",
+     "d": "Oculta marcadores y alertas de resultado de tus equipos, y un índice de emoción te dice si vale la pena verlo sin revelar quién ganó."
+    },
+    {
+     "t": "Sigue a tu jugador",
+     "d": "Sigue un partido o a un jugador concreto y entérate de las noches de 40, 50 y 60 puntos."
+    },
+    {
+     "t": "El partido completo",
+     "d": "Box score, jugada a jugada, flujo del partido, líderes y clasificación con zonas de playoffs y play-in."
+    }
+   ],
+   "keywords": [
+    "básquetbol en vivo",
+    "marcadores de básquetbol en vivo",
+    "resultados NBA",
+    "marcador NBA en vivo",
+    "alertas de básquetbol",
+    "box score",
+    "básquetbol sin spoilers",
+    "clasificación de playoffs"
+   ]
+  },
+  "en": {
+   "title": "Clutch: Live Basketball Scores & Clutch-Time Alerts",
+   "description": "Live pro basketball scores with alerts only when a game gets good: clutch time, overtime and big comebacks. Spoiler-free mode and box scores. No sign-up.",
+   "h1": "Live basketball scores that tell you when a game gets good",
+   "intro": "Clutch is a live pro basketball scores app for iPhone and Android, with no sign-up. Instead of pinging you for every basket, it alerts you when a game gets good: the last 5 minutes within 5 points, overtime and 15+ point comebacks. Watching it later? Spoiler-free mode hides the result for your teams.",
+   "features": [
+    {
+     "t": "Clutch-time alerts",
+     "d": "Get notified when a game is within 5 points in the last 5 minutes, goes to overtime or turns into a 15+ point comeback."
+    },
+    {
+     "t": "Spoiler-free, for real",
+     "d": "Hide scores and result alerts for your teams, and check the excitement rating to see if a game is worth watching without learning who won."
+    },
+    {
+     "t": "Follow a player",
+     "d": "Follow a single game or a single player and catch 40, 50 and 60-point nights as they happen."
+    },
+    {
+     "t": "The whole game",
+     "d": "Box score, play-by-play, game flow, leaders and standings with playoff and play-in lines."
+    }
+   ],
+   "keywords": [
+    "live basketball scores",
+    "NBA live scores",
+    "NBA scores app",
+    "basketball score alerts",
+    "clutch time alerts",
+    "spoiler-free NBA scores",
+    "NBA box scores",
+    "NBA standings"
+   ]
+  },
+  "aso_gaps": "La App Store lista solo inglés en «Idiomas» aunque la ficha dice «todo en español»: declara la localización en español en el binario de iOS. El modo sin spoilers ya está en la descripción corta de Play pero no en los subtítulos de iOS («Resultados, alertas y stats» / «Pro hoops alerts & box scores»); pruébalo ahí, y como la página web nombra la NBA, conserva el aviso de que Clutch es independiente y no está afiliada."
+ },
+ "peakplay": {
+  "slug": "peakplay",
+  "es": {
+   "title": "PeakPlay: marcadores de la NFL en vivo y estadísticas",
+   "description": "Marcadores NFL en vivo, estadísticas, calendario y noticias de los 32 equipos. Gratis, sin cuenta y con una interfaz oscura hecha para el día de juego.",
+   "h1": "NFL en vivo: marcadores y estadísticas en segundos, sin cuenta",
+   "intro": "PeakPlay es una app gratuita para Android con la que sigues la NFL en vivo. Revisa en segundos los juegos en vivo, finalizados y próximos, con marcador por cuartos, estadio y transmisión de TV. También tiene estadísticas, calendarios y noticias de los 32 equipos, sin crear cuenta ni registrarte.",
+   "features": [
+    {
+     "t": "Marcadores en vivo",
+     "d": "Juegos en vivo, finalizados y próximos en una sola pestaña, con hora de inicio, estadio, transmisión de TV y marcador por cuartos."
+    },
+    {
+     "t": "Los 32 equipos",
+     "d": "Récord, puntos a favor y en contra y calendario completo de cada equipo de la AFC y la NFC, de la pretemporada a los playoffs."
+    },
+    {
+     "t": "Jugadores y líderes",
+     "d": "Busca jugadores por nombre, equipo o posición y consulta a los líderes de pase, acarreo y recepción de la temporada."
+    },
+    {
+     "t": "Noticias y lesiones",
+     "d": "Titulares, resúmenes de partidos, reportes de lesiones y traspasos, con filtro por tema."
+    }
+   ],
+   "keywords": [
+    "NFL en vivo",
+    "marcadores NFL en vivo",
+    "resultados NFL hoy",
+    "calendario NFL",
+    "estadísticas NFL",
+    "noticias NFL",
+    "futbol americano en vivo",
+    "reporte de lesiones NFL"
+   ]
+  },
+  "en": {
+   "title": "PeakPlay: Live NFL Scores, Stats, Schedules & News",
+   "description": "Free live NFL scores, player stats, stat leaders, schedules and news for all 32 teams. No account needed, in a clean dark app built for game day.",
+   "h1": "Live NFL scores and stats in seconds, no account needed",
+   "intro": "PeakPlay is a free Android app for following the NFL. Live, final and upcoming games sit in one tab, with kickoff time, stadium, TV broadcast and quarter-by-quarter scoring. You also get stats, schedules, season leaders and news for all 32 teams, with no account and no sign-up.",
+   "features": [
+    {
+     "t": "Live NFL scores",
+     "d": "Live, final and upcoming games in one tab, with kickoff time, stadium, TV broadcast and scoring by quarter."
+    },
+    {
+     "t": "All 32 teams",
+     "d": "Every team's record, points for and against, and full schedule from preseason through the playoffs, with your favorites pinned."
+    },
+    {
+     "t": "Players and stat leaders",
+     "d": "Search players by name, team or position and see the season's passing, rushing and receiving leaders."
+    },
+    {
+     "t": "News and injury reports",
+     "d": "Headlines, game recaps, injury reports and trade news, refreshed through the day and filterable by topic."
+    }
+   ],
+   "keywords": [
+    "live NFL scores",
+    "NFL scores today",
+    "NFL schedule",
+    "NFL stats",
+    "NFL stat leaders",
+    "NFL news",
+    "NFL injury report",
+    "NFL scores app"
+   ]
+  },
+  "aso_gaps": "La ficha en español nunca dice «futbol americano», que es como se busca en México: añádelo a la descripción corta o larga, y ten lista una alternativa al título «NFL en Vivo: PeakPlay» por si Google objeta el uso de la marca. Cuando se apruebe iOS, repite en el subtítulo los mismos ejes (marcadores, estadísticas, calendario, noticias) y agrega el botón de App Store a la página."
+ },
+ "padelmate": {
+  "slug": "padel-mate",
+  "es": {
+   "title": "Padel Mate: marcador de pádel y partidos cerca de ti",
+   "description": "Lleva el marcador de pádel con reglas reales, encuentra canchas y partidos cerca y guarda tu historial. Gratis en iPhone y Android, también con Wear OS.",
+   "h1": "Marcador de pádel con reglas reales y partidos cerca de ti",
+   "intro": "Padel Mate es una app de pádel para iPhone y Android que lleva el marcador con las reglas reales: puntos, juegos, sets y tie-break. El marcador se guarda solo, así que puedes cerrar la app a mitad del partido. Además, un mapa te muestra canchas y partidos abiertos cerca de ti, y cada resultado queda en tu historial.",
+   "features": [
+    {
+     "t": "Marcador con reglas reales",
+     "d": "Cuenta puntos, juegos, sets y tie-break, y se guarda solo para que retomes el partido justo donde lo dejaste."
+    },
+    {
+     "t": "Canchas y partidos cerca",
+     "d": "Un mapa con los partidos abiertos y las canchas a tu alrededor para unirte a un juego o crear el tuyo."
+    },
+    {
+     "t": "Tu historial de jugador",
+     "d": "Cada partido queda guardado con su resultado, su fecha y sus jugadores para que veas cómo evoluciona tu juego."
+    },
+    {
+     "t": "Comunidad de pádel",
+     "d": "Sigue a otros jugadores, revisa sus partidos y califica a tus compañeros después de jugar."
+    }
+   ],
+   "keywords": [
+    "app de pádel",
+    "marcador de pádel",
+    "contador de puntos de pádel",
+    "canchas de pádel cerca de mí",
+    "partidos de pádel",
+    "buscar jugadores de pádel",
+    "marcador de pádel para reloj"
+   ]
+  },
+  "en": {
+   "title": "Padel Mate: Padel Scoreboard & Matches Near You",
+   "description": "Keep padel score with the real rules, find courts and open matches nearby and save your match history. Free on iPhone and Android, with Wear OS support.",
+   "h1": "A padel scoreboard with real rules, plus matches near you",
+   "intro": "Padel Mate is a padel app for iPhone and Android that keeps score with the real rules: points, games, sets and tie-breaks. The scoreboard saves itself, so you can close the app mid-match and pick up where you left off. A map shows courts and open matches near you, and every result lands in your history.",
+   "features": [
+    {
+     "t": "Real-rules scoreboard",
+     "d": "Counts points, games, sets and tie-breaks, and saves itself so you can resume a match exactly where you left off."
+    },
+    {
+     "t": "Courts and matches nearby",
+     "d": "A map of open matches and padel courts around you, so you can join a game or create your own."
+    },
+    {
+     "t": "Your match history",
+     "d": "Every match is stored with its score, date and players, so you can watch your game develop."
+    },
+    {
+     "t": "A padel community",
+     "d": "Follow other players, look through their matches and rate your partners after you play."
+    }
+   ],
+   "keywords": [
+    "padel app",
+    "padel scoreboard",
+    "padel score keeper",
+    "padel courts near me",
+    "padel matches near me",
+    "find padel players",
+    "padel scoreboard for Wear OS"
+   ]
+  },
+  "aso_gaps": "La ficha en español de Google Play está en español de España («pistas», «móvil», «apúntate») y el título de iOS en México dice «Marcador y Pistas» aunque el subtítulo ya usa «canchas»: crea una ficha es-419 con «canchas» y «celular» y cambia «Pistas» por «Canchas» en iOS. Si el punto de oro, deshacer punto y los americanos que anuncia Play también existen en iOS, añádelos a esa ficha."
+ },
+ "padely": {
+  "slug": "padely",
+  "es": {
+   "title": "Padely: marcador de pádel para iPhone y Apple Watch",
+   "description": "Lleva el marcador de tu partido de pádel desde el iPhone o el Apple Watch: puntos, juegos y sets al mejor de tres, con punto de oro en el 40-40. Gratis.",
+   "h1": "Marcador de pádel en tu iPhone y en tu Apple Watch",
+   "intro": "Padely es un marcador de pádel para iPhone y Apple Watch. Sumas puntos para cada equipo con el conteo de siempre (0, 15, 30, 40 y juego) y la app lleva los juegos y los sets hasta que un equipo gana dos. En el 40-40 se activa el punto de oro y el equipo que recibe elige el lado. Es gratis y, por ahora, está en inglés.",
+   "features": [
+    {
+     "t": "Marcador en tiempo real",
+     "d": "Suma puntos para el equipo 1 y el equipo 2 con el conteo de tenis: 0, 15, 30, 40 y juego."
+    },
+    {
+     "t": "Punto de oro",
+     "d": "En el 40-40 se activa el punto de oro y el equipo que recibe elige el lado para el punto decisivo."
+    },
+    {
+     "t": "Al mejor de tres sets",
+     "d": "Lleva los juegos y los sets por ti y anuncia al equipo ganador cuando se lleva dos sets."
+    },
+    {
+     "t": "Desde el Apple Watch",
+     "d": "Lleva el marcador desde la muñeca sin sacar el teléfono: puntos, juegos y sets."
+    }
+   ],
+   "keywords": [
+    "marcador de pádel",
+    "marcador de pádel para Apple Watch",
+    "contador de puntos de pádel",
+    "app de pádel para iPhone",
+    "punto de oro pádel",
+    "marcador de partidos de pádel"
+   ]
+  },
+  "en": {
+   "title": "Padely: Padel Scorekeeper for iPhone & Apple Watch",
+   "description": "Keep score of your padel match from your iPhone or Apple Watch: points, games and best-of-three sets, with the golden point at 40-40. Free.",
+   "h1": "A padel scorekeeper on your iPhone and Apple Watch",
+   "intro": "Padely is a padel scorekeeper for iPhone and Apple Watch. Add points for each team with the familiar count (0, 15, 30, 40, game) and the app tracks games and sets until a team wins two. At 40-40 the golden point kicks in and the receiving team picks the side. It's free.",
+   "features": [
+    {
+     "t": "Real-time scoring",
+     "d": "Add points for Team 1 and Team 2 with tennis-style scoring: 0, 15, 30, 40, game."
+    },
+    {
+     "t": "Golden point",
+     "d": "At 40-40 the golden point kicks in and the receiving team chooses the side for the deciding point."
+    },
+    {
+     "t": "Best of three sets",
+     "d": "Games and sets are tracked for you, and the winning team is announced once it takes two sets."
+    },
+    {
+     "t": "Score from Apple Watch",
+     "d": "Keep score from your wrist without reaching for your phone: points, games and sets."
+    }
+   ],
+   "keywords": [
+    "padel scorekeeper",
+    "padel score app",
+    "padel Apple Watch",
+    "padel scoreboard iPhone",
+    "golden point padel",
+    "padel match tracker"
+   ]
+  },
+  "aso_gaps": "La ficha solo existe en inglés (sin localización en español) y las capturas son pantallas sin marco ni textos de venta; no hay capturas de Apple Watch aunque la descripción lo destaca. Comparte nicho con Padel Mate: conviene diferenciarla en el subtítulo («marcador para Apple Watch») o enlazar una con la otra."
+ },
+ "coder": {
+  "slug": "alchemist-coder",
+  "es": {
+   "title": "Alchemist Coder: app gratis para Claude Code y Codex",
+   "description": "App de escritorio gratis y de código abierto para Claude Code, Codex, Gemini CLI y Grok. Sigue cada agente en vivo y busca en todo tu historial.",
+   "h1": "Claude Code, Codex y Gemini CLI en una app de escritorio gratis",
+   "intro": "Alchemist Coder es una app de escritorio gratuita y de código abierto para macOS, Windows y Linux. Reúne tus conversaciones de Claude Code, Codex, Gemini CLI y Grok en un solo lugar: ves cada agente y subagente en vivo, buscas en todo tu historial y automatizas rutinas. La edición Community trabaja con modelos locales y sin cuenta.",
+   "features": [
+    {
+     "t": "Árbol de agentes en vivo",
+     "d": "Ve al agente principal y a sus subagentes con su estado (pensando, esperando tu permiso o terminado) y los archivos que cambió cada uno."
+    },
+    {
+     "t": "Todo tu historial, con búsqueda",
+     "d": "Indexa en tu computadora cada conversación de Claude Code, Codex, Gemini CLI y Grok Build, y retómala con todo su contexto."
+    },
+    {
+     "t": "Automatizaciones en diagrama",
+     "d": "Describe una rutina con tus palabras y un agente la dibuja como diagrama de flujo que corre con horario y tope de gasto diario."
+    },
+    {
+     "t": "Código abierto y modelos locales",
+     "d": "Núcleo con licencia AGPL-3.0, sin cuenta, y agentes con Ollama o LM Studio para que tu código no salga de tu equipo."
+    }
+   ],
+   "keywords": [
+    "interfaz gráfica para Claude Code",
+    "app de escritorio para Claude Code",
+    "Codex CLI",
+    "Gemini CLI",
+    "agentes de IA para programar",
+    "historial de Claude Code",
+    "IA para programar de código abierto",
+    "programar con Ollama"
+   ]
+  },
+  "en": {
+   "title": "Alchemist Coder: Free Desktop App for Claude Code & Codex",
+   "description": "Free, open-source desktop app for Claude Code, Codex, Gemini CLI and Grok. Follow every agent and subagent live and search your entire history.",
+   "h1": "Claude Code, Codex and Gemini CLI in one free desktop app",
+   "intro": "Alchemist Coder is a free, open-source desktop app for macOS, Windows and Linux. It brings your Claude Code, Codex, Gemini CLI and Grok conversations into one place, so you can follow every agent and subagent live, search your entire history and automate routines. The Community edition runs agents on local models, with no account.",
+   "features": [
+    {
+     "t": "A live agent tree",
+     "d": "See the main agent and every subagent with its status (thinking, waiting for your permission or done) and the files each one changed."
+    },
+    {
+     "t": "Your whole history, searchable",
+     "d": "Index every Claude Code, Codex, Gemini CLI and Grok Build conversation on your machine and resume any of them with full context."
+    },
+    {
+     "t": "Automations as flow diagrams",
+     "d": "Describe a routine in plain words and an agent draws it as a flow that runs on a schedule with a daily spending cap."
+    },
+    {
+     "t": "Open source, local models",
+     "d": "An AGPL-3.0 core, no account, and agents on Ollama or LM Studio so your code never leaves your machine."
+    }
+   ],
+   "keywords": [
+    "Claude Code GUI",
+    "Claude Code desktop app",
+    "Codex CLI GUI",
+    "Gemini CLI GUI",
+    "AI coding agents",
+    "Claude Code history",
+    "open-source AI coding tool",
+    "Ollama coding agent"
+   ]
+  },
+  "aso_gaps": "No tiene ficha en tiendas, así que su «tienda» es GitHub y la página de descarga: firma y notariza la app para quitar el paso de «Abrir igualmente» y publícala en Homebrew Cask y winget. Los 20 topics de GitHub ya están ocupados; cambia los genéricos (ai-tools, llm) por búsquedas reales como claude-code-gui y codex-cli, y aclara junto a la descarga que Community usa modelos locales y que Pro, con tus propias cuentas, aún no sale."
+ },
+ "instanotes": {
+  "slug": "instanotes-ai",
+  "es": {
+   "title": "Instanotes AI: bloc de notas con IA, voz a texto y OCR",
+   "description": "Bloc de notas con IA: dicta notas de voz, escanea texto con OCR y mejora, corrige, resume o traduce cualquier fragmento sin salir de tu nota.",
+   "h1": "Bloc de notas con IA: de apuntes sueltos a textos terminados",
+   "intro": "Instanotes AI es un bloc de notas con IA para iPhone y Android. Escribe con formato, dicta una nota de voz o escanea una hoja, un pizarrón o un recibo, y luego selecciona cualquier fragmento para que la IA lo mejore, corrija la gramática, lo resuma, lo traduzca o le cambie el tono. El resultado reemplaza justo lo que seleccionaste.",
+   "features": [
+    {
+     "t": "IA sobre cualquier selección",
+     "d": "Mejora, corrige, resume, amplía, cambia el tono, traduce o continúa el texto, y el resultado queda dentro de tu nota."
+    },
+    {
+     "t": "Notas de voz a texto",
+     "d": "Dicta y recibe texto limpio y puntuado directo en el editor, listo para corregir."
+    },
+    {
+     "t": "Escáner con OCR",
+     "d": "Escanea páginas impresas o escritas a mano, pizarrones y recibos, y conviértelos en notas editables."
+    },
+    {
+     "t": "De nota a publicación",
+     "d": "Convierte una nota en captions, resúmenes, preguntas frecuentes, biografías o textos de producto, en decenas de idiomas."
+    }
+   ],
+   "keywords": [
+    "bloc de notas con IA",
+    "app de notas con IA",
+    "voz a texto",
+    "dictado de notas",
+    "escáner OCR",
+    "pasar foto a texto",
+    "corrector de gramática",
+    "resumir texto con IA"
+   ]
+  },
+  "en": {
+   "title": "Instanotes AI: AI Notepad with Voice to Text & OCR",
+   "description": "AI notepad: dictate voice notes, scan text with OCR, and improve, fix, summarize or translate any selection without leaving your note.",
+   "h1": "An AI notepad that turns rough notes into finished writing",
+   "intro": "Instanotes AI is an AI notepad for iPhone and Android. Write with real formatting, dictate a voice note or scan a page, whiteboard or receipt, then select any passage and let AI improve it, fix the grammar, summarize it, translate it or change its tone. The result replaces exactly what you selected.",
+   "features": [
+    {
+     "t": "AI on any selection",
+     "d": "Improve, fix, summarize, expand, change the tone, translate or continue your text, and the result stays inside your note."
+    },
+    {
+     "t": "Voice notes to text",
+     "d": "Dictate and get clean, punctuated text straight in the editor, ready to edit."
+    },
+    {
+     "t": "OCR document scanner",
+     "d": "Scan printed or handwritten pages, whiteboards and receipts and turn them into editable notes."
+    },
+    {
+     "t": "From note to post",
+     "d": "Turn a note into captions, summaries, FAQs, bios or product copy, in dozens of languages."
+    }
+   ],
+   "keywords": [
+    "AI notepad",
+    "AI note taking app",
+    "voice to text notes",
+    "OCR scanner app",
+    "image to text",
+    "grammar fixer",
+    "AI summarizer",
+    "AI rewriter"
+   ]
+  },
+  "aso_gaps": "La ficha en español de Google Play está en español de España y traduce «Type when typing is quicker» como «Escribe a mano cuando teclear sea más rápido», que sugiere escritura a mano: corrígelo y crea una ficha es-419 con «pizarrón» y «escribir» en lugar de «pizarra» y «teclear». En ambas tiendas conviene destacar desde la primera línea que las notas son gratis e ilimitadas y que la IA tiene una cuota diaria, porque hoy ese dato queda al final."
+ },
+ "pdfmaster": {
+  "slug": "pdf-master",
+  "es": {
+   "title": "PDF Master: escanear documentos y convertir foto a PDF",
+   "description": "Escáner de documentos con OCR: escanea tu INE, facturas o contratos, fírmalos y convierte foto a PDF. Todo se queda en tu celular, sin nube ni cuenta.",
+   "h1": "Escanea documentos con tu celular, sin subir nada a la nube",
+   "intro": "PDF Master es un escáner de documentos con OCR para iPhone y Android. Escanea tu INE, contratos, facturas o apuntes, firma sin imprimir y convierte foto a PDF en segundos. Tus documentos se procesan y se guardan en tu dispositivo: sin nube, sin cuenta y sin registro. El plan gratuito no pone marca de agua.",
+   "features": [
+    {
+     "t": "Escaneo limpio",
+     "d": "Detección automática de bordes, recorte, contraste y filtros, con documentos de varias páginas que puedes reordenar y rotar."
+    },
+    {
+     "t": "Firma sin imprimir",
+     "d": "Dibuja tu firma una vez, colócala en cualquier documento y compártelo por WhatsApp, correo o Drive."
+    },
+    {
+     "t": "OCR: del papel al texto",
+     "d": "Reconoce el texto de facturas, formularios, apuntes y libros, impreso o con letra clara, para que lo copies donde lo necesites."
+    },
+    {
+     "t": "Privado por diseño",
+     "d": "Tus documentos y el OCR se procesan en tu teléfono, y nada se vende, se comparte ni se usa para entrenar nada."
+    }
+   ],
+   "keywords": [
+    "escanear documentos con el celular",
+    "escáner de documentos",
+    "convertir foto a PDF",
+    "JPG a PDF",
+    "escanear INE",
+    "firmar PDF",
+    "extraer texto de una imagen",
+    "editor de PDF"
+   ]
+  },
+  "en": {
+   "title": "PDF Master: Document Scanner App, Scan to PDF with OCR",
+   "description": "Scan IDs, receipts, contracts and notes to PDF with OCR. Sign without printing, convert photos to PDF and keep everything on your phone. No account.",
+   "h1": "Scan documents to PDF without uploading anything to the cloud",
+   "intro": "PDF Master is a document scanner with OCR for iPhone and Android. Scan your ID, contracts, receipts or class notes, sign without printing and convert photos to PDF in seconds. Your documents are processed and stored on your device, with no cloud upload, no account and no sign-up. The free plan adds no watermark.",
+   "features": [
+    {
+     "t": "Clean scans",
+     "d": "Automatic edge detection, cropping, contrast and filters, with multi-page documents you can reorder and rotate."
+    },
+    {
+     "t": "Sign without printing",
+     "d": "Draw your signature once, place it on any document and share it to WhatsApp, email or Drive."
+    },
+    {
+     "t": "OCR: paper to text",
+     "d": "Recognize text on invoices, forms, notes and books, printed or clearly handwritten, and copy it wherever you need it."
+    },
+    {
+     "t": "Private by design",
+     "d": "Your documents and OCR are processed on your phone, and nothing is sold, shared or used to train anything."
+    }
+   ],
+   "keywords": [
+    "document scanner app",
+    "scan to PDF",
+    "photo to PDF",
+    "JPG to PDF",
+    "PDF scanner with OCR",
+    "sign PDF",
+    "scan ID card",
+    "private document scanner"
+   ]
+  },
+  "aso_gaps": "Las fichas no coinciden: iOS anuncia unir y comprimir PDF (y en inglés «Scan to Word»), mientras que Android habla de combinar escaneos y elegir la calidad de exportación; si las funciones son iguales, unifica el texto para que la web pueda prometer lo mismo en ambas plataformas. Además, la marca «PDF Master» no aparece en el nombre ni en el subtítulo de ninguna tienda («Escanear Documentos: PDF OCR» / «Scan to PDF: Doc Scanner OCR»), así que quien llegue desde la web no la reconocerá; súmala al subtítulo de iOS o a la descripción corta de Play."
+ },
+ "walpy": {
+  "slug": "walpy",
+  "es": {
+   "title": "Walpy: fondos de pantalla con IA hechos para tu celular",
+   "description": "Describe una escena o elige un estilo y Walpy crea cuatro fondos de pantalla con IA a la resolución exacta de tu celular. Sin cuenta y sin anuncios.",
+   "h1": "Fondos de pantalla con IA que solo existen para ti",
+   "intro": "Walpy es una app para Android que crea fondos de pantalla con IA. Describe una escena, o solo elige un estilo y una paleta de colores, y Walpy genera cuatro fondos nuevos a la resolución exacta de tu teléfono, de borde a borde y sin recortes. Antes de guardarlo, ves cómo queda bajo el reloj.",
+   "features": [
+    {
+     "t": "A la medida de tu pantalla",
+     "d": "Detecta tu teléfono y crea cada fondo a su resolución real, para que llene la pantalla sin recortes."
+    },
+    {
+     "t": "Velo antes de guardarlo",
+     "d": "Revisa cada fondo bajo el reloj de la pantalla de bloqueo, detrás de los íconos de inicio o solo."
+    },
+    {
+     "t": "Estilos y paletas",
+     "d": "Acuarela, minimalista, 3D, anime, foto, degradado, neón o papel recortado, o describe exactamente lo que quieres."
+    },
+    {
+     "t": "Privado desde el diseño",
+     "d": "Sin cuenta, sin anuncios y sin rastreo: tus fondos se quedan en tu dispositivo."
+    }
+   ],
+   "keywords": [
+    "fondos de pantalla con IA",
+    "crear fondo de pantalla con IA",
+    "generador de fondos de pantalla",
+    "fondos de pantalla personalizados",
+    "fondos de pantalla para Android",
+    "fondos de pantalla anime",
+    "fondos de pantalla minimalistas"
+   ]
+  },
+  "en": {
+   "title": "Walpy: AI Wallpaper Generator Made for Your Phone",
+   "description": "Describe a scene or pick a style, and Walpy creates four AI wallpapers at your phone's exact resolution. Preview them under the clock. No account, no ads.",
+   "h1": "AI wallpapers that exist only for you",
+   "intro": "Walpy is an Android app that creates AI wallpapers. Describe a scene, or just pick a style and a color palette, and Walpy makes four new wallpapers at your phone's exact resolution, so they fill the screen edge to edge without cropping. Before you save one, you see how it looks under your clock.",
+   "features": [
+    {
+     "t": "Made for your screen",
+     "d": "Walpy detects your phone and renders every wallpaper at its native size, so it fills the screen without cropping."
+    },
+    {
+     "t": "See it before you save it",
+     "d": "Preview each wallpaper under your lock screen clock, behind your home screen icons or on its own."
+    },
+    {
+     "t": "Styles and palettes",
+     "d": "Watercolor, minimal, 3D, anime, photo, gradient, neon or paper cut, or describe exactly what you want."
+    },
+    {
+     "t": "Private by design",
+     "d": "No account, no ads and no tracking: your wallpapers stay on your device."
+    }
+   ],
+   "keywords": [
+    "AI wallpaper generator",
+    "AI wallpapers",
+    "custom wallpaper maker",
+    "wallpaper app for Android",
+    "lock screen wallpaper",
+    "anime wallpapers",
+    "minimalist wallpapers"
+   ]
+  },
+  "aso_gaps": "La ficha de Google Play nombra modelos de iPhone (iPhone 17, iPhone Air) y enlaza el EULA de Apple como términos de uso: cámbialos por modelos Android y tus propios términos. Di en la descripción corta que la primera creación es gratis y sin cuenta, y revisa walpy.alekla.com, que dice que Walpy también está en App Store aunque no aparece en la búsqueda de Apple."
+ },
+ "inventra": {
+  "slug": "inventra",
+  "es": {
+   "title": "Inventra: app de inventario y ventas para pymes",
+   "description": "Controla productos, stock, ventas básicas, compras y sucursales en una sola app, con alertas de bajo stock y sincronización en la nube. En Google Play.",
+   "h1": "App de inventario y ventas para tener tu negocio bajo control",
+   "intro": "Inventra es una app de control de inventario pensada para negocios pequeños y medianos. Das de alta tus productos, llevas el stock, registras ventas básicas y compras, y te avisa cuando algo está por agotarse. Si tienes varias sucursales, tus datos se sincronizan en la nube y consultas los reportes desde la misma app.",
+   "features": [
+    {
+     "t": "Productos y stock",
+     "d": "Da de alta tus productos y lleva el control de existencias en un solo lugar."
+    },
+    {
+     "t": "Ventas y compras",
+     "d": "Registra ventas básicas y compras junto a tu inventario, sin cambiar de herramienta."
+    },
+    {
+     "t": "Alertas de bajo stock",
+     "d": "Te avisa cuando un producto está por agotarse para que resurtas a tiempo."
+    },
+    {
+     "t": "Sucursales y reportes",
+     "d": "Administra varias sucursales y consulta reportes, con tus datos sincronizados en la nube."
+    }
+   ],
+   "keywords": [
+    "app de inventario y ventas",
+    "app para control de inventario",
+    "app de inventario de productos",
+    "app de inventario para android",
+    "control de inventario para pymes",
+    "control de stock",
+    "inventario por sucursales"
+   ]
+  },
+  "en": {
+   "title": "Inventra: Inventory & Sales App for Small Business",
+   "description": "Track products, stock, basic sales, purchases and branches in one app, with low-stock alerts and cloud sync. Built for small and midsize businesses.",
+   "h1": "An inventory and sales app that keeps your stock under control",
+   "intro": "Inventra is an inventory management app for small and midsize businesses. Add your products, track stock levels, record basic sales and purchases, and get an alert when an item is running low. If you run more than one branch, your data syncs to the cloud and you can check reports from the same app.",
+   "features": [
+    {
+     "t": "Products and stock",
+     "d": "Add your products and keep track of stock levels in one place."
+    },
+    {
+     "t": "Sales and purchases",
+     "d": "Record basic sales and purchases right next to your inventory."
+    },
+    {
+     "t": "Low-stock alerts",
+     "d": "Get alerted when a product is running low so you can reorder in time."
+    },
+    {
+     "t": "Branches and reports",
+     "d": "Manage multiple branches and view reports, with your data synced to the cloud."
+    }
+   ],
+   "keywords": [
+    "inventory app for small business",
+    "inventory and sales app",
+    "inventory management app",
+    "stock control app",
+    "stock and sales app",
+    "inventory app for android",
+    "low stock alerts",
+    "multi-location inventory"
+   ]
+  },
+  "aso_gaps": "La descripción de Google Play tiene solo unos 200 caracteres y en español va sin acentos («pequenos», «sincronizacion»); conviene ampliarla con funciones, para quién es y qué incluye gratis frente a las compras dentro de la app, repitiendo «app de inventario y ventas» y «control de inventario». El título podría sumar «control de stock» o «para negocios», que hoy solo aparece en la descripción corta."
+ },
+ "komodo": {
+  "slug": "komodo-vpn",
+  "es": {
+   "title": "Komodo VPN: VPN gratis y segura para iPhone y Android",
+   "description": "Cifra tu conexión con un toque en el Wi-Fi público de cafés, aeropuertos y hoteles. Gratis con anuncios o sin ellos con Premium. Sin registro de actividad.",
+   "h1": "VPN para Wi-Fi público: cifra tu conexión con un toque",
+   "intro": "Komodo VPN crea un túnel cifrado entre tu celular y un servidor VPN, para que otras personas en la misma red Wi-Fi no puedan leer tu tráfico. Está pensada para redes que no controlas, como las de cafés, aeropuertos, hoteles y coworkings. No necesitas cuenta, es gratis con anuncios y está disponible para iPhone y Android.",
+   "features": [
+    {
+     "t": "Conexión con un toque",
+     "d": "Activa la VPN con un solo toque y elige tu servidor entre las ubicaciones disponibles."
+    },
+    {
+     "t": "Kill switch en iPhone",
+     "d": "Si la conexión se cae, iOS vuelve a levantar el túnel en vez de mandar tu tráfico a la red abierta."
+    },
+    {
+     "t": "Cambio automático en Android",
+     "d": "Si un servidor no responde, la app prueba otro y te muestra el estado, tu IP pública y los datos transferidos."
+    },
+    {
+     "t": "Sin registros de actividad",
+     "d": "El servicio VPN no guarda tu historial de navegación, tus consultas DNS ni tu IP y datos de sesión."
+    }
+   ],
+   "keywords": [
+    "vpn gratis",
+    "vpn para iphone",
+    "vpn para android",
+    "vpn segura",
+    "vpn para wifi público",
+    "vpn con kill switch",
+    "vpn sin registros"
+   ]
+  },
+  "en": {
+   "title": "Komodo VPN: Free, Secure VPN for iPhone & Android",
+   "description": "Encrypt your connection in one tap on café, airport and hotel Wi-Fi. Use it free with ads, or go Premium to remove ads. No activity logs, no account.",
+   "h1": "VPN for public Wi-Fi: encrypt your connection in one tap",
+   "intro": "Komodo VPN creates an encrypted tunnel between your phone and a VPN server, so other people on the same Wi-Fi network can't read your traffic. It's built for networks you don't control: cafés, airports, hotels and co-working spaces. No account needed, it's free to use with ads, and it's available on iPhone and Android.",
+   "features": [
+    {
+     "t": "One-tap connect",
+     "d": "Turn the VPN on with a single tap and pick a server from the available locations."
+    },
+    {
+     "t": "Kill switch on iPhone",
+     "d": "If the connection drops, iOS reconnects the tunnel instead of letting your traffic fall back to the open network."
+    },
+    {
+     "t": "Automatic fallback on Android",
+     "d": "If a server doesn't respond, the app tries another and shows your status, public IP and data transfer."
+    },
+    {
+     "t": "No activity logs",
+     "d": "The VPN service doesn't log your browsing history, DNS queries, IP address or session details."
+    }
+   ],
+   "keywords": [
+    "free vpn",
+    "vpn for public wifi",
+    "vpn app for iphone",
+    "vpn app for android",
+    "secure vpn",
+    "vpn with kill switch",
+    "no-logs vpn"
+   ]
+  },
+  "aso_gaps": "Las fichas no coinciden: kill switch, destinos excluidos, prueba de velocidad, generador de contraseñas y la política sin registros solo aparecen en iOS, y el cambio automático de servidor y la IP pública solo en Android; si existen en ambas apps, conviene listarlas en las dos y llevar «sin registros» y «Wi-Fi público» a la descripción corta de Google Play. El título de Play promete «Rápida» mientras la propia ficha advierte que la velocidad depende de la red; «Segura y privada», como en iOS, es más defendible."
+ },
+ "cleanpro": {
+  "slug": "cleanpro",
+  "es": {
+   "title": "CleanPro: elimina fotos duplicadas y libera espacio",
+   "description": "Encuentra fotos duplicadas, videos de 100 MB o más y capturas de pantalla en tu Android. Ve cuánto espacio recuperas y borra solo lo que tú confirmes.",
+   "h1": "Libera espacio en tu Android: fotos duplicadas, videos y capturas",
+   "intro": "CleanPro es un limpiador de almacenamiento para Android que revisa tu galería y agrupa lo que más espacio ocupa: fotos duplicadas exactas, videos de 100 MB o más y capturas de pantalla olvidadas. Ves el tamaño real de cada categoría antes de borrar y nada se elimina sin tu confirmación. Todo el análisis ocurre en tu teléfono.",
+   "features": [
+    {
+     "t": "Fotos duplicadas exactas",
+     "d": "Agrupa los duplicados por tamaño y contenido, y marca la copia más antigua como la que se conserva."
+    },
+    {
+     "t": "Videos pesados",
+     "d": "Señala los videos de 100 MB o más para que decidas cuáles conservar y cuáles borrar."
+    },
+    {
+     "t": "Capturas de pantalla",
+     "d": "Encuentra todas tus capturas para que limpies las que ya no necesitas de un solo toque."
+    },
+    {
+     "t": "Privado y bajo tu control",
+     "d": "No sube tus fotos a ningún servidor y usa el diálogo del sistema para que confirmes antes de borrar."
+    }
+   ],
+   "keywords": [
+    "eliminar fotos duplicadas",
+    "borrar fotos duplicadas android",
+    "app para liberar espacio",
+    "limpiador de celular",
+    "limpiar almacenamiento android",
+    "liberar espacio en el celular",
+    "borrar capturas de pantalla"
+   ]
+  },
+  "en": {
+   "title": "CleanPro: Duplicate Photo & Storage Cleaner for Android",
+   "description": "Find exact duplicate photos, videos of 100 MB or more and old screenshots. See how much space you'll recover, and nothing is deleted until you confirm.",
+   "h1": "Free up space on Android: duplicate photos, big videos, screenshots",
+   "intro": "CleanPro is a storage cleaner for Android that scans your photo library and groups what takes up the most space: exact duplicate photos, videos of 100 MB or more, and forgotten screenshots. You see the real size of each category before you delete, and nothing is removed without your confirmation. All scanning happens on your phone.",
+   "features": [
+    {
+     "t": "Exact duplicate photos",
+     "d": "Groups duplicates by file size and content, and marks the oldest copy as the one to keep."
+    },
+    {
+     "t": "Large videos",
+     "d": "Flags videos of 100 MB or more so you can decide what to keep and what to delete."
+    },
+    {
+     "t": "Screenshots",
+     "d": "Finds all your screenshots so you can clear the backlog in one tap."
+    },
+    {
+     "t": "Private and in your control",
+     "d": "Never uploads your photos to a server, and uses the system dialog so you confirm before anything is deleted."
+    }
+   ],
+   "keywords": [
+    "storage cleaner for android",
+    "duplicate photo cleaner",
+    "duplicate photo finder",
+    "free up space on android",
+    "phone cleaner app",
+    "delete screenshots on android",
+    "large video finder"
+   ]
+  },
+  "aso_gaps": "La ficha en español usa términos de España («vídeos», «Pulsa») y precios fijos en euros; conviene adaptarla a México («videos», «Toca», sin cifras o en MXN) y llevar «liberar espacio» y «limpiador de celular» al título o a la descripción corta. En inglés, el título de Play («Storage Cleaner») no menciona la función principal; sumar «Duplicate Photo Cleaner» la cubriría."
+ },
+ "caltracker": {
+  "slug": "caltracker-ai",
+  "es": {
+   "title": "CalTracker AI: contador de calorías con foto e IA",
+   "description": "Toma una foto de tu comida y la IA estima calorías, proteínas, carbohidratos y grasas. Escanea códigos de barras y registra agua y peso. iPhone y Android.",
+   "h1": "Cuenta calorías con una foto: tu contador de calorías con IA",
+   "intro": "CalTracker AI estima las calorías y los macros de tu comida a partir de una foto, ideal para platillos caseros o de restaurante que no traen etiqueta. Para productos empacados, escaneas el código de barras. Calcula tu meta diaria con la fórmula Mifflin-St Jeor y guarda tu diario en tu teléfono, así que puedes registrar comidas incluso sin conexión.",
+   "features": [
+    {
+     "t": "Escaneo de fotos con IA",
+     "d": "Toma una foto de cualquier platillo y obtén al instante un estimado de calorías y macronutrientes."
+    },
+    {
+     "t": "Lector de códigos de barras",
+     "d": "Escanea productos empacados y consulta su información nutricional en una base de datos que se actualiza a diario."
+    },
+    {
+     "t": "Metas de calorías y macros",
+     "d": "Responde unas preguntas y obtén metas diarias para bajar, mantener o subir de peso a tu ritmo."
+    },
+    {
+     "t": "Progreso, agua y peso",
+     "d": "Anillos y gráficas muestran tus calorías, macros, vasos de agua y la tendencia de tu peso."
+    }
+   ],
+   "keywords": [
+    "contador de calorías",
+    "app para contar calorías",
+    "contar calorías con foto",
+    "app de calorías por foto",
+    "contador de macros",
+    "app para contar calorías y proteínas",
+    "escáner de código de barras de alimentos"
+   ]
+  },
+  "en": {
+   "title": "CalTracker AI: Photo Calorie Counter & Macro Tracker",
+   "description": "Snap a photo of your meal and AI estimates calories, protein, carbs and fat. Scan barcodes, log water and track your weight trend. On iPhone and Android.",
+   "h1": "Count calories from a photo with an AI calorie counter",
+   "intro": "CalTracker AI estimates the calories and macros in your meal from a single photo, which is handy for home-cooked or restaurant food with no label. For packaged products, scan the barcode. It sets your daily target with the Mifflin-St Jeor formula and keeps your food diary on your phone, so you can log meals even offline.",
+   "features": [
+    {
+     "t": "AI photo scanning",
+     "d": "Snap any meal and get an instant estimate of its calories and macros."
+    },
+    {
+     "t": "Barcode scanner",
+     "d": "Scan packaged foods and pull nutrition facts from a food database that updates every day."
+    },
+    {
+     "t": "Calorie and macro goals",
+     "d": "Answer a few questions and get daily targets to lose, maintain or gain weight at your own pace."
+    },
+    {
+     "t": "Progress, water and weight",
+     "d": "Rings and charts show your calories, macros, glasses of water and weight trend."
+    }
+   ],
+   "keywords": [
+    "calorie counter app",
+    "ai calorie counter",
+    "calorie counter by photo",
+    "calorie tracker by photo",
+    "macro tracker app",
+    "barcode calorie scanner",
+    "food diary app"
+   ]
+  },
+  "aso_gaps": "En Google Play México el título sigue en inglés («CalTracker AI: Calorie Counter»); localizarlo a algo como «Contador de calorías con foto» y usar en la descripción las búsquedas mexicanas «contar calorías con foto» y «calorías y proteínas» ayudaría. La ficha dice «millones de artículos» en el escáner y «miles de alimentos» en el buscador, y promete información «precisa»; conviene unificar la cifra y suavizar «precisa» porque la foto da un estimado."
+ },
+ "nerite": {
+  "slug": "nerite",
+  "es": {
+   "title": "Nerite: app de acuario, parámetros y dosificación",
+   "description": "Registra pH, amoniaco, nitrato, alcalinidad y más; calcula dosis para arrecife y programa recordatorios de mantenimiento. Sin conexión y sin registro.",
+   "h1": "Tu acuario estable sin hojas de cálculo: parámetros, dosis y avisos",
+   "intro": "Nerite reúne en una app el diario de tu acuario, una calculadora de dosificación para arrecife y recordatorios de mantenimiento. Compara cada parámetro con el rango de tu sistema (agua dulce, plantado, marino, arrecife o salobre) y funciona sin conexión ni registro. Está disponible en Android y, por ahora, la app solo está en inglés.",
+   "features": [
+    {
+     "t": "Parámetros del agua interpretados",
+     "d": "Registra pH, amoniaco, nitrito, nitrato, fosfato, alcalinidad, calcio, magnesio y salinidad, y ve si cada uno está en rango."
+    },
+    {
+     "t": "Matriz de dosificación",
+     "d": "Calcula la dosis de carbonato de sodio o bicarbonato (y de calcio y magnesio con Premium) y la reparte en varios días si hace falta."
+    },
+    {
+     "t": "Recordatorios de mantenimiento",
+     "d": "Programa alimentación, cambios de agua, pruebas y el servicio de filtros, bombas y luces, con avisos que suenan aunque no tengas señal."
+    },
+    {
+     "t": "Guía de 250 especies",
+     "d": "Consulta peces, corales, invertebrados y plantas, y revisa su compatibilidad antes de comprar."
+    }
+   ],
+   "keywords": [
+    "app para acuarios",
+    "parámetros acuario marino",
+    "parámetros acuario plantado",
+    "calculadora acuario marino",
+    "calculadora de dosificación arrecife",
+    "compatibilidad de peces",
+    "recordatorio cambio de agua acuario"
+   ]
+  },
+  "en": {
+   "title": "Nerite: Aquarium Log & Reef Dosing Calculator",
+   "description": "Log water parameters against your tank's target range, get reef dosing schedules and set maintenance reminders. Works offline, no sign-up. On Android.",
+   "h1": "Keep every aquarium stable with a log, dosing and reminders",
+   "intro": "Nerite puts an aquarium log, a reef dosing calculator and maintenance reminders in one app. Every reading is checked against the target range for your system, whether freshwater, planted, saltwater, reef or brackish, so you see \"in range\" or \"out of range\" at a glance. It works fully offline, with no sign-up, on Android.",
+   "features": [
+    {
+     "t": "Water parameters, scored",
+     "d": "Log pH, ammonia, nitrite, nitrate, phosphate, alkalinity, calcium, magnesium and salinity against your tank's targets."
+    },
+    {
+     "t": "Dosing matrix",
+     "d": "Get the exact dose of soda ash or sodium bicarbonate (calcium and magnesium chloride with Premium), split over several days when needed."
+    },
+    {
+     "t": "Maintenance reminders",
+     "d": "Schedule feeding, water changes, tests and equipment service; reminders fire on your device even with no signal."
+    },
+    {
+     "t": "250-species compatibility guide",
+     "d": "Browse fish, corals, invertebrates and plants, and check compatibility before you buy."
+    }
+   ],
+   "keywords": [
+    "aquarium app",
+    "reef dosing calculator",
+    "alkalinity calculator reef",
+    "aquarium water parameters app",
+    "fish compatibility checker",
+    "aquarium maintenance reminder",
+    "aquarium log app",
+    "planted tank tracker"
+   ]
+  },
+  "aso_gaps": "La ficha en español usa términos de España («introduce», «carbonato sódico», «cuenta atrás», «bote») y avisa que la app solo está en inglés; traducir la interfaz y adaptar la ficha a México abriría búsquedas como «app para acuarios» y «parámetros acuario marino». Al publicar en iOS, conviene usar en título y subtítulo «Reef Dosing» (como el título en inglés de Google Play) y «Aquarium Log», y alinear el título en español de Play («Diario de Acuario») con esas mismas funciones."
+ },
+ "minoxtrack": {
+  "slug": "minoxtrack",
+  "es": {
+   "title": "MinoxTrack: recordatorio y registro de minoxidil",
+   "description": "Registra cada aplicación de minoxidil con un toque, con recordatorios de mañana y noche, racha y constancia. Privado y sin cuenta. Para iPhone y Android.",
+   "h1": "Lleva la constancia de tu rutina de minoxidil con recordatorios",
+   "intro": "MinoxTrack es un registro privado y un recordatorio para la rutina de minoxidil que ya sigues según la etiqueta de tu producto o las indicaciones de tu profesional de salud. Registras cada aplicación con un toque, ves tu racha y tu constancia de 7 días, y estimas cuánto te dura el frasco. No promete resultados: cuenta lo que hiciste.",
+   "features": [
+    {
+     "t": "Registro con un toque",
+     "d": "Marca cada aplicación desde el anillo de la pantalla de inicio y consulta tu historial completo."
+    },
+    {
+     "t": "Recordatorios de mañana y noche",
+     "d": "Activa avisos opcionales para el horario que tú configures."
+    },
+    {
+     "t": "Racha y constancia",
+     "d": "Tu racha, la tira semanal y la cifra de los últimos 7 días muestran un olvido el mismo día."
+    },
+    {
+     "t": "Estimación del frasco",
+     "d": "Con el tamaño de tu botella y la cantidad que indica tu etiqueta, estima cuánto te va a durar."
+    }
+   ],
+   "keywords": [
+    "recordatorio de minoxidil",
+    "registro de minoxidil",
+    "app para minoxidil",
+    "rutina de minoxidil",
+    "seguimiento de minoxidil",
+    "diario capilar",
+    "recordatorio de rutina capilar"
+   ]
+  },
+  "en": {
+   "title": "MinoxTrack: Minoxidil Tracker & Reminder App",
+   "description": "Log each minoxidil application in one tap, set optional morning and night reminders, and see your streak and 7-day adherence. Private, no account needed.",
+   "h1": "Keep track of your minoxidil routine with reminders and streaks",
+   "intro": "MinoxTrack is a private tracker and reminder for the minoxidil routine you already follow, as set by your product label or your healthcare professional. Log each application in one tap, see your streak and 7-day adherence, and get an estimate of how long your bottle will last. It promises no results: it counts what you did.",
+   "features": [
+    {
+     "t": "One-tap logging",
+     "d": "Log each application from the ring on the home screen and review your full history."
+    },
+    {
+     "t": "Morning and night reminders",
+     "d": "Turn on optional reminders for the schedule you set yourself."
+    },
+    {
+     "t": "Streak and adherence",
+     "d": "Your streak, week strip and 7-day figure make a missed application visible the same day."
+    },
+    {
+     "t": "Bottle supply estimate",
+     "d": "Enter your bottle size and the amount on your label to see roughly how long it will last."
+    }
+   ],
+   "keywords": [
+    "minoxidil tracker",
+    "minoxidil tracker app",
+    "minoxidil reminder",
+    "minoxidil routine log",
+    "minoxidil schedule tracker",
+    "hair care routine tracker",
+    "hair journal app"
+   ]
+  },
+  "aso_gaps": "La ficha de iOS no tiene las secciones «Para quién es este registro» ni «Constancia, no promesas» que sí están en Google Play; añadirlas daría más contexto y palabras clave (diario capilar, rutina) sin prometer resultados. En Google Play México el título dice «Registro Minoxidil»; probar «Recordatorio y registro de minoxidil» cubriría ambas búsquedas, y el aviso de salud debe quedarse tal cual en las dos tiendas."
+ },
+ "jumpropecoach": {
+  "slug": "jump-rope-coach",
+  "es": {
+   "title": "Jump Rope Coach: rutinas para saltar la cuerda y HIIT",
+   "description": "Entrena con cualquier cuerda: rutinas por intervalos de principiante a avanzado, avisos por voz y vibración, racha diaria y sin registro. Para Android.",
+   "h1": "Saltar la cuerda con rutinas HIIT guiadas por voz",
+   "intro": "Jump Rope Coach convierte cualquier cuerda para saltar en un entrenamiento por intervalos con estructura. Eliges una rutina de tu nivel, le das a empezar y los avisos por voz y vibración te dicen cuándo saltar, descansar o pasar a técnica, sin mirar la pantalla. Funciona sin conexión, sin cuenta y sin cuerda de marca.",
+   "features": [
+    {
+     "t": "Rutinas por nivel",
+     "d": "Seis entrenamientos guiados gratis, de principiante a avanzado, con niveles que se desbloquean al completar sesiones."
+    },
+    {
+     "t": "Temporizador HIIT con voz",
+     "d": "Avisos por voz y vibración que puedes activar o desactivar, con la pantalla encendida toda la sesión."
+    },
+    {
+     "t": "Racha e historial",
+     "d": "Ve tu racha diaria y tus últimos 7 días; con Premium tienes el historial completo con gráficas semanales."
+    },
+    {
+     "t": "Premium sin anuncios",
+     "d": "Desbloquea los 12 entrenamientos, incluidos los de footwork y técnica, y crea tus propias rutinas."
+    }
+   ],
+   "keywords": [
+    "saltar la cuerda",
+    "brincar la cuerda",
+    "rutina de cuerda",
+    "rutina de cuerda para principiantes",
+    "app para saltar la cuerda",
+    "temporizador hiit",
+    "cardio en casa"
+   ]
+  },
+  "en": {
+   "title": "Jump Rope Coach: Jump Rope Workouts & HIIT Timer",
+   "description": "Turn any rope into a structured interval workout: guided sessions from beginner to advanced, voice and vibration cues, daily streaks and no sign-up.",
+   "h1": "Jump rope workouts with a voice-guided HIIT interval timer",
+   "intro": "Jump Rope Coach turns any jump rope into a structured interval workout. Pick a session for your level, press start, and voice and vibration cues tell you when to jump, rest or switch to technique, so your eyes can stay off the screen. It works offline, with no account and no branded rope required.",
+   "features": [
+    {
+     "t": "Workouts by level",
+     "d": "Six free guided interval workouts from beginner to advanced, with levels that unlock as you complete sessions."
+    },
+    {
+     "t": "Voice-guided HIIT timer",
+     "d": "Voice and vibration cues you can turn on or off, and the screen stays on for the whole session."
+    },
+    {
+     "t": "Streaks and history",
+     "d": "Track your daily streak and last 7 days; Premium adds full history with weekly charts."
+    },
+    {
+     "t": "Ad-free Premium",
+     "d": "Unlock all 12 workouts, including footwork and technique sessions, and build your own."
+    }
+   ],
+   "keywords": [
+    "jump rope workout",
+    "jump rope workout for beginners",
+    "jump rope app",
+    "jump rope hiit",
+    "interval timer app",
+    "hiit timer",
+    "jump rope workout for boxing"
+   ]
+  },
+  "aso_gaps": "La ficha en español usa «comba», término de España que en México no aparece en el autocompletado; cambiar título y descripción corta a «saltar la cuerda» o «rutina de cuerda» (por ejemplo, «Jump Rope Coach: saltar la cuerda») alinearía la ficha con lo que se busca. En inglés, el título de Play («HIIT Timer») podría sumar «Jump Rope Workout», que hoy solo está en la descripción corta."
+ },
+ "waterday": {
+  "slug": "waterday",
+  "es": {
+   "title": "Waterday: recordatorio de riego gratis para tus plantas",
+   "description": "Recibe un solo aviso al día con las plantas que toca regar. Recordatorios gratis para todas tus plantas, sin cuenta y sin conexión. App para Android.",
+   "h1": "Recordatorio de riego: un aviso al día para todas tus plantas",
+   "intro": "Waterday es una app para acordarte de regar tus plantas de interior. Una vez al día, a la hora que elijas, te llega una sola notificación con las plantas que toca regar; tocas «Regada» y listo. La siguiente fecha cuenta desde el día en que de verdad regaste, y los recordatorios son gratis para todas tus plantas.",
+   "features": [
+    {
+     "t": "Plantas ilimitadas gratis",
+     "d": "Agrega todas las plantas que tengas y recibe sus recordatorios de riego sin pagar."
+    },
+    {
+     "t": "Un resumen al día",
+     "d": "Una notificación a la hora que elijas; desliza una planta para posponerla un día."
+    },
+    {
+     "t": "Intervalos sugeridos",
+     "d": "Empieza con intervalos sugeridos para plantas de interior comunes y ajústalos cuando quieras."
+    },
+    {
+     "t": "Cuidados Premium",
+     "d": "Recordatorios de abono, rociado y trasplante, ajuste por temporada y respaldo de tus plantas, sin anuncios."
+    }
+   ],
+   "keywords": [
+    "app para regar plantas",
+    "recordatorio de riego",
+    "app para recordar regar plantas",
+    "app para saber cuándo regar plantas",
+    "app para plantas gratis",
+    "cuidado de plantas de interior",
+    "calendario de riego"
+   ]
+  },
+  "en": {
+   "title": "Waterday: Free Plant Watering Reminder App",
+   "description": "Get one daily notification with the plants that need water today. Free reminders for unlimited houseplants, no account, works offline. For Android.",
+   "h1": "Plant watering reminder: one daily nudge for every houseplant",
+   "intro": "Waterday is a plant watering app that reminds you when your houseplants need water. Once a day, at the time you choose, one notification lists the plants that need water; tap \"Watered\" and you're done. The next date counts from the day you actually watered, and reminders are free for every plant you have.",
+   "features": [
+    {
+     "t": "Unlimited plants, free",
+     "d": "Add every plant you own and get watering reminders for all of them at no cost."
+    },
+    {
+     "t": "One daily summary",
+     "d": "A single notification at the time you pick; swipe a plant to snooze it by a day."
+    },
+    {
+     "t": "Suggested intervals",
+     "d": "Start from suggested intervals for common houseplants and edit them anytime."
+    },
+    {
+     "t": "Premium care",
+     "d": "Fertilizing, misting and repotting reminders, seasonal adjustment and plant backups, with no ads."
+    }
+   ],
+   "keywords": [
+    "plant watering reminder app",
+    "plant watering app",
+    "plant watering app free",
+    "plant care app free",
+    "houseplant app",
+    "houseplant watering schedule",
+    "plant watering tracker"
+   ]
+  },
+  "aso_gaps": "La ficha en español usa términos de España («estancia», «pulverizado», «Pospón»); adaptarla a México («habitación», «rociado») y llevar «app para regar plantas» y «recordatorio de riego» al título y a la descripción corta cubriría las búsquedas locales. Dejar claro desde la descripción corta que los recordatorios de riego son gratis e ilimitados es una ventaja que conviene mantener en ambos idiomas."
+ }
+}

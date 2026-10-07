@@ -1,0 +1,264 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://thealchemistcode.org/#organization",
+   "name": "The Alchemist Code",
+   "url": "https://thealchemistcode.org/",
+   "logo": {
+    "@type": "ImageObject",
+    "@id": "https://thealchemistcode.org/#logo",
+    "url": "https://thealchemistcode.org/wp-content/uploads/tac-site/logo-thealchemistcode.png",
+    "contentUrl": "https://thealchemistcode.org/wp-content/uploads/tac-site/logo-thealchemistcode.png",
+    "caption": "The Alchemist Code"
+   },
+   "image": {
+    "@id": "https://thealchemistcode.org/#logo"
+   },
+   "slogan": "Apps e IA listas para producción",
+   "description": "Estudio de desarrollo de software, apps móviles, infraestructura e inteligencia artificial para empresas en Puebla, México, y Estados Unidos. Dirigido por su fundador; diseña, publica y opera 17 apps propias.",
+   "email": "contact@thealchemistcode.org",
+   "telephone": "+52 222 108 5511",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Puebla",
+    "addressRegion": "Puebla",
+    "addressCountry": "MX"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "Puebla"
+    },
+    {
+     "@type": "State",
+     "name": "Puebla"
+    },
+    {
+     "@type": "Country",
+     "name": "México"
+    },
+    {
+     "@type": "Country",
+     "name": "Estados Unidos"
+    }
+   ],
+   "contactPoint": [
+    {
+     "@type": "ContactPoint",
+     "contactType": "sales",
+     "telephone": "+52 222 108 5511",
+     "email": "contact@thealchemistcode.org",
+     "availableLanguage": [
+      "Spanish",
+      "English"
+     ],
+     "areaServed": [
+      "MX",
+      "US"
+     ]
+    }
+   ],
+   "knowsLanguage": [
+    "es",
+    "en"
+   ],
+   "currenciesAccepted": "MXN, USD",
+   "paymentAccepted": "Transferencia bancaria, tarjeta",
+   "knowsAbout": [
+    "Detección de fraude con IA",
+    "Inteligencia artificial para empresas",
+    "Infraestructura en la nube",
+    "Desarrollo de aplicaciones móviles",
+    "Desarrollo de software a la medida",
+    "Desarrollo de apps móviles",
+    "Flutter",
+    "Swift",
+    "Kotlin",
+    "Inteligencia artificial aplicada",
+    "OCR",
+    "Reconocimiento de imágenes",
+    "APIs y backend",
+    "Notificaciones push",
+    "VPN",
+    "Apps de escritorio",
+    "App Store Optimization (ASO)"
+   ],
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios de The Alchemist Code",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Desarrollo de apps móviles (Flutter, Swift y Kotlin)",
+       "description": "Apps para iOS y Android: fuerza de ventas, inventario, lealtad, reservas y notificaciones.",
+       "provider": {
+        "@id": "https://thealchemistcode.org/#organization"
+       },
+       "areaServed": [
+        {
+         "@type": "Country",
+         "name": "México"
+        },
+        {
+         "@type": "Country",
+         "name": "Estados Unidos"
+        }
+       ],
+       "url": "https://thealchemistcode.org/soluciones/"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Inteligencia artificial aplicada",
+       "description": "OCR, reconocimiento de fotos y asistentes integrados en apps y procesos de empresa.",
+       "provider": {
+        "@id": "https://thealchemistcode.org/#organization"
+       },
+       "areaServed": [
+        {
+         "@type": "Country",
+         "name": "México"
+        },
+        {
+         "@type": "Country",
+         "name": "Estados Unidos"
+        }
+       ],
+       "url": "https://thealchemistcode.org/soluciones/"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Backend e infraestructura",
+       "description": "APIs, servidores de notificaciones, VPN y redes privadas.",
+       "provider": {
+        "@id": "https://thealchemistcode.org/#organization"
+       },
+       "areaServed": [
+        {
+         "@type": "Country",
+         "name": "México"
+        },
+        {
+         "@type": "Country",
+         "name": "Estados Unidos"
+        }
+       ],
+       "url": "https://thealchemistcode.org/soluciones/"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Apps de escritorio",
+       "description": "Apps para macOS, Windows y Linux.",
+       "provider": {
+        "@id": "https://thealchemistcode.org/#organization"
+       },
+       "areaServed": [
+        {
+         "@type": "Country",
+         "name": "México"
+        },
+        {
+         "@type": "Country",
+         "name": "Estados Unidos"
+        }
+       ],
+       "url": "https://thealchemistcode.org/soluciones/"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Lanzamiento y crecimiento",
+       "description": "Publicación en App Store y Google Play, revisión de Apple, fichas de tienda y ASO.",
+       "provider": {
+        "@id": "https://thealchemistcode.org/#organization"
+       },
+       "areaServed": [
+        {
+         "@type": "Country",
+         "name": "México"
+        },
+        {
+         "@type": "Country",
+         "name": "Estados Unidos"
+        }
+       ],
+       "url": "https://thealchemistcode.org/soluciones/"
+      }
+     }
+    ]
+   },
+   "alternateName": [
+    "The Alchemist Code Studio",
+    "TAC"
+   ],
+   "legalName": "Yabin Alejandro Lagunes Cuevas",
+   "founder": {
+    "@type": "Person",
+    "@id": "https://thealchemistcode.org/#founder",
+    "name": "Yabin Alejandro Lagunes Cuevas",
+    "jobTitle": "Fundador e ingeniero principal",
+    "alumniOf": [
+     {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidad Iberoamericana"
+     },
+     {
+      "@type": "CollegeOrUniversity",
+      "name": "HSE University"
+     }
+    ],
+    "knowsLanguage": [
+     "es",
+     "en",
+     "ru",
+     "de"
+    ],
+    "sameAs": [
+     "https://github.com/alekla0126"
+    ]
+   },
+   "sameAs": [
+    "https://play.google.com/store/apps/developer?id=Alejandro+Lagunes",
+    "https://apps.apple.com/us/developer/yabin-alejandro-lagunes-cuevas/id1754517101",
+    "https://github.com/alekla0126"
+   ],
+   "subjectOf": {
+    "@type": "ScholarlyArticle",
+    "name": "Enhanced Cybersecurity: AI-Driven Phishing Fraud Detection Approach",
+    "datePublished": "2025",
+    "publisher": {
+     "@type": "Organization",
+     "name": "Springer Nature"
+    },
+    "sameAs": "https://doi.org/10.1007/978-3-031-85363-0_21"
+   }
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://thealchemistcode.org/#website",
+   "url": "https://thealchemistcode.org/",
+   "name": "The Alchemist Code",
+   "inLanguage": [
+    "es-MX",
+    "en"
+   ],
+   "publisher": {
+    "@id": "https://thealchemistcode.org/#organization"
+   }
+  }
+ ]
+}

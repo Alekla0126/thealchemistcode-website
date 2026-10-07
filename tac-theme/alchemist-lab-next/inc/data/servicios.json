@@ -1,0 +1,1154 @@
+{
+  "_nota": "Páginas de servicio (vista = clave). Cada texto es [es, en]. Cifras comprobadas el 7-oct-2026: Play Console, fichas públicas, App Monitor, plan de servidores de Komodo y Crossref. Enlaces: app:<clave>, view:<vista> o URL completa.",
+  "infra": {
+    "label": [
+      "Infraestructura y redes",
+      "Infrastructure and networks"
+    ],
+    "h1": [
+      "Infraestructura de TI, nube y redes para empresas en Puebla y México",
+      "Cloud and network infrastructure for companies in the US and Mexico"
+    ],
+    "intro": [
+      "Diseñamos, montamos y operamos la infraestructura que sostiene tu operación: servidores Linux, Google Cloud y Firebase, redes privadas y VPN para sucursales y personal remoto, seguridad, monitoreo y respaldos. No es teoría: operamos nuestra propia red de servidores VPN en Europa y los backends de nuestras apps en producción, todos los días.",
+      "We design, set up and run the infrastructure your operation depends on: Linux servers, Google Cloud and Firebase, private networks and VPNs for branches and remote staff, security, monitoring and backups. This isn't theory: we run our own VPN server network in Europe and the backends of our apps in production, every day."
+    ],
+    "tipo": [
+      "Infraestructura de TI, nube y redes",
+      "IT infrastructure, cloud and network services"
+    ],
+    "prueba": [
+      {
+        "v": "2",
+        "n": 0,
+        "l": [
+          "Nodos VPN propios",
+          "VPN nodes we run"
+        ],
+        "d": [
+          "Estonia y Chipre, con OpenVPN",
+          "Estonia and Cyprus, on OpenVPN"
+        ],
+        "s": [
+          "Komodo VPN · oct 2026",
+          "Komodo VPN · Oct 2026"
+        ],
+        "u": "app:komodo"
+      },
+      {
+        "v": "30,566",
+        "n": 30566,
+        "l": [
+          "Instalaciones de Komodo VPN",
+          "Komodo VPN installs"
+        ],
+        "d": [
+          "Sobre nuestra propia red de servidores",
+          "On our own server network"
+        ],
+        "s": [
+          "Play Console · sep 2026",
+          "Play Console · Sep 2026"
+        ],
+        "u": "app:komodo"
+      },
+      {
+        "v": "TLS 1.3",
+        "n": 0,
+        "l": [
+          "Cifrado en cada nodo",
+          "Encryption on every node"
+        ],
+        "d": [
+          "AES-256-GCM negociado en el handshake",
+          "AES-256-GCM negotiated in the handshake"
+        ],
+        "s": [
+          "Prueba real · 3 oct 2026",
+          "Live test · Oct 3, 2026"
+        ],
+        "u": "app:komodo"
+      },
+      {
+        "v": "2025",
+        "n": 0,
+        "l": [
+          "Ciberseguridad con IA",
+          "AI for cybersecurity"
+        ],
+        "d": [
+          "Capítulo sobre detección de phishing",
+          "Chapter on phishing detection"
+        ],
+        "s": [
+          "Springer Nature · LNNS",
+          "Springer Nature · LNNS"
+        ],
+        "u": "https://doi.org/10.1007/978-3-031-85363-0_21"
+      }
+    ],
+    "bloque": {
+      "tipo": "infra",
+      "label": [
+        "Lo que operamos",
+        "What we run"
+      ],
+      "h2": [
+        "La misma infraestructura que usamos para nuestras apps",
+        "The same infrastructure we use for our own apps"
+      ],
+      "sub": [
+        "Topología típica para una empresa con sucursales, personal remoto y apps, y lo que hoy tenemos en producción.",
+        "A typical setup for a company with branches, remote staff and apps, and what we have in production today."
+      ]
+    },
+    "usos_h2": [
+      "Para quién trabajamos la infraestructura",
+      "Who we build infrastructure for"
+    ],
+    "usos": [
+      {
+        "t": [
+          "Empresas con sucursales",
+          "Companies with several locations"
+        ],
+        "p": [
+          "Red privada entre sucursales, bodegas y oficina central, para que el inventario, el punto de venta y los reportes hablen entre sí sin quedar expuestos a internet.",
+          "A private network between branches, warehouses and head office, so inventory, point of sale and reporting talk to each other without being exposed to the internet."
+        ]
+      },
+      {
+        "t": [
+          "Equipos remotos y en campo",
+          "Remote and field teams"
+        ],
+        "p": [
+          "VPN para trabajar desde casa, en ruta o con clientes, con acceso solo a lo que cada persona necesita.",
+          "A VPN for working from home, on the road or at client sites, with each person reaching only what they need."
+        ]
+      },
+      {
+        "t": [
+          "Apps y sistemas en la nube",
+          "Apps and systems in the cloud"
+        ],
+        "p": [
+          "Backend, base de datos, notificaciones y respaldos para tu app, con el costo por usuario calculado antes de crecer.",
+          "Backend, database, notifications and backups for your app, with the cost per user worked out before you grow."
+        ]
+      },
+      {
+        "t": [
+          "Empresas que pagan de más en la nube",
+          "Companies overpaying for cloud"
+        ],
+        "p": [
+          "Revisión de tu factura y de tu arquitectura, con una propuesta de ahorro antes de mover nada.",
+          "A review of your bill and your architecture, with a savings plan before anything moves."
+        ]
+      },
+      {
+        "t": [
+          "Control de equipos de TI",
+          "IT asset tracking"
+        ],
+        "p": [
+          "Inventario de computadoras, licencias y asignaciones en un sistema propio desplegado en tu servidor, por ejemplo Snipe-IT.",
+          "Inventory of computers, licenses and assignments in a self-hosted system on your server, such as Snipe-IT."
+        ]
+      }
+    ],
+    "enfoque_h2": [
+      "Criterios que aplicamos",
+      "How we make infrastructure decisions"
+    ],
+    "enfoque": [
+      {
+        "t": [
+          "Lo más simple que aguante la carga",
+          "The simplest setup that handles the load"
+        ],
+        "p": [
+          "Un servidor bien configurado muchas veces basta. Para Komodo VPN calculamos que el autoescalado no ahorraba nada hasta tener cientos de usuarios Premium conectados a la vez, así que primero se deja todo listo para escalar en minutos.",
+          "A well-configured server is often enough. For Komodo VPN we worked out that autoscaling saved nothing until hundreds of Premium users were connected at once, so the first step is being ready to scale in minutes."
+        ]
+      },
+      {
+        "t": [
+          "Todo por escrito y reproducible",
+          "Everything written down and reproducible"
+        ],
+        "p": [
+          "La configuración vive en archivos versionados (Docker, scripts), no en la memoria de una persona. Si mañana cambias de proveedor, te llevas todo.",
+          "Configuration lives in versioned files (Docker, scripts), not in one person's head. If you change providers tomorrow, you take everything with you."
+        ]
+      },
+      {
+        "t": [
+          "Tus cuentas, tus llaves",
+          "Your accounts, your keys"
+        ],
+        "p": [
+          "La nube, los dominios y los servidores quedan a nombre de tu empresa. Entramos con accesos que puedes revocar cuando quieras.",
+          "Cloud accounts, domains and servers stay in your company's name. We work with access you can revoke at any time."
+        ]
+      },
+      {
+        "t": [
+          "Medir antes de gastar",
+          "Measure before spending"
+        ],
+        "p": [
+          "Revisamos el uso real (CPU, tráfico, usuarios conectados) antes de proponer un servidor más grande o un proveedor nuevo.",
+          "We look at real usage (CPU, traffic, connected users) before proposing a bigger server or a new provider."
+        ]
+      }
+    ],
+    "casos": [
+      {
+        "app": "komodo",
+        "v": "30,566",
+        "l": [
+          "Komodo VPN · red de servidores propia, OpenVPN",
+          "Komodo VPN · our own server network, OpenVPN"
+        ]
+      },
+      {
+        "app": "pdfmaster",
+        "v": "Cloud Run",
+        "l": [
+          "PDF Master · API que escala a cero, pagos con Stripe",
+          "PDF Master · API that scales to zero, Stripe payments"
+        ]
+      },
+      {
+        "app": "soccer24",
+        "v": "75,685",
+        "l": [
+          "Soccer24 · Firebase y notificaciones en tiempo real",
+          "Soccer24 · Firebase and real-time notifications"
+        ]
+      }
+    ],
+    "pasos": [
+      {
+        "t": [
+          "Diagnóstico",
+          "Assessment"
+        ],
+        "p": [
+          "Lo que tienes hoy: servidores, nube, red, accesos y costos. Sin costo.",
+          "What you have today: servers, cloud, network, access and costs. Free."
+        ]
+      },
+      {
+        "t": [
+          "Diseño y presupuesto",
+          "Design and budget"
+        ],
+        "p": [
+          "Arquitectura y costo mensual por escrito, por usuario o por sucursal.",
+          "Architecture and monthly cost in writing, per user or per location."
+        ]
+      },
+      {
+        "t": [
+          "Montaje",
+          "Build-out"
+        ],
+        "p": [
+          "Configuración reproducible, pruebas de carga y de recuperación.",
+          "Reproducible configuration, load tests and recovery tests."
+        ]
+      },
+      {
+        "t": [
+          "Migración",
+          "Migration"
+        ],
+        "p": [
+          "En paralelo primero y con plan de regreso, para cambiar sin sorpresas.",
+          "Run in parallel first, with a rollback plan, so the switch has no surprises."
+        ]
+      },
+      {
+        "t": [
+          "Operación",
+          "Operations"
+        ],
+        "p": [
+          "Monitoreo, actualizaciones y respaldos con tiempos de respuesta por escrito.",
+          "Monitoring, updates and backups with written response times."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": [
+          "¿Configuran redes privadas y VPN para empresas?",
+          "Do you set up VPNs and private networks for companies?"
+        ],
+        "a": [
+          "Sí. Configuramos VPN para conectar sucursales, bodegas y personal remoto, con accesos por usuario. Operamos nuestra propia red de servidores OpenVPN en Europa para Komodo VPN, una app con más de 30,000 instalaciones en Google Play.",
+          "Yes. We set up VPNs that connect branches, warehouses and remote staff, with per-user access. We run our own OpenVPN server network in Europe for Komodo VPN, an app with more than 30,000 Google Play installs."
+        ]
+      },
+      {
+        "q": [
+          "¿Qué nube recomiendan?",
+          "Which cloud do you recommend?"
+        ],
+        "a": [
+          "La que mejor encaje con tu carga, tu presupuesto y lo que ya usas. Trabajamos a diario con Google Cloud (Cloud Run, Cloud Functions) y Firebase, y con servidores Linux en VPS cuando el tráfico es alto y constante. Te mostramos la comparación de costos antes de decidir.",
+          "Whichever fits your load, your budget and what you already use. We work daily with Google Cloud (Cloud Run, Cloud Functions) and Firebase, and with Linux VPS servers when traffic is high and steady. You see the cost comparison before you decide."
+        ]
+      },
+      {
+        "q": [
+          "¿La infraestructura queda a nombre de mi empresa?",
+          "Will the infrastructure be in my company's name?"
+        ],
+        "a": [
+          "Sí. Las cuentas de nube, los dominios y los servidores quedan a tu nombre; nosotros trabajamos con accesos que puedes revocar. Al terminar recibes la configuración documentada.",
+          "Yes. Cloud accounts, domains and servers are in your name; we work with access you can revoke. At handover you receive the documented configuration."
+        ]
+      },
+      {
+        "q": [
+          "¿Cuánto cuesta mantener servidores y nube?",
+          "How much do servers and cloud cost to run?"
+        ],
+        "a": [
+          "Depende del tráfico, los usuarios y los respaldos que necesites. Antes de contratar nada recibes un estimado mensual por escrito, separado de nuestros honorarios.",
+          "It depends on traffic, users and the backups you need. Before you sign up for anything you get a written monthly estimate, separate from our fees."
+        ]
+      },
+      {
+        "q": [
+          "¿Qué pasa si un servidor falla en la noche?",
+          "What happens if a server fails at night?"
+        ],
+        "a": [
+          "El monitoreo automático avisa de inmediato. Con mantenimiento contratado, una falla crítica tiene respuesta en 4 horas hábiles, por escrito en el contrato.",
+          "Automatic monitoring alerts us right away. Under a maintenance plan, a critical failure gets a response within 4 business hours, written into the contract."
+        ]
+      },
+      {
+        "q": [
+          "¿Pueden revisar la seguridad de lo que ya tengo?",
+          "Can you review the security of what I already have?"
+        ],
+        "a": [
+          "Sí: revisamos accesos, puertos abiertos, certificados, respaldos y llaves expuestas, y te entregamos un reporte con prioridades. Nuestra investigación sobre detección de fraude por phishing con IA está publicada en Springer Nature (2025).",
+          "Yes: we review access, open ports, certificates, backups and exposed secrets, and give you a prioritized report. Our research on AI-driven phishing fraud detection is published by Springer Nature (2025)."
+        ]
+      }
+    ]
+  },
+  "movil": {
+    "label": [
+      "Apps móviles",
+      "Mobile apps"
+    ],
+    "h1": [
+      "Desarrollo de aplicaciones móviles en México para iOS y Android",
+      "Mobile app development company in Mexico: iOS and Android"
+    ],
+    "intro": [
+      "Diseñamos, programamos, publicamos y operamos apps para iOS y Android desde Puebla. Tenemos 17 apps propias publicadas, con más de 100,000 instalaciones en Google Play, y aplicamos el mismo proceso a las apps de nuestros clientes: del diseño a la tienda, y después.",
+      "We design, build, ship and run iOS and Android apps from Puebla, Mexico. We have 17 apps of our own in the stores, with more than 100,000 Google Play installs, and we apply the same process to client apps: from design to the store, and beyond."
+    ],
+    "tipo": [
+      "Desarrollo de aplicaciones móviles iOS y Android",
+      "iOS and Android mobile app development"
+    ],
+    "prueba": [
+      {
+        "v": "100,000+",
+        "n": 100000,
+        "suf": "+",
+        "l": [
+          "Instalaciones en Google Play",
+          "Google Play installs"
+        ],
+        "d": [
+          "De nuestras apps propias",
+          "Across our own apps"
+        ],
+        "s": [
+          "Play Console · sep 2026",
+          "Play Console · Sep 2026"
+        ],
+        "u": "view:apps"
+      },
+      {
+        "v": "75,685",
+        "n": 75685,
+        "l": [
+          "Instalaciones de Soccer24",
+          "Soccer24 installs"
+        ],
+        "d": [
+          "Resultados en vivo de 1,100+ competiciones",
+          "Live results from 1,100+ competitions"
+        ],
+        "s": [
+          "Play Console · sep 2026",
+          "Play Console · Sep 2026"
+        ],
+        "u": "app:soccer24"
+      },
+      {
+        "v": "4.5★",
+        "n": 0,
+        "l": [
+          "Soccer24 en Google Play",
+          "Soccer24 on Google Play"
+        ],
+        "d": [
+          "Calificación pública de usuarios",
+          "Public user rating"
+        ],
+        "s": [
+          "Google Play · oct 2026",
+          "Google Play · Oct 2026"
+        ],
+        "u": "https://play.google.com/store/apps/details?id=com.alekla0126.soccer24"
+      },
+      {
+        "v": "17",
+        "n": 17,
+        "l": [
+          "Apps publicadas",
+          "Apps shipped"
+        ],
+        "d": [
+          "Operadas por nosotros",
+          "Run in-house"
+        ],
+        "s": [
+          "App Store y Google Play",
+          "App Store and Google Play"
+        ],
+        "u": "view:apps"
+      }
+    ],
+    "bloque": {
+      "tipo": "phones",
+      "apps": [
+        "komodo",
+        "soccer24",
+        "inventra",
+        "caltracker",
+        "pdfmaster"
+      ],
+      "label": [
+        "Hechas por nosotros",
+        "Built by us"
+      ],
+      "h2": [
+        "Apps que ya están en las tiendas",
+        "Apps already in the stores"
+      ],
+      "sub": [
+        "Pantallas reales de apps que diseñamos, publicamos y operamos.",
+        "Real screens from apps we designed, shipped and run."
+      ]
+    },
+    "items_h2": [
+      "Qué incluye el desarrollo de tu app",
+      "What building your app includes"
+    ],
+    "items": [
+      {
+        "t": [
+          "Apps para iOS y Android",
+          "iOS and Android apps"
+        ],
+        "p": [
+          "Flutter para tener las dos plataformas con un solo código, y Swift o Kotlin nativos cuando la app lo pide: widgets, extensiones o funciones muy ligadas al sistema.",
+          "Flutter for both platforms from a single codebase, and native Swift or Kotlin when the app calls for it: widgets, extensions or features tied closely to the OS."
+        ],
+        "app": "soccer24"
+      },
+      {
+        "t": [
+          "Diseño de producto",
+          "Product design"
+        ],
+        "p": [
+          "Pantallas y prototipo antes del código, para que pruebes el flujo con usuarios reales y decidas con algo en la mano.",
+          "Screens and a prototype before code, so you can test the flow with real users and decide with something in hand."
+        ]
+      },
+      {
+        "t": [
+          "Backend y sincronización",
+          "Backend and sync"
+        ],
+        "p": [
+          "Firebase o Cloud Run, notificaciones en tiempo real y modo sin conexión que sincroniza cuando vuelve la señal.",
+          "Firebase or Cloud Run, real-time notifications and an offline mode that syncs when the signal comes back."
+        ],
+        "app": "inventra"
+      },
+      {
+        "t": [
+          "Pagos y suscripciones",
+          "Payments and subscriptions"
+        ],
+        "p": [
+          "Compras y suscripciones dentro de la app en App Store y Google Play, y pagos con Stripe en la web.",
+          "In-app purchases and subscriptions on the App Store and Google Play, and Stripe payments on the web."
+        ],
+        "app": "komodo"
+      },
+      {
+        "t": [
+          "Publicación y fichas de tienda",
+          "Store release and listings"
+        ],
+        "p": [
+          "Revisión de Apple, lanzamientos escalonados en Google Play y fichas optimizadas por país e idioma para que la app se encuentre.",
+          "Apple review, staged rollouts on Google Play and listings optimized per country and language so the app gets found."
+        ]
+      },
+      {
+        "t": [
+          "Mantenimiento",
+          "Maintenance"
+        ],
+        "p": [
+          "Actualizaciones de iOS, Android y Flutter cada año, respuesta a reseñas y monitoreo de fallas en producción.",
+          "Yearly iOS, Android and Flutter updates, review replies and crash monitoring in production."
+        ]
+      }
+    ],
+    "enfoque_h2": [
+      "Decisiones que tomamos contigo",
+      "Decisions we make with you"
+    ],
+    "enfoque": [
+      {
+        "t": [
+          "¿Flutter o nativo?",
+          "Flutter or native?"
+        ],
+        "p": [
+          "Flutter cuando quieres iOS y Android con un solo equipo y un solo código; nativo para widgets o funciones del sistema. Soccer24 usa los dos: la app en Flutter y widgets en Swift y Kotlin.",
+          "Flutter when you want iOS and Android with one team and one codebase; native for widgets or OS features. Soccer24 uses both: the app in Flutter, widgets in Swift and Kotlin."
+        ]
+      },
+      {
+        "t": [
+          "Teléfonos, plegables y tablets",
+          "Phones, foldables and tablets"
+        ],
+        "p": [
+          "La app se reorganiza según la pantalla. PeakPlay pasa de dos a cuatro columnas al abrir un Pixel 9 Pro Fold, sin recargar.",
+          "The app rearranges itself for each screen. PeakPlay goes from two to four columns when a Pixel 9 Pro Fold opens, without reloading."
+        ]
+      },
+      {
+        "t": [
+          "La tienda también es producto",
+          "The store listing is product too"
+        ],
+        "p": [
+          "Una buena app con una ficha débil no se descarga. Publicamos fichas por país e idioma y respondemos reseñas desde el primer día.",
+          "A good app with a weak listing doesn't get downloaded. We publish listings per country and language and reply to reviews from day one."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": [
+          "¿Cuánto cuesta desarrollar una app en México?",
+          "How much does it cost to build an app?"
+        ],
+        "a": [
+          "Depende del alcance, las plataformas, las integraciones con tus sistemas y si lleva IA. La primera llamada y la propuesta no tienen costo: recibes alcance, calendario y precio por escrito antes de empezar.",
+          "It depends on scope, platforms, integrations with your systems and whether AI is involved. The first call and the proposal are free: you get scope, schedule and price in writing before we start."
+        ]
+      },
+      {
+        "q": [
+          "¿Cuánto tarda en estar lista una app?",
+          "How long does an app take?"
+        ],
+        "a": [
+          "Depende del alcance. En la propuesta recibes un calendario por semanas, con entregas frecuentes que instalas en tu propio teléfono por TestFlight y la prueba interna de Google Play.",
+          "It depends on scope. The proposal includes a week-by-week schedule, with frequent builds you install on your own phone through TestFlight and Google Play internal testing."
+        ]
+      },
+      {
+        "q": [
+          "¿Publican la app en App Store y Google Play?",
+          "Do you publish the app on the App Store and Google Play?"
+        ],
+        "a": [
+          "Sí, incluida la revisión de Apple. La app se publica en la cuenta de desarrollador de tu empresa, para que sea tuya desde el primer día.",
+          "Yes, including Apple's review. The app goes out under your company's developer account, so it's yours from day one."
+        ]
+      },
+      {
+        "q": [
+          "¿Pueden tomar una app que ya existe?",
+          "Can you take over an existing app?"
+        ],
+        "a": [
+          "Sí. Revisamos el código, lo actualizamos a las versiones actuales de iOS, Android y Flutter, y seguimos con mantenimiento mensual.",
+          "Yes. We audit the code, update it to current iOS, Android and Flutter versions, and continue with monthly maintenance."
+        ]
+      },
+      {
+        "q": [
+          "¿El código es mío?",
+          "Do I own the code?"
+        ],
+        "a": [
+          "Sí. Recibes el código, los repositorios, la documentación y los accesos, con cesión completa de la propiedad intelectual.",
+          "Yes. You receive the code, repositories, documentation and access, with full assignment of IP."
+        ]
+      }
+    ]
+  },
+  "ia": {
+    "label": [
+      "Inteligencia artificial",
+      "Artificial intelligence"
+    ],
+    "h1": [
+      "Inteligencia artificial para empresas: IA aplicada que ahorra trabajo",
+      "AI development company in Mexico: applied AI that saves real work"
+    ],
+    "intro": [
+      "Llevamos IA a procesos reales: leer documentos, reconocer fotos, redactar, clasificar y detectar fraude. La hemos publicado en investigación (Springer Nature, 2025), aplicado en finanzas y puesto en apps que la gente usa, como PDF Master y CalTracker AI.",
+      "We put AI to work on real processes: reading documents, recognizing photos, writing, classifying and detecting fraud. We have published on it (Springer Nature, 2025), applied it in finance and shipped it in apps people use, such as PDF Master and CalTracker AI."
+    ],
+    "tipo": [
+      "Inteligencia artificial para empresas",
+      "AI development for businesses"
+    ],
+    "prueba": [
+      {
+        "v": "2025",
+        "n": 0,
+        "l": [
+          "Investigación publicada",
+          "Published research"
+        ],
+        "d": [
+          "Detección de fraude por phishing con IA",
+          "AI-driven phishing fraud detection"
+        ],
+        "s": [
+          "Springer Nature · LNNS",
+          "Springer Nature · LNNS"
+        ],
+        "u": "https://doi.org/10.1007/978-3-031-85363-0_21"
+      },
+      {
+        "v": "2020",
+        "n": 0,
+        "l": [
+          "IA en finanzas",
+          "AI in finance"
+        ],
+        "d": [
+          "Detección de lavado de dinero y financiamiento ilícito",
+          "Money-laundering and illicit-finance detection"
+        ],
+        "s": [
+          "2020–2021",
+          "2020–2021"
+        ],
+        "u": "anchor:investigacion|research"
+      },
+      {
+        "v": "OCR",
+        "n": 0,
+        "l": [
+          "En el teléfono",
+          "On the device"
+        ],
+        "d": [
+          "Lectura de documentos en PDF Master",
+          "Document reading in PDF Master"
+        ],
+        "s": [
+          "App Store y Google Play",
+          "App Store and Google Play"
+        ],
+        "u": "app:pdfmaster"
+      },
+      {
+        "v": [
+          "1 foto",
+          "1 photo"
+        ],
+        "n": 0,
+        "l": [
+          "Visión por computadora",
+          "Computer vision"
+        ],
+        "d": [
+          "Calorías a partir de una foto en CalTracker AI",
+          "Calories from a photo in CalTracker AI"
+        ],
+        "s": [
+          "App Store",
+          "App Store"
+        ],
+        "u": "app:caltracker"
+      }
+    ],
+    "bloque": {
+      "tipo": "phones",
+      "apps": [
+        "pdfmaster",
+        "caltracker"
+      ],
+      "label": [
+        "IA en producción",
+        "AI in production"
+      ],
+      "h2": [
+        "IA que ya usan personas reales",
+        "AI that real people already use"
+      ],
+      "sub": [
+        "PDF Master lee y procesa documentos; CalTracker AI estima calorías a partir de una foto.",
+        "PDF Master reads and processes documents; CalTracker AI estimates calories from a photo."
+      ]
+    },
+    "items_h2": [
+      "Dónde la IA ahorra trabajo de verdad",
+      "Where AI actually saves work"
+    ],
+    "items": [
+      {
+        "t": [
+          "Lectura de documentos",
+          "Document reading"
+        ],
+        "p": [
+          "Facturas, contratos, identificaciones y formatos convertidos en datos que tu sistema entiende, sin capturarlos a mano.",
+          "Invoices, contracts, IDs and forms turned into data your system understands, without manual entry."
+        ],
+        "app": "pdfmaster"
+      },
+      {
+        "t": [
+          "Reconocimiento de imágenes",
+          "Image recognition"
+        ],
+        "p": [
+          "Fotos de productos, inspecciones o comida que se clasifican y se miden solas.",
+          "Photos of products, inspections or food that get classified and measured automatically."
+        ],
+        "app": "caltracker"
+      },
+      {
+        "t": [
+          "Asistentes y redacción",
+          "Assistants and writing"
+        ],
+        "p": [
+          "Resúmenes, respuestas, notas y borradores con el tono de tu empresa, revisados por una persona antes de salir.",
+          "Summaries, replies, notes and drafts in your company's voice, reviewed by a person before they go out."
+        ],
+        "app": "instanotes"
+      },
+      {
+        "t": [
+          "Detección de fraude y riesgo",
+          "Fraud and risk detection"
+        ],
+        "p": [
+          "Modelos que marcan correos de phishing, transacciones atípicas o patrones de riesgo para que tu equipo revise lo importante.",
+          "Models that flag phishing emails, unusual transactions or risk patterns so your team reviews what matters."
+        ]
+      },
+      {
+        "t": [
+          "Automatización de procesos",
+          "Process automation"
+        ],
+        "p": [
+          "Flujos que hoy se copian a mano entre correo, hojas de cálculo y sistemas, conectados y con IA donde aporta.",
+          "Workflows that people copy by hand between email, spreadsheets and systems, connected and with AI where it helps."
+        ]
+      },
+      {
+        "t": [
+          "IA dentro de tu app o sistema",
+          "AI inside your app or system"
+        ],
+        "p": [
+          "Integramos modelos de los principales proveedores o modelos que corren en el teléfono, con las llaves en el servidor y límites por usuario.",
+          "We integrate models from the major providers or models that run on the phone, with keys on the server and per-user limits."
+        ]
+      }
+    ],
+    "enfoque_h2": [
+      "Cómo llevamos la IA a producción",
+      "How we take AI to production"
+    ],
+    "enfoque": [
+      {
+        "t": [
+          "Prueba de concepto primero",
+          "Proof of concept first"
+        ],
+        "p": [
+          "Una prueba acotada con tus datos reales para medir si funciona antes de invertir en todo el sistema.",
+          "A scoped test on your real data to measure whether it works before you invest in the full system."
+        ]
+      },
+      {
+        "t": [
+          "Costos por uso bajo control",
+          "Usage costs under control"
+        ],
+        "p": [
+          "Calculamos cuánto cuesta cada consulta y ponemos límites por usuario. Las llaves viven en el servidor, nunca en la app.",
+          "We work out what each request costs and set per-user limits. Keys live on the server, never in the app."
+        ]
+      },
+      {
+        "t": [
+          "Tus datos, con cuidado",
+          "Your data, handled with care"
+        ],
+        "p": [
+          "Solo enviamos lo necesario y, cuando se puede, la IA corre en el dispositivo. Hemos trabajado con datos clínicos sensibles en IRISA.",
+          "We send only what's needed and, when possible, the AI runs on the device. We have worked with sensitive clinical data on IRISA."
+        ]
+      },
+      {
+        "t": [
+          "Medir el acierto",
+          "Measure accuracy"
+        ],
+        "p": [
+          "Antes de lanzar acordamos cómo se mide que la IA acierta, y lo seguimos midiendo después.",
+          "Before launch we agree on how to measure whether the AI gets it right, and we keep measuring afterwards."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": [
+          "¿Cómo puede usar IA mi empresa?",
+          "How can my company use AI?"
+        ],
+        "a": [
+          "Empieza por un proceso que hoy cuesta horas de trabajo manual: capturar documentos, clasificar solicitudes, responder preguntas frecuentes o revisar fotos. En la primera llamada, sin costo, vemos dónde la IA ahorra trabajo y dónde no vale la pena.",
+          "Start with a process that costs hours of manual work today: entering documents, sorting requests, answering common questions or reviewing photos. In the free first call we look at where AI saves work and where it isn't worth it."
+        ]
+      },
+      {
+        "q": [
+          "¿Mis datos se usan para entrenar modelos?",
+          "Is my data used to train models?"
+        ],
+        "a": [
+          "Configuramos la IA para que tus datos no se usen para entrenar: con servicios cuyo contrato lo excluye o con modelos en tu servidor o en el teléfono.",
+          "We set up AI so your data isn't used for training: through services whose terms exclude it, or with models on your own server or on the phone."
+        ]
+      },
+      {
+        "q": [
+          "¿Necesito muchos datos para empezar?",
+          "Do I need a lot of data to start?"
+        ],
+        "a": [
+          "No siempre. Con los modelos actuales, muchos casos funcionan con ejemplos y reglas claras. La prueba de concepto lo confirma antes de invertir más.",
+          "Not always. With current models, many use cases work from examples and clear rules. The proof of concept confirms it before you invest more."
+        ]
+      },
+      {
+        "q": [
+          "¿Pueden agregar IA a mi app o sistema actual?",
+          "Can you add AI to my existing app or system?"
+        ],
+        "a": [
+          "Sí. Conectamos la IA a lo que ya tienes, desde una API, sin rehacer el sistema.",
+          "Yes. We connect AI to what you already have through an API, without rebuilding the system."
+        ]
+      },
+      {
+        "q": [
+          "¿Cuánto cuesta un proyecto de IA?",
+          "How much does an AI project cost?"
+        ],
+        "a": [
+          "Depende del proceso, del volumen y del modelo. Recomendamos empezar con una prueba de concepto de alcance cerrado; la propuesta es gratuita y por escrito.",
+          "It depends on the process, the volume and the model. We recommend starting with a fixed-scope proof of concept; the proposal is free and in writing."
+        ]
+      }
+    ]
+  },
+  "flutter": {
+    "label": [
+      "Flutter",
+      "Flutter"
+    ],
+    "h1": [
+      "Desarrollo en Flutter en México: apps para iOS, Android y plegables",
+      "Flutter development company in Mexico"
+    ],
+    "intro": [
+      "Flutter es nuestra herramienta principal: la mayoría de nuestras 17 apps están hechas en Flutter, desde Soccer24, con 75,685 instalaciones en Google Play, hasta Komodo VPN e Inventra. Un solo código para iOS y Android, con Swift y Kotlin nativos donde hace falta.",
+      "Flutter is our main tool: most of our 17 apps are built in Flutter, from Soccer24, with 75,685 Google Play installs, to Komodo VPN and Inventra. One codebase for iOS and Android, with native Swift and Kotlin where it's needed."
+    ],
+    "tipo": [
+      "Desarrollo de apps en Flutter",
+      "Flutter app development"
+    ],
+    "prueba": [
+      {
+        "v": "75,685",
+        "n": 75685,
+        "l": [
+          "Soccer24 en Flutter",
+          "Soccer24, built in Flutter"
+        ],
+        "d": [
+          "Con widgets nativos en Swift y Kotlin",
+          "With native Swift and Kotlin widgets"
+        ],
+        "s": [
+          "Play Console · sep 2026",
+          "Play Console · Sep 2026"
+        ],
+        "u": "app:soccer24"
+      },
+      {
+        "v": "30,566",
+        "n": 30566,
+        "l": [
+          "Komodo VPN en Flutter",
+          "Komodo VPN, built in Flutter"
+        ],
+        "d": [
+          "Sobre OpenVPN y servidores propios",
+          "On OpenVPN and our own servers"
+        ],
+        "s": [
+          "Play Console · sep 2026",
+          "Play Console · Sep 2026"
+        ],
+        "u": "app:komodo"
+      },
+      {
+        "v": "4.5★",
+        "n": 0,
+        "l": [
+          "Soccer24 en Google Play",
+          "Soccer24 on Google Play"
+        ],
+        "d": [
+          "Calificación pública de usuarios",
+          "Public user rating"
+        ],
+        "s": [
+          "Google Play · oct 2026",
+          "Google Play · Oct 2026"
+        ],
+        "u": "https://play.google.com/store/apps/details?id=com.alekla0126.soccer24"
+      },
+      {
+        "v": "2→4",
+        "n": 0,
+        "l": [
+          "Columnas en un plegable",
+          "Columns on a foldable"
+        ],
+        "d": [
+          "PeakPlay al abrir un Pixel 9 Pro Fold",
+          "PeakPlay as a Pixel 9 Pro Fold opens"
+        ],
+        "s": [
+          "Emulador · oct 2026",
+          "Emulator · Oct 2026"
+        ],
+        "u": "app:peakplay"
+      }
+    ],
+    "bloque": {
+      "tipo": "fold",
+      "app": "peakplay",
+      "label": [
+        "Flutter en plegables",
+        "Flutter on foldables"
+      ],
+      "h2": [
+        "Una sola app que se adapta a cada pantalla",
+        "One app that adapts to every screen"
+      ],
+      "sub": [
+        "PeakPlay, hecha en Flutter, en un Pixel 9 Pro Fold: dos columnas cerrado y cuatro abierto, sin recargar.",
+        "PeakPlay, built in Flutter, on a Pixel 9 Pro Fold: two columns closed and four open, without reloading."
+      ]
+    },
+    "items_h2": [
+      "Qué hacemos con Flutter",
+      "What we do with Flutter"
+    ],
+    "items": [
+      {
+        "t": [
+          "Apps nuevas en Flutter",
+          "New Flutter apps"
+        ],
+        "p": [
+          "iOS y Android desde un solo código y un solo equipo, con diseño propio, no plantillas.",
+          "iOS and Android from one codebase and one team, with custom design, not templates."
+        ],
+        "app": "soccer24"
+      },
+      {
+        "t": [
+          "Módulos nativos",
+          "Native modules"
+        ],
+        "p": [
+          "Widgets de pantalla de inicio, extensiones y puentes a librerías nativas en Swift y Kotlin cuando Flutter no llega.",
+          "Home-screen widgets, extensions and bridges to native Swift and Kotlin libraries where Flutter doesn't reach."
+        ]
+      },
+      {
+        "t": [
+          "Plegables y tablets",
+          "Foldables and tablets"
+        ],
+        "p": [
+          "Diseños que se reorganizan al abrir un plegable o girar una tablet, probados en emuladores de cada dispositivo.",
+          "Layouts that rearrange when a foldable opens or a tablet rotates, tested on emulators for each device."
+        ],
+        "app": "peakplay"
+      },
+      {
+        "t": [
+          "Migración a Flutter",
+          "Migration to Flutter"
+        ],
+        "p": [
+          "De dos apps nativas, o de una app híbrida, a un solo código, pantalla por pantalla y sin detener la app en tienda.",
+          "From two native apps, or a hybrid app, to one codebase, screen by screen, without taking the store app down."
+        ]
+      },
+      {
+        "t": [
+          "Mantenimiento y actualizaciones",
+          "Maintenance and upgrades"
+        ],
+        "p": [
+          "Flutter, iOS y Android cambian cada año. Mantenemos tu app al día, por ejemplo con el soporte de páginas de memoria de 16 KB que pide Google Play.",
+          "Flutter, iOS and Android change every year. We keep your app current, for example with the 16 KB memory page support Google Play requires."
+        ],
+        "app": "komodo"
+      },
+      {
+        "t": [
+          "Equipo dedicado",
+          "Dedicated team"
+        ],
+        "p": [
+          "Desarrollo Flutter por mes, en tu horario y en inglés o español, integrado a tu equipo y a tus herramientas.",
+          "Monthly Flutter development on your hours, in English or Spanish, embedded in your team and your tools."
+        ]
+      }
+    ],
+    "enfoque_h2": [
+      "Por qué Flutter, y cuándo no",
+      "Why Flutter, and when not"
+    ],
+    "enfoque": [
+      {
+        "t": [
+          "Un código, dos tiendas",
+          "One codebase, two stores"
+        ],
+        "p": [
+          "Las funciones salen el mismo día en iOS y Android y el costo de mantenimiento no se duplica.",
+          "Features ship the same day on iOS and Android, and maintenance cost doesn't double."
+        ]
+      },
+      {
+        "t": [
+          "Rendimiento nativo",
+          "Native performance"
+        ],
+        "p": [
+          "Flutter compila a código nativo. Soccer24 muestra resultados en vivo de más de 1,100 competiciones con notificaciones en tiempo real.",
+          "Flutter compiles to native code. Soccer24 shows live results from 1,100+ competitions with real-time notifications."
+        ]
+      },
+      {
+        "t": [
+          "Cuándo recomendamos nativo",
+          "When we recommend native"
+        ],
+        "p": [
+          "Si la app depende sobre todo de funciones del sistema (por ejemplo, extensiones muy específicas de iOS), te lo decimos y la hacemos nativa.",
+          "If the app depends mostly on OS features (for example, very specific iOS extensions), we tell you and build it native."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": [
+          "¿Por qué elegir Flutter para mi app?",
+          "Why choose Flutter for my app?"
+        ],
+        "a": [
+          "Porque con un solo equipo y un solo código tienes iOS y Android al mismo tiempo, con rendimiento nativo y un diseño idéntico en los dos. Es la herramienta con la que hicimos la mayoría de nuestras 17 apps.",
+          "Because one team and one codebase give you iOS and Android at the same time, with native performance and identical design on both. It's what we used for most of our 17 apps."
+        ]
+      },
+      {
+        "q": [
+          "¿Flutter sirve para apps grandes?",
+          "Is Flutter good for large apps?"
+        ],
+        "a": [
+          "Sí. Soccer24 tiene más de 75,000 instalaciones en Google Play, resultados en vivo y widgets nativos, y está hecha en Flutter.",
+          "Yes. Soccer24 has more than 75,000 Google Play installs, live results and native widgets, and it's built in Flutter."
+        ]
+      },
+      {
+        "q": [
+          "¿Ofrecen desarrolladores Flutter por mes?",
+          "Do you offer Flutter developers on a monthly basis?"
+        ],
+        "a": [
+          "Sí, con el modelo de equipo dedicado: trabajo mensual en tu horario, con tus herramientas y con contrato en MXN o USD.",
+          "Yes, through our dedicated-team model: monthly work on your hours, in your tools, with a contract in USD or MXN."
+        ]
+      },
+      {
+        "q": [
+          "¿Pueden mantener una app Flutter hecha por otro equipo?",
+          "Can you maintain a Flutter app built by another team?"
+        ],
+        "a": [
+          "Sí. Empezamos con una revisión del código y de las dependencias, la actualizamos y seguimos con mantenimiento mensual.",
+          "Yes. We start with a code and dependency review, bring it up to date and continue with monthly maintenance."
+        ]
+      },
+      {
+        "q": [
+          "¿En qué horario trabajan?",
+          "What hours do you work?"
+        ],
+        "a": [
+          "Puebla está en UTC−6 todo el año: la misma hora que Chicago en invierno y una hora menos en verano.",
+          "Puebla is on UTC−6 all year: the same time as Chicago in winter and one hour behind it in summer."
+        ]
+      }
+    ]
+  }
+}

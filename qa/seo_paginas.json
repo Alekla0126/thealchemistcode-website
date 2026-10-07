@@ -1,0 +1,90 @@
+{
+  "home|es": {
+    "title": "Desarrollo de Apps y Software en Puebla | The Alchemist Code",
+    "description": "Estudio en Puebla que desarrolla apps iOS y Android, software a la medida e IA para empresas de México y EE. UU. 17 apps propias publicadas. Factura CFDI."
+  },
+  "home|en": {
+    "title": "Nearshore App & AI Developers in Mexico | The Alchemist Code",
+    "description": "Nearshore iOS, Android and AI development from Puebla, Mexico, on US Central hours (UTC−6). 17 of our own apps live. Contracts in USD or MXN."
+  },
+  "solutions|es": {
+    "title": "Desarrollo de apps a la medida e IA | The Alchemist Code",
+    "description": "Apps en Flutter, Swift y Kotlin, IA aplicada (OCR, fotos, asistentes), backend, VPN y apps de escritorio para empresas. Diagnóstico y propuesta sin costo."
+  },
+  "solutions|en": {
+    "title": "Custom App, AI and Backend Development | The Alchemist Code",
+    "description": "Flutter, Swift and Kotlin apps, applied AI (OCR, photo recognition, assistants), APIs, VPN and desktop apps. Free discovery and a written proposal."
+  },
+  "apps|es": {
+    "title": "Portafolio: 17 apps propias publicadas | The Alchemist Code",
+    "description": "Soccer24, Inventra, Komodo VPN, PDF Master y más: 17 apps propias con más de 100,000 instalaciones en Google Play. Así las construimos y operamos."
+  },
+  "apps|en": {
+    "title": "Portfolio: 17 Apps We Built and Run | The Alchemist Code",
+    "description": "Soccer24, Inventra, Komodo VPN, PDF Master and more: 17 of our own apps with 100,000+ installs on Google Play. See how we build and run them."
+  },
+  "about|es": {
+    "title": "Nosotros: estudio de apps en Puebla | The Alchemist Code",
+    "description": "Estudio de software y apps en Puebla, México, dirigido por su fundador: 17 apps propias publicadas, IA aplicada y un capítulo en Springer Nature (2025)."
+  },
+  "about|en": {
+    "title": "About: App Studio in Puebla, Mexico | The Alchemist Code",
+    "description": "Founder-led software and app studio in Puebla, Mexico: 17 apps of our own in the stores, applied AI and a Springer Nature chapter (2025)."
+  },
+  "faq|es": {
+    "title": "FAQ: costo de una app, plazos y CFDI | The Alchemist Code",
+    "description": "Cuánto cuesta una app, plazos, factura CFDI, NDA, propiedad del código y soporte: lo que suelen preguntarnos antes de empezar un proyecto."
+  },
+  "faq|en": {
+    "title": "FAQ: App Cost, Timelines, NDA, USD | The Alchemist Code",
+    "description": "How much an app costs, timelines, USD payments with Mexican invoices, NDA, code ownership and support: what people ask before we start."
+  },
+  "contact|es": {
+    "title": "Cotiza tu app: diagnóstico sin costo | The Alchemist Code",
+    "description": "Cuéntanos tu proyecto de software, app o IA. Primera llamada y propuesta sin costo, por correo, videollamada o WhatsApp, en horario de México."
+  },
+  "contact|en": {
+    "title": "Get a Quote: Free App Discovery | The Alchemist Code",
+    "description": "Tell us about your software, app or AI project. Free first call and written proposal by email, video call or WhatsApp, on US-friendly hours."
+  },
+  "local|es": {
+    "title": "Desarrollo de Software en Puebla | The Alchemist Code",
+    "description": "Estudio de desarrollo de software en Puebla: apps iOS y Android, sistemas a la medida e IA para empresas. Factura CFDI, NDA y el código es tuyo."
+  },
+  "local|en": {
+    "title": "Software Development Company in Mexico | The Alchemist Code",
+    "description": "Founder-led nearshore software studio in Puebla, Mexico: iOS and Android apps, custom systems and AI. US hours, USD contracts, you own the IP."
+  },
+  "infra|es": {
+    "title": "Infraestructura, Nube y Redes en Puebla | The Alchemist Code",
+    "description": "Servidores Linux, Google Cloud y Firebase, VPN para sucursales y personal remoto, seguridad y monitoreo. Operamos nuestra propia red de servidores VPN."
+  },
+  "infra|en": {
+    "title": "Cloud & Network Infrastructure, Mexico | The Alchemist Code",
+    "description": "Linux servers, Google Cloud and Firebase, VPNs for branches and remote staff, security and monitoring, from a nearshore team in Mexico on US hours."
+  },
+  "movil|es": {
+    "title": "Desarrollo de Aplicaciones Móviles en México | The Alchemist Code",
+    "description": "Apps iOS y Android en Flutter, Swift y Kotlin, desde Puebla para todo México. 17 apps propias publicadas y más de 100,000 instalaciones en Google Play."
+  },
+  "movil|en": {
+    "title": "Mobile App Development Company in Mexico | The Alchemist Code",
+    "description": "Nearshore iOS and Android development in Flutter, Swift and Kotlin. 17 apps of our own live, 100,000+ Google Play installs, US hours, USD contracts."
+  },
+  "ia|es": {
+    "title": "Inteligencia Artificial para Empresas | The Alchemist Code",
+    "description": "IA aplicada para empresas en México: lectura de documentos, reconocimiento de imágenes, asistentes y detección de fraude, con investigación en Springer."
+  },
+  "ia|en": {
+    "title": "AI Development Company in Mexico | The Alchemist Code",
+    "description": "Applied AI from a nearshore studio in Mexico: document reading, image recognition, assistants and fraud detection. Research published by Springer Nature."
+  },
+  "flutter|es": {
+    "title": "Desarrollo en Flutter en México | The Alchemist Code",
+    "description": "Apps en Flutter para iOS, Android y plegables. La mayoría de nuestras 17 apps son Flutter, como Soccer24 (75,685 instalaciones) y Komodo VPN."
+  },
+  "flutter|en": {
+    "title": "Flutter Development Company in Mexico | The Alchemist Code",
+    "description": "Nearshore Flutter developers in Mexico: most of our 17 apps are Flutter, including Soccer24 with 75,685 Google Play installs. US hours, USD contracts."
+  }
+}

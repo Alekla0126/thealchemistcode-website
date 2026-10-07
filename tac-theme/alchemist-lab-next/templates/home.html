@@ -1,0 +1,29 @@
+<!-- wp:template-part {"slug":"topbar","tagName":"div"} /-->
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+<!-- wp:group {"tagName":"main","className":"tac tac-blog","layout":{"type":"default"}} -->
+<main class="wp-block-group tac tac-blog"><!-- wp:group {"className":"tac-wrap","layout":{"type":"default"}} -->
+<div class="wp-block-group tac-wrap"><!-- wp:html -->
+<div class="tac-label"><b>—</b> Blog</div>
+<h1 style="font-size:48px;margin:16px 0 14px">Notas del taller</h1>
+<p class="tac-sub" style="margin-bottom:44px">Apps, IA, lanzamientos y lo que aprendemos operando nuestros productos. / Apps, AI, launches and what we learn running our products.</p>
+<!-- /wp:html -->
+<!-- wp:query {"queryId":1,"query":{"perPage":12,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":true}} -->
+<div class="wp-block-query"><!-- wp:post-template -->
+<!-- wp:post-date {"format":"d.m.Y"} /-->
+<!-- wp:post-title {"isLink":true,"level":2} /-->
+<!-- wp:post-excerpt {"moreText":"Leer →","excerptLength":28} /-->
+<!-- /wp:post-template -->
+<!-- wp:query-pagination -->
+<!-- wp:query-pagination-previous /-->
+<!-- wp:query-pagination-numbers /-->
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination -->
+<!-- wp:query-no-results -->
+<!-- wp:paragraph -->
+<p>Todavía no hay entradas.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group --></main>
+<!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

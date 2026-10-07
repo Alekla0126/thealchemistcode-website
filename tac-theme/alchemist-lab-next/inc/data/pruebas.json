@@ -1,0 +1,16 @@
+{
+  "_nota": "Pruebas que solo se publican si son reales y hay permiso. Si una lista está vacía (o un precio en blanco), su sección no aparece. Logos en uploads/tac-site/clientes/; fotos de testimonios en uploads/tac-site/testimonios/.",
+  "testimonios": [],
+  "_ejemplo_testimonio": {
+    "cita_es": "", "cita_en": "",
+    "nombre": "", "cargo_es": "", "cargo_en": "", "empresa": "",
+    "foto": "archivo.webp", "url": "https://..."
+  },
+  "clientes": [],
+  "_ejemplo_cliente": { "nombre": "", "logo": "archivo.svg", "url": "https://..." },
+  "precios": {
+    "proyecto": { "mxn": "", "usd": "" },
+    "equipo": { "mxn": "", "usd": "" },
+    "mantenimiento": { "mxn": "", "usd": "" }
+  }
+}
