@@ -147,25 +147,25 @@ function tac_render_footer() {
         <a class="tac-brand" href="<?php echo esc_url(tac_url('home')); ?>"><?php echo tac_logo(); ?>The Alchemist Code</a>
         <p><?php tac_e('Estudio de desarrollo de apps e IA para empresas. Puebla, México.', 'App and AI development studio for businesses. Puebla, Mexico.'); ?></p>
       </div>
-      <div><h4><?php tac_e('Servicios', 'Services'); ?></h4><ul>
+      <div><h2><?php tac_e('Servicios', 'Services'); ?></h2><ul>
         <li><a href="<?php echo esc_url(tac_url('local')); ?>"><?php tac_e('Desarrollo de software en Puebla', 'Software development in Mexico'); ?></a></li>
         <li><a href="<?php echo esc_url(tac_url('movil')); ?>"><?php tac_e('Apps móviles', 'Mobile apps'); ?></a></li>
         <li><a href="<?php echo esc_url(tac_url('flutter')); ?>">Flutter</a></li>
         <li><a href="<?php echo esc_url(tac_url('ia')); ?>"><?php tac_e('Inteligencia artificial', 'AI development'); ?></a></li>
         <li><a href="<?php echo esc_url(tac_url('infra')); ?>"><?php tac_e('Infraestructura y redes', 'Infrastructure and networks'); ?></a></li>
       </ul></div>
-      <div><h4><?php tac_e('Estudio', 'Studio'); ?></h4><ul>
+      <div><h2><?php tac_e('Estudio', 'Studio'); ?></h2><ul>
         <li><a href="<?php echo esc_url(tac_url('solutions')); ?>"><?php tac_e('Soluciones', 'Solutions'); ?></a></li>
         <li><a href="<?php echo esc_url(tac_url('home') . '#' . tac_t('casos', 'work')); ?>"><?php tac_e('Casos', 'Work'); ?></a></li>
         <li><a href="<?php echo esc_url(tac_url('apps')); ?>">Apps</a></li>
         <li><a href="<?php echo esc_url(tac_url('about')); ?>"><?php tac_e('Nosotros', 'About'); ?></a></li>
       </ul></div>
-      <div><h4><?php tac_e('Recursos', 'Resources'); ?></h4><ul>
+      <div><h2><?php tac_e('Recursos', 'Resources'); ?></h2><ul>
         <li><a href="<?php echo esc_url(tac_url('blog')); ?>">Blog</a></li>
         <li><a href="<?php echo esc_url(tac_url('faq')); ?>"><?php tac_e('Preguntas frecuentes', 'FAQ'); ?></a></li>
         <li><a href="<?php echo esc_url(tac_url('contact')); ?>"><?php tac_e('Contacto', 'Contact'); ?></a></li>
       </ul></div>
-      <div><h4>Legal</h4><ul>
+      <div><h2>Legal</h2><ul>
         <li><a href="<?php echo esc_url(tac_url('privacy')); ?>"><?php tac_e('Aviso de privacidad', 'Privacy notice'); ?></a></li>
         <li><a href="<?php echo esc_url(tac_url('terms')); ?>"><?php tac_e('Términos', 'Terms'); ?></a></li>
         <li><a href="<?php echo esc_url(tac_url('privacy') . '#cookies'); ?>">Cookies</a></li>

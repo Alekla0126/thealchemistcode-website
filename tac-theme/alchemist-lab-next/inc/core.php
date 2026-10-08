@@ -310,7 +310,7 @@ function tac_app_marquee() {
     $out = '';
     foreach ($rows as $n => $row) {
         $items = implode('', $row);
-        $out .= '<div class="tac-marquee' . ($n ? ' rev' : '') . '"><div class="tac-track">' . $items . '<span aria-hidden="true" style="display:contents">' . $items . '</span></div></div>';
+        $out .= '<div class="tac-marquee' . ($n ? ' rev' : '') . '"><div class="tac-track">' . $items . '<span aria-hidden="true" inert style="display:contents">' . str_replace('<a ', '<a tabindex="-1" ', $items) . '</span></div></div>';
     }
     return $out;
 }

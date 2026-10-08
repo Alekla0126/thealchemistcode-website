@@ -132,6 +132,14 @@ add_filter('aioseo_schema_output', function ($graphs) {
                 $graphs[$i]['hasOfferCatalog'] = array('@type' => 'OfferCatalog', 'name' => tac_t('Servicios', 'Services'), 'itemListElement' => $ofertas);
             }
         }
+        // Las guías las firma el estudio, no una persona: autor = la organización; fuera el nodo Person del usuario.
+        if (in_array($type, array('BlogPosting', 'Article', 'NewsArticle'), true) || str_ends_with((string) ($n['author']['@id'] ?? ''), '#author')) {
+            $graphs[$i]['author'] = array('@id' => 'https://thealchemistcode.org/#organization');
+        }
+        if ($type === 'Person' && str_ends_with((string) ($n['@id'] ?? ''), '#author')) {
+            unset($graphs[$i]);
+            continue;
+        }
         if ($type === 'BreadcrumbList' && !empty($n['itemListElement'])) {
             $items = array();
             $first = tac_lang() === 'en' ? array('name' => 'Home', 'item' => tac_url('home', 'en')) : array('name' => 'Inicio', 'item' => home_url('/'));
@@ -157,7 +165,7 @@ add_filter('aioseo_schema_output', function ($graphs) {
             $graphs[$i]['itemListElement'] = array_values($items);
         }
     }
-    return $graphs;
+    return array_values($graphs);
 });
 
 /** Archivos de categorías y etiquetas: fuera del índice (contenido duplicado del blog). */
