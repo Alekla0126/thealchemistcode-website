@@ -2,6 +2,7 @@
 title: "Cómo elegir una empresa de desarrollo de software en México: 12 preguntas antes de firmar"
 slug: como-elegir-empresa-de-desarrollo-de-software-mexico
 lang: es
+par: how-to-choose-a-software-development-company
 servicio: local
 seo_title: "Cómo elegir empresa de desarrollo de software en México"
 seo_desc: "12 preguntas para elegir una empresa de desarrollo de software en México: propiedad del código, contrato, CFDI, garantía, soporte y cómo comprobar su trabajo."

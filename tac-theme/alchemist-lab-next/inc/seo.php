@@ -61,6 +61,7 @@ add_action('template_redirect', function () {
         'faq'       => array('faq', 'en'),
         'contact'   => array('contact', 'en'),
         'portfolio' => array('apps', 'en'),
+        'category/uncategorized' => array('blog', 'es'),
     );
     if (isset($map[$path])) {
         wp_safe_redirect(tac_url($map[$path][0], $map[$path][1]), 301);
@@ -284,4 +285,12 @@ function tac_llms_txt() {
     $s[] = '- [Blog and guides](' . tac_url('blog') . ')';
     $s[] = '- [Source code of this website (GPL-2.0)](https://github.com/Alekla0126/thealchemistcode-website)';
     return implode("\n", $s) . "\n";
+}
+
+/** Clics de contacto (site.js): la petición solo queda en el registro del servidor; no se guarda nada más. */
+add_action('wp_ajax_nopriv_tac_evt', 'tac_evt');
+add_action('wp_ajax_tac_evt', 'tac_evt');
+function tac_evt() {
+    status_header(204);
+    exit;
 }

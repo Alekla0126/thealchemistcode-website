@@ -294,4 +294,13 @@
     });
     b.addEventListener('pointerleave', function () { b.style.setProperty('--mgx', '0px'); b.style.setProperty('--mgy', '0px'); });
   });
+
+  /* intención de contacto: clics a WhatsApp, correo y teléfono. Sin cookies ni datos personales:
+     solo queda una línea en el registro del servidor, que lee qa/trafico.py */
+  d.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="mailto:"],a[href*="wa.me/"],a[href^="tel:"]');
+    if (!a || !navigator.sendBeacon) return;
+    var t = /^mailto:/.test(a.href) ? 'correo' : (/^tel:/.test(a.href) ? 'telefono' : 'whatsapp');
+    navigator.sendBeacon('/wp-admin/admin-ajax.php?action=tac_evt&t=' + t + '&p=' + encodeURIComponent(location.pathname));
+  }, true);
 })();

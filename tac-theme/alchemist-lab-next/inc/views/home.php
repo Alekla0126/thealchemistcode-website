@@ -128,6 +128,22 @@ $tac_home = true; ?>
   </div>
 </section>
 
+<?php $guias = tac_guias_html(tac_lang() === 'en'
+    ? array('nearshore-software-development-mexico-guide', 'flutter-vs-native-how-to-choose', 'ai-for-business-practical-uses')
+    : array('como-elegir-empresa-de-desarrollo-de-software-mexico', 'flutter-o-nativo-como-elegir-tecnologia-app', 'ia-para-empresas-mexico-usos-reales'));
+if ($guias) : ?>
+<section class="tac-sec" id="<?php tac_e('guias', 'guides'); ?>" style="padding-top:40px">
+  <div class="tac-wrap">
+    <div class="tac-sec-head">
+      <div data-reveal><div class="tac-label"><b>08</b> — <?php tac_e('Guías', 'Guides'); ?></div><h2><?php tac_e('Para decidir con información', 'Read before you decide'); ?></h2></div>
+      <div data-reveal style="--d:120ms"><p class="tac-sub"><?php tac_e('Lo que preguntan las empresas antes de contratar software, respondido con lo que aprendimos al publicar nuestras apps.', 'What companies ask before hiring a software team, answered with what we learned shipping our own apps.'); ?></p>
+        <a class="tac-more" href="<?php echo esc_url(tac_url('blog')); ?>"><?php tac_e('Todas las guías', 'All guides'); ?> <span aria-hidden="true">→</span></a></div>
+    </div>
+    <?php echo $guias; // phpcs:ignore -- escapado en tac_guias_html() ?>
+  </div>
+</section>
+<?php endif; ?>
+
 <?php include __DIR__ . '/_coder.php'; ?>
 
 <?php include __DIR__ . '/_proof_people.php'; ?>
