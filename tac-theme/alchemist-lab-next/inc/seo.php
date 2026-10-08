@@ -11,6 +11,15 @@ add_filter('language_attributes', function ($output) {
 });
 
 add_action('wp_head', function () {
+    // Guías traducidas: cada versión apunta a la otra (la de español es la predeterminada).
+    if (is_singular('post') && ($par = tac_post_par(get_queried_object_id()))) {
+        $este = get_queried_object();
+        $urls = array(tac_lang() => get_permalink($este), (tac_lang() === 'en' ? 'es' : 'en') => get_permalink($par));
+        echo '<link rel="alternate" hreflang="es-MX" href="' . esc_url($urls['es']) . "\">\n";
+        echo '<link rel="alternate" hreflang="en" href="' . esc_url($urls['en']) . "\">\n";
+        echo '<link rel="alternate" hreflang="x-default" href="' . esc_url($urls['es']) . "\">\n";
+        return;
+    }
     $view = tac_current_view();
     if (!$view) {
         return;

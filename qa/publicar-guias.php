@@ -24,6 +24,7 @@ foreach ($guias as $g) {
     if (is_wp_error($id)) { WP_CLI::warning($g['slug'] . ': ' . $id->get_error_message()); continue; }
     update_post_meta($id, 'tac_lang', $g['lang']);
     update_post_meta($id, 'tac_servicio', $g['servicio']);
+    if (!empty($g['par'])) { update_post_meta($id, 'tac_par', $g['par']); }
     $og = is_readable(wp_upload_dir()['basedir'] . "/tac-site/og/guia-{$g['slug']}.jpg") ? content_url("uploads/tac-site/og/guia-{$g['slug']}.jpg") : '';
     $row = array('title' => $g['seo_title'], 'description' => $g['seo_desc'], 'og_title' => $g['title'], 'og_description' => $g['seo_desc'],
         'og_image_type' => $og ? 'custom_image' : 'default', 'og_image_custom_url' => $og, 'twitter_use_og' => 1, 'updated' => current_time('mysql'));

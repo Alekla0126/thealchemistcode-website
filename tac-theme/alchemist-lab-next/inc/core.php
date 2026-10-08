@@ -88,10 +88,23 @@ function tac_counterpart_url($lang) {
     if ($view) {
         return tac_url($view, $lang);
     }
+    if (is_singular('post') && tac_lang() === $lang) {
+        return get_permalink(get_queried_object_id());
+    }
+    if (is_singular('post') && ($par = tac_post_par(get_queried_object_id())) && get_post_meta($par->ID, 'tac_lang', true) === $lang) {
+        return get_permalink($par);
+    }
     if (is_home() || is_singular('post') || is_archive()) {
         return tac_url('blog', $lang);
     }
     return tac_url('home', $lang);
+}
+
+/** Traducción de una entrada del blog (metadato tac_par = slug de la versión en el otro idioma), si está publicada. */
+function tac_post_par($id) {
+    $slug = (string) get_post_meta($id, 'tac_par', true);
+    $p = $slug ? get_page_by_path($slug, OBJECT, 'post') : null;
+    return $p && $p->post_status === 'publish' ? $p : null;
 }
 
 /** URL de una imagen del sitio (subida a uploads/tac-site). */

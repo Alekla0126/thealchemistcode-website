@@ -154,7 +154,7 @@ $casos = array(
   <p class="tac-local-more" data-reveal><?php tac_e('Más respuestas en', 'More answers in our'); ?> <a href="<?php echo esc_url(tac_url('faq')); ?>"><?php tac_e('preguntas frecuentes', 'FAQ'); ?></a> · <a href="<?php echo esc_url(tac_url('solutions')); ?>"><?php tac_e('soluciones', 'solutions'); ?></a> · <a href="<?php echo esc_url(tac_url('apps')); ?>"><?php tac_e('las 17 apps', 'all 17 apps'); ?></a></p>
 </div></section>
 
-<?php $guias = tac_guias_html($L ? array('nearshore-software-development-mexico-guide') : array('como-elegir-empresa-de-desarrollo-de-software-mexico', 'flutter-o-nativo-como-elegir-tecnologia-app', 'ia-para-empresas-mexico-usos-reales', 'vpn-para-empresas-con-sucursales')); if ($guias) : ?>
+<?php $guias = tac_guias_html($L ? array('nearshore-software-development-mexico-guide', 'flutter-vs-native-how-to-choose', 'ai-for-business-practical-uses') : array('como-elegir-empresa-de-desarrollo-de-software-mexico', 'flutter-o-nativo-como-elegir-tecnologia-app', 'ia-para-empresas-mexico-usos-reales', 'como-publicar-app-app-store-google-play')); if ($guias) : ?>
 <section class="tac-sec" style="padding-top:40px"><div class="tac-wrap">
   <div class="tac-sec-head">
     <div data-reveal><div class="tac-label"><b>08</b> — <?php tac_e('Guías', 'Guides'); ?></div><h2><?php tac_e('Para decidir con información', 'Read before you decide'); ?></h2></div>

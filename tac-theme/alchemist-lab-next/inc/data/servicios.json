@@ -622,10 +622,12 @@
     ],
     "guias": {
       "es": [
+        "como-publicar-app-app-store-google-play",
         "flutter-o-nativo-como-elegir-tecnologia-app",
         "como-elegir-empresa-de-desarrollo-de-software-mexico"
       ],
       "en": [
+        "flutter-vs-native-how-to-choose",
         "nearshore-software-development-mexico-guide"
       ]
     }
@@ -912,6 +914,7 @@
         "como-elegir-empresa-de-desarrollo-de-software-mexico"
       ],
       "en": [
+        "ai-for-business-practical-uses",
         "nearshore-software-development-mexico-guide"
       ]
     }
@@ -1179,9 +1182,10 @@
     "guias": {
       "es": [
         "flutter-o-nativo-como-elegir-tecnologia-app",
-        "como-elegir-empresa-de-desarrollo-de-software-mexico"
+        "como-publicar-app-app-store-google-play"
       ],
       "en": [
+        "flutter-vs-native-how-to-choose",
         "nearshore-software-development-mexico-guide"
       ]
     }

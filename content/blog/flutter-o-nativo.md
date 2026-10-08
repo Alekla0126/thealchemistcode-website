@@ -2,6 +2,7 @@
 title: "Flutter o nativo: cómo elegir la tecnología de tu app"
 slug: flutter-o-nativo-como-elegir-tecnologia-app
 lang: es
+par: flutter-vs-native-how-to-choose
 servicio: flutter
 seo_title: "Flutter o nativo (Swift y Kotlin): cómo elegir para tu app"
 seo_desc: "Cuándo conviene Flutter y cuándo una app nativa en Swift o Kotlin. Criterios de costo, rendimiento, mantenimiento y funciones del sistema, con ejemplos reales."

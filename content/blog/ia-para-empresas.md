@@ -2,6 +2,7 @@
 title: "IA para empresas en México: usos que ya ahorran trabajo (y cuándo no conviene)"
 slug: ia-para-empresas-mexico-usos-reales
 lang: es
+par: ai-for-business-practical-uses
 servicio: ia
 seo_title: "IA para empresas en México: usos reales y cuándo no conviene"
 seo_desc: "Usos de inteligencia artificial que ya ahorran trabajo en empresas mexicanas: lectura de documentos, fotos, atención a clientes y fraude. Costos, datos y cómo empezar."
