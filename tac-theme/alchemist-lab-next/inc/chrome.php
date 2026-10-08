@@ -9,7 +9,57 @@ add_action('init', function () {
     register_block_type('tac/topbar', array('render_callback' => 'tac_render_topbar'));
     register_block_type('tac/header', array('render_callback' => 'tac_render_header'));
     register_block_type('tac/footer', array('render_callback' => 'tac_render_footer'));
+    register_block_type('tac/post-end', array('render_callback' => 'tac_render_post_end'));
 });
+
+/** Servicios del estudio: vista → nombre en cada idioma (pie, cierre de artículos y schema). */
+function tac_servicios() {
+    return array(
+        'local'   => array('Desarrollo de software en Puebla', 'Software development company in Mexico'),
+        'movil'   => array('Desarrollo de apps móviles', 'Mobile app development'),
+        'flutter' => array('Desarrollo en Flutter', 'Flutter development'),
+        'ia'      => array('Inteligencia artificial para empresas', 'AI development'),
+        'infra'   => array('Infraestructura y redes', 'Infrastructure and networks'),
+    );
+}
+
+/**
+ * Cierre de cada artículo del blog: el servicio relacionado (metadato tac_servicio), los demás servicios
+ * y la invitación a iniciar un proyecto. Quien llega por una guía tiene a un clic la página que vende.
+ */
+function tac_render_post_end() {
+    if (!is_singular('post')) {
+        return '';
+    }
+    $L = tac_lang() === 'en' ? 1 : 0;
+    $srv = (string) get_post_meta(get_the_ID(), 'tac_servicio', true);
+    $todo = tac_servicios();
+    $datos = json_decode((string) file_get_contents(get_template_directory() . '/inc/data/servicios.json'), true) ?: array();
+    ob_start(); ?>
+<div class="tac-post-end">
+  <?php if ($srv && isset($todo[$srv])) :
+      $intro = $datos[$srv]['intro'][$L] ?? tac_t('Estudio en Puebla dirigido por su fundador: apps iOS y Android, sistemas a la medida e IA para empresas de México y Estados Unidos.', 'A founder-led studio in Puebla, Mexico: iOS and Android apps, custom systems and AI for companies in the US and Mexico.'); ?>
+    <a class="tac-post-srv" href="<?php echo esc_url(tac_url($srv)); ?>">
+      <span class="tac-label"><?php tac_e('Servicio relacionado', 'Related service'); ?></span>
+      <b><?php echo esc_html($todo[$srv][$L]); ?> <span aria-hidden="true">→</span></b>
+      <span class="d"><?php echo esc_html(wp_trim_words($intro, 34)); ?></span>
+    </a>
+  <?php endif; ?>
+  <div class="tac-post-cta">
+    <h2><?php tac_e('¿Qué tiene que salir bien en tu proyecto?', 'What does success look like for your product?'); ?></h2>
+    <p><?php tac_e('La primera llamada y la propuesta no tienen costo. Te responde en persona quien va a dirigir tu proyecto.', 'The first call and the proposal are free. The person who will lead your project replies in person.'); ?></p>
+    <a class="tac-btn tac-btn-primary" href="<?php echo esc_url(tac_url('contact')); ?>"><?php tac_e('Iniciar un proyecto', 'Start a project'); ?> <span class="arr">→</span></a>
+  </div>
+  <nav class="tac-post-more" aria-label="<?php echo esc_attr(tac_t('Servicios', 'Services')); ?>">
+    <?php foreach ($todo as $v => $t) : if ($v === $srv) { continue; } ?>
+      <a href="<?php echo esc_url(tac_url($v)); ?>"><?php echo esc_html($t[$L]); ?></a>
+    <?php endforeach; ?>
+    <a class="back" href="<?php echo esc_url(tac_url('blog')); ?>">← Blog</a>
+  </nav>
+</div>
+<?php
+    return ob_get_clean();
+}
 
 function tac_render_topbar() {
     // Relojes en vivo (los actualiza site.js): el comprador de EE. UU. ve de un vistazo cuánto se empalma el horario.

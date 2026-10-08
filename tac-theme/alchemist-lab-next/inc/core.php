@@ -431,3 +431,20 @@ function tac_precio_desde($modelo, $sufijo_es = '', $sufijo_en = '') {
     $orden = tac_lang() === 'en' ? array_reverse($partes) : $partes;
     return tac_t('Desde ', 'From ') . implode(' · ', $orden) . tac_t($sufijo_es, $sufijo_en);
 }
+
+/** Tarjetas de guías del blog (por slug, solo las publicadas): enlazan cada servicio con su contenido. */
+function tac_guias_html($slugs) {
+    $out = '';
+    foreach ((array) $slugs as $slug) {
+        $p = get_page_by_path($slug, OBJECT, 'post');
+        if (!$p || $p->post_status !== 'publish') {
+            continue;
+        }
+        $mins = max(3, (int) round(str_word_count(wp_strip_all_tags($p->post_content)) / 220));
+        $out .= '<a class="tac-guia" href="' . esc_url(get_permalink($p)) . '" data-reveal>'
+            . '<small>' . esc_html(sprintf(tac_t('Guía · %d min', 'Guide · %d min'), $mins)) . '</small>'
+            . '<b>' . esc_html(get_the_title($p)) . '</b>'
+            . '<span>' . esc_html(wp_trim_words(get_the_excerpt($p), 26)) . '</span></a>';
+    }
+    return $out ? '<div class="tac-guias">' . $out . '</div>' : '';
+}

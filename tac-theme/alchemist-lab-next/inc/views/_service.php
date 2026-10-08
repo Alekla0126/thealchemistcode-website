@@ -32,13 +32,7 @@ $num = function () use (&$tac_sec_n) {
     $tac_sec_n++;
     return sprintf('%02d', $tac_sec_n);
 };
-$otros = array(
-    'local'   => array('Desarrollo de software en Puebla', 'Software development company in Mexico'),
-    'movil'   => array('Desarrollo de apps móviles', 'Mobile app development'),
-    'flutter' => array('Desarrollo en Flutter', 'Flutter development'),
-    'ia'      => array('Inteligencia artificial para empresas', 'AI development'),
-    'infra'   => array('Infraestructura y redes', 'Infrastructure and networks'),
-);
+$otros = tac_servicios();
 $bloque = $S['bloque'] ?? array();
 ?>
 <section class="tac-phero tac-srv-hero"><div class="tac-wrap">
@@ -184,6 +178,15 @@ $bloque = $S['bloque'] ?? array();
       <details data-reveal><summary><?php echo esc_html($tx($q['q'])); ?></summary><p><?php echo esc_html($tx($q['a'])); ?></p></details>
     <?php endforeach; ?>
   </div>
+</div></section>
+<?php endif; ?>
+
+<?php $guias = tac_guias_html($S['guias'][$L ? 'en' : 'es'] ?? array()); if ($guias) : ?>
+<section class="tac-sec" style="padding-top:40px"><div class="tac-wrap">
+  <div class="tac-sec-head">
+    <div data-reveal><div class="tac-label"><b><?php echo esc_html($num()); ?></b> — <?php tac_e('Guías', 'Guides'); ?></div><h2><?php tac_e('Para decidir con información', 'Read before you decide'); ?></h2></div>
+  </div>
+  <?php echo $guias; // phpcs:ignore -- escapado en tac_guias_html() ?>
 </div></section>
 <?php endif; ?>
 

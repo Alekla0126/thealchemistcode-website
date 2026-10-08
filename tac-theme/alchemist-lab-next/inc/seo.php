@@ -168,3 +168,111 @@ add_filter('aioseo_robots_meta', function ($attrs) {
     }
     return $attrs;
 });
+
+/* ---------- IndexNow: Bing (y con él DuckDuckGo, Yahoo, Copilot y la búsqueda de ChatGPT), Yandex y otros ---------- */
+
+/** Clave de IndexNow: se genera una vez y vive en la base de datos (no en el repositorio). */
+function tac_indexnow_key() {
+    $k = (string) get_option('tac_indexnow_key');
+    if (!preg_match('/^[a-f0-9]{32}$/', $k)) {
+        $k = bin2hex(random_bytes(16));
+        update_option('tac_indexnow_key', $k, false);
+    }
+    return $k;
+}
+
+/** Avisa a IndexNow de URLs nuevas o cambiadas (máximo 10,000 por envío; sin bloquear la petición). */
+function tac_indexnow_submit(array $urls, $blocking = false) {
+    $host = wp_parse_url(home_url(), PHP_URL_HOST);
+    $urls = array_values(array_unique(array_filter($urls, function ($u) use ($host) {
+        return wp_parse_url($u, PHP_URL_HOST) === $host;
+    })));
+    if (!$urls || wp_get_environment_type() !== 'production') {
+        return null;
+    }
+    $key = tac_indexnow_key();
+    return wp_remote_post('https://api.indexnow.org/indexnow', array(
+        'blocking' => $blocking,
+        'timeout'  => $blocking ? 20 : 3,
+        'headers'  => array('Content-Type' => 'application/json; charset=utf-8'),
+        'body'     => wp_json_encode(array('host' => $host, 'key' => $key, 'keyLocation' => home_url('/' . $key . '.txt'), 'urlList' => array_slice($urls, 0, 10000))),
+    ));
+}
+
+// Al publicar o actualizar una página o entrada pública, se avisa de su URL (y de su versión en el otro idioma).
+add_action('transition_post_status', function ($nuevo, $viejo, $post) {
+    if ($nuevo !== 'publish' || !in_array($post->post_type, array('post', 'page'), true) || wp_is_post_revision($post) || wp_is_post_autosave($post)) {
+        return;
+    }
+    $urls = array(get_permalink($post));
+    $view = (string) get_post_meta($post->ID, 'tac_view', true);
+    if ($view && $view !== 'app') {
+        $otro = get_post_meta($post->ID, 'tac_lang', true) === 'en' ? 'es' : 'en';
+        $urls[] = tac_url($view, $otro);
+    }
+    tac_indexnow_submit($urls);
+}, 10, 3);
+
+/* ---------- archivos de texto en la raíz: clave de IndexNow y llms.txt ---------- */
+
+add_action('init', function () {
+    $path = trim((string) wp_parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH), '/');
+    if ($path === '' || strpos($path, '/') !== false || substr($path, -4) !== '.txt') {
+        return;
+    }
+    if ($path === tac_indexnow_key() . '.txt') {
+        header('Content-Type: text/plain; charset=utf-8');
+        echo tac_indexnow_key(); // phpcs:ignore
+        exit;
+    }
+    if ($path === 'llms.txt') {
+        header('Content-Type: text/plain; charset=utf-8');
+        header('Cache-Control: public, max-age=86400');
+        echo tac_llms_txt(); // phpcs:ignore
+        exit;
+    }
+}, 0);
+
+/**
+ * llms.txt (llmstxt.org): resumen del estudio para asistentes de IA (ChatGPT, Claude, Perplexity…),
+ * con enlaces a las páginas que responden "¿quién hace apps / software / IA en Puebla o México?".
+ * Solo datos que ya están publicados en el sitio, con su fuente.
+ */
+function tac_llms_txt() {
+    $u = function ($v, $l) { return tac_url($v, $l); };
+    $s = array();
+    $s[] = '# The Alchemist Code';
+    $s[] = '';
+    $s[] = '> Founder-led software, mobile app and AI development studio in Puebla, Mexico, working with companies in Mexico and the United States. We design, build, launch and run software, and we publish and operate 17 apps of our own (iOS, Android and desktop).';
+    $s[] = '';
+    $s[] = 'Estudio de desarrollo de software, apps móviles e inteligencia artificial en Puebla, México, dirigido por su fundador. Atiende empresas de México y Estados Unidos. Contratos en MXN o USD, factura CFDI, NDA y el código queda a nombre del cliente.';
+    $s[] = '';
+    $s[] = '## Facts (with sources)';
+    $s[] = '- 100,000+ Google Play installs across our own apps (Play Console, Sep 2026).';
+    $s[] = '- Soccer24: 75,685 Google Play installs and a public 4.5★ rating (Play Console, Sep 2026; Google Play, Oct 2026).';
+    $s[] = '- Komodo VPN: 30,566 Google Play installs, running on our own OpenVPN server network (Play Console, Sep 2026).';
+    $s[] = '- Research: "Enhanced Cybersecurity: AI-Driven Phishing Fraud Detection Approach", Springer Nature, 2025, https://doi.org/10.1007/978-3-031-85363-0_21';
+    $s[] = '- Location: Puebla, Mexico (UTC−6 all year). Languages: Spanish and English. Contact: ' . TAC_MAIL;
+    $s[] = '';
+    $s[] = '## Services (English)';
+    $s[] = '- [Software development company in Mexico](' . $u('local', 'en') . '): custom software, mobile apps, AI and infrastructure for US and Mexican companies.';
+    $s[] = '- [Mobile app development](' . $u('movil', 'en') . '): iOS and Android apps in Flutter, Swift and Kotlin, from design to store release and maintenance.';
+    $s[] = '- [Flutter development](' . $u('flutter', 'en') . '): most of our 17 apps are built in Flutter.';
+    $s[] = '- [AI development](' . $u('ia', 'en') . '): document reading (OCR), image recognition, assistants and fraud detection.';
+    $s[] = '- [Cloud and network infrastructure](' . $u('infra', 'en') . '): Linux servers, Google Cloud, Firebase, VPNs, security and monitoring.';
+    $s[] = '';
+    $s[] = '## Servicios (español)';
+    $s[] = '- [Desarrollo de software en Puebla](' . $u('local', 'es') . '): software a la medida, apps móviles, IA e infraestructura.';
+    $s[] = '- [Desarrollo de aplicaciones móviles](' . $u('movil', 'es') . '): apps iOS y Android en Flutter, Swift y Kotlin.';
+    $s[] = '- [Desarrollo en Flutter](' . $u('flutter', 'es') . ')';
+    $s[] = '- [Inteligencia artificial para empresas](' . $u('ia', 'es') . ')';
+    $s[] = '- [Infraestructura y redes](' . $u('infra', 'es') . ')';
+    $s[] = '';
+    $s[] = '## More';
+    $s[] = '- [Our 17 apps](' . $u('apps', 'en') . ')';
+    $s[] = '- [How to engage, FAQ](' . $u('faq', 'en') . ')';
+    $s[] = '- [Contact / start a project](' . $u('contact', 'en') . ')';
+    $s[] = '- [Blog and guides](' . tac_url('blog') . ')';
+    $s[] = '- [Source code of this website (GPL-2.0)](https://github.com/Alekla0126/thealchemistcode-website)';
+    return implode("\n", $s) . "\n";
+}

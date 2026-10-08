@@ -11,6 +11,7 @@ de MarketingEngine y las capturas originales bajadas a research/tac/.
 import json
 import os
 import pathlib
+import sys
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
@@ -330,6 +331,31 @@ def servicio_og(clave, lang):
     return im.convert('RGB')
 
 
+def guia_og(datos):
+    """Imagen para redes de una guía del blog: etiqueta, título grande y marca."""
+    lang = datos['lang']
+    im = fondo().convert('RGBA')
+    d = ImageDraw.Draw(im)
+    pill = 'Guía · The Alchemist Code' if lang == 'es' else 'Guide · The Alchemist Code'
+    pf = fuente(19, 'SemiBold')
+    tw = d.textlength(pill, font=pf)
+    d.rounded_rectangle((64, 64, 64 + tw + 50, 104), radius=20, fill=(13, 24, 43), outline=(36, 55, 90), width=2)
+    d.ellipse((82, 79, 92, 89), fill=(34, 197, 94))
+    d.text((104, 73), pill, font=pf, fill=INK)
+    titulo = datos['title']
+    for tam in range(66, 38, -2):
+        f = fuente(tam, 'ExtraBold')
+        lineas = envolver(titulo, f, 1060, d)
+        if len(lineas) <= 4 and tam * 1.18 * len(lineas) <= 360:
+            break
+    y = 150
+    for ln in lineas:
+        d.text((60, y), ln, font=f, fill=INK)
+        y += int(tam * 1.18)
+    marca(im, d, 566)
+    return im.convert('RGB')
+
+
 def main():
     SALIDA.mkdir(parents=True, exist_ok=True)
     for lang in ('es', 'en'):
@@ -338,6 +364,11 @@ def main():
             servicio_og(clave, lang).save(SALIDA / f'{clave}-{lang}.jpg', quality=86, optimize=True, progressive=True)
         for a in APPS['apps']:
             app_og(a, lang).save(SALIDA / f"{a['clave']}-{lang}.jpg", quality=86, optimize=True, progressive=True)
+    sys.path.insert(0, str(RAIZ / 'qa'))
+    from guias import frontmatter
+    for md in sorted((RAIZ / 'content/blog').glob('*.md')):
+        datos, _ = frontmatter(md.read_text())
+        guia_og(datos).save(SALIDA / f"guia-{datos['slug']}.jpg", quality=86, optimize=True, progressive=True)
     tam = sorted(os.path.getsize(p) for p in SALIDA.glob('*.jpg'))
     print(f'{len(tam)} imágenes en {SALIDA.relative_to(RAIZ)} · {tam[0] // 1024}–{tam[-1] // 1024} KB')
 

@@ -343,7 +343,15 @@
           "Yes: we review access, open ports, certificates, backups and exposed secrets, and give you a prioritized report. Our research on AI-driven phishing fraud detection is published by Springer Nature (2025)."
         ]
       }
-    ]
+    ],
+    "guias": {
+      "es": [
+        "vpn-para-empresas-con-sucursales"
+      ],
+      "en": [
+        "nearshore-software-development-mexico-guide"
+      ]
+    }
   },
   "movil": {
     "label": [
@@ -611,7 +619,16 @@
           "Yes. You receive the code, repositories, documentation and access, with full assignment of IP."
         ]
       }
-    ]
+    ],
+    "guias": {
+      "es": [
+        "flutter-o-nativo-como-elegir-tecnologia-app",
+        "como-elegir-empresa-de-desarrollo-de-software-mexico"
+      ],
+      "en": [
+        "nearshore-software-development-mexico-guide"
+      ]
+    }
   },
   "ia": {
     "label": [
@@ -888,7 +905,16 @@
           "It depends on the process, the volume and the model. We recommend starting with a fixed-scope proof of concept; the proposal is free and in writing."
         ]
       }
-    ]
+    ],
+    "guias": {
+      "es": [
+        "ia-para-empresas-mexico-usos-reales",
+        "como-elegir-empresa-de-desarrollo-de-software-mexico"
+      ],
+      "en": [
+        "nearshore-software-development-mexico-guide"
+      ]
+    }
   },
   "flutter": {
     "label": [
@@ -1149,6 +1175,15 @@
           "Puebla is on UTC−6 all year: the same time as Chicago in winter and one hour behind it in summer."
         ]
       }
-    ]
+    ],
+    "guias": {
+      "es": [
+        "flutter-o-nativo-como-elegir-tecnologia-app",
+        "como-elegir-empresa-de-desarrollo-de-software-mexico"
+      ],
+      "en": [
+        "nearshore-software-development-mexico-guide"
+      ]
+    }
   }
 }
