@@ -51,6 +51,14 @@ add_action('wp_head', function () {
     echo '<link rel="alternate" hreflang="x-default" href="' . esc_url($es) . "\">\n";
 }, 2);
 
+/** La portada del blog muestra todas las guías: sus páginas 2, 3… llevan a la portada (sin duplicados). */
+add_action('template_redirect', function () {
+    if (is_home() && is_paged()) {
+        wp_safe_redirect(tac_url('blog'), 301);
+        exit;
+    }
+}, 2);
+
 /** La web anterior estaba en inglés: sus URL llevan a la versión en inglés de cada página. */
 add_action('template_redirect', function () {
     $path = trim((string) wp_parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH), '/');

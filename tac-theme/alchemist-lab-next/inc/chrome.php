@@ -10,7 +10,50 @@ add_action('init', function () {
     register_block_type('tac/header', array('render_callback' => 'tac_render_header'));
     register_block_type('tac/footer', array('render_callback' => 'tac_render_footer'));
     register_block_type('tac/post-end', array('render_callback' => 'tac_render_post_end'));
+    register_block_type('tac/blog', array('render_callback' => 'tac_render_blog'));
 });
+
+/**
+ * Portada del blog: las guías agrupadas por idioma (primero español, luego inglés), con tiempo de lectura
+ * y el servicio con el que se relaciona cada una. Sin paginación mientras haya pocas entradas.
+ */
+function tac_render_blog() {
+    $posts = get_posts(array('post_type' => 'post', 'post_status' => 'publish', 'numberposts' => 60, 'orderby' => 'date', 'order' => 'DESC'));
+    $grupos = array('es' => array(), 'en' => array());
+    foreach ($posts as $p) {
+        $grupos[get_post_meta($p->ID, 'tac_lang', true) === 'en' ? 'en' : 'es'][] = $p;
+    }
+    $srv = tac_servicios();
+    $tarjeta = function ($p, $lang) use ($srv) {
+        $L = $lang === 'en' ? 1 : 0;
+        $mins = max(3, (int) round(str_word_count(wp_strip_all_tags($p->post_content)) / 220));
+        $s = (string) get_post_meta($p->ID, 'tac_servicio', true);
+        return '<a class="tac-guia" href="' . esc_url(get_permalink($p)) . '" lang="' . esc_attr($lang) . '">'
+            . '<small>' . esc_html(sprintf($L ? 'Guide · %d min' : 'Guía · %d min', $mins)) . '</small>'
+            . '<b>' . esc_html(get_the_title($p)) . '</b>'
+            . '<span>' . esc_html(wp_trim_words(get_the_excerpt($p), 24)) . '</span>'
+            . (isset($srv[$s]) ? '<em>' . esc_html($srv[$s][$L]) . '</em>' : '')
+            . '</a>';
+    };
+    ob_start(); ?>
+<div class="tac-blog-head">
+  <div class="tac-label"><b>—</b> Blog</div>
+  <h1><?php tac_e('Guías para contratar software, apps e IA', 'Guides for hiring software, app and AI teams'); ?></h1>
+  <p class="tac-sub"><?php tac_e('Lo que preguntan las empresas antes de contratar, respondido con lo que aprendimos al publicar y operar nuestras propias apps.', 'What companies ask before hiring a software team, answered with what we learned shipping and running our own apps.'); ?></p>
+  <nav class="tac-blog-lang" aria-label="<?php echo esc_attr(tac_t('Idioma de las guías', 'Guide language')); ?>">
+    <a href="#es" hreflang="es">Español <span><?php echo (int) count($grupos['es']); ?></span></a>
+    <a href="#en" hreflang="en">English <span><?php echo (int) count($grupos['en']); ?></span></a>
+    <a class="costo" href="<?php echo esc_url(tac_url('costo')); ?>"><?php tac_e('¿Cuánto cuesta una app?', 'How much does an app cost?'); ?> →</a>
+  </nav>
+</div>
+<?php foreach ($grupos as $lang => $lista) : if (!$lista) { continue; } ?>
+  <section class="tac-blog-grupo" id="<?php echo esc_attr($lang); ?>" lang="<?php echo esc_attr($lang); ?>">
+    <h2><?php echo $lang === 'en' ? 'In English' : 'En español'; ?></h2>
+    <div class="tac-guias"><?php foreach ($lista as $p) { echo $tarjeta($p, $lang); } // phpcs:ignore -- escapado en $tarjeta ?></div>
+  </section>
+<?php endforeach;
+    return ob_get_clean();
+}
 
 /** Servicios del estudio: vista → nombre en cada idioma (pie, cierre de artículos y schema). */
 function tac_servicios() {
