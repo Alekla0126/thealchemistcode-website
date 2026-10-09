@@ -85,6 +85,10 @@ function tac_counterpart_url($lang) {
         $u = tac_app_url((string) get_post_meta(get_queried_object_id(), 'tac_app', true), $lang);
         return $u ?: tac_url('apps', $lang);
     }
+    if ($view === 'caso') {
+        $u = tac_caso_url((string) get_post_meta(get_queried_object_id(), 'tac_caso', true), $lang);
+        return $u ?: tac_url('casos', $lang);
+    }
     if ($view) {
         return tac_url($view, $lang);
     }
@@ -460,4 +464,38 @@ function tac_guias_html($slugs) {
             . '<span>' . esc_html(wp_trim_words(get_the_excerpt($p), 26)) . '</span></a>';
     }
     return $out ? '<div class="tac-guias">' . $out . '</div>' : '';
+}
+
+/** Mapa caso → idioma → ID de página (páginas con tac_view=caso y tac_caso=<clave>). */
+function tac_caso_pages() {
+    static $m = null;
+    if ($m !== null) {
+        return $m;
+    }
+    $m = array();
+    $q = new WP_Query(array('post_type' => 'page', 'post_status' => 'publish', 'posts_per_page' => 50, 'fields' => 'ids', 'no_found_rows' => true,
+        'meta_query' => array(array('key' => 'tac_view', 'value' => 'caso'))));
+    foreach ($q->posts as $id) {
+        $k = get_post_meta($id, 'tac_caso', true);
+        if ($k) {
+            $m[$k][get_post_meta($id, 'tac_lang', true) === 'en' ? 'en' : 'es'] = (int) $id;
+        }
+    }
+    return $m;
+}
+
+function tac_caso_url($k, $lang = null) {
+    $lang = $lang ?: tac_lang();
+    $m = tac_caso_pages();
+    return !empty($m[$k][$lang]) ? get_permalink($m[$k][$lang]) : '';
+}
+
+/** Casos de estudio completos (inc/data/casos.json). */
+function tac_casos_data() {
+    static $c = null;
+    if ($c === null) {
+        $c = json_decode((string) file_get_contents(__DIR__ . '/data/casos.json'), true) ?: array();
+        unset($c['_nota']);
+    }
+    return $c;
 }

@@ -1,0 +1,778 @@
+{
+  "_nota": "Casos de estudio completos (vista caso, tac_caso=<clave>). Cada texto es [es, en]. Hechos verificados el 9-oct-2026 en los repos (Soccer24, PDF Master Mobile App, PDFMaster, Komodo), App Monitor/STATUS.md y Play Console. Sin secretos ni datos de servidores.",
+  "soccer24": {
+    "nombre": "Soccer24",
+    "app": "soccer24",
+    "categoria": "SportsApplication",
+    "so": "iOS, Android",
+    "servicio": "flutter",
+    "slug": "soccer24",
+    "seo_title": [
+      "Caso Soccer24: app de resultados en vivo en Flutter",
+      "Soccer24 Case Study: a Live Scores App in Flutter"
+    ],
+    "seo_desc": [
+      "Cómo diseñamos y operamos Soccer24: marcadores en vivo de 1,100+ competiciones, widgets, Live Activities y alertas de gol en 18 idiomas. 75,685 instalaciones.",
+      "How we built and run Soccer24: live scores from 1,100+ competitions, widgets, Live Activities and goal alerts in 18 languages. 75,685 Google Play installs."
+    ],
+    "tipo": [
+      "Caso · Producto propio",
+      "Case study · Own product"
+    ],
+    "h1": [
+      "Soccer24: marcadores en vivo de 1,100+ competiciones, hasta en la pantalla de bloqueo",
+      "Soccer24: live scores from 1,100+ competitions, right on the lock screen"
+    ],
+    "resumen": [
+      "Diseñamos, construimos y operamos Soccer24, una app de fútbol en vivo para iOS y Android con widgets, Live Activities y alertas de gol en 18 idiomas. Tiene 75,685 instalaciones en Google Play y una calificación pública de 4.5★.",
+      "We designed, built and run Soccer24, a live football app for iOS and Android with widgets, Live Activities and goal alerts in 18 languages. It has 75,685 Google Play installs and a public 4.5★ rating."
+    ],
+    "meta": [
+      {
+        "k": [
+          "Rol",
+          "Role"
+        ],
+        "v": [
+          "Producto propio: diseño, desarrollo y operación",
+          "Own product: design, build and operations"
+        ]
+      },
+      {
+        "k": [
+          "Plataformas",
+          "Platforms"
+        ],
+        "v": [
+          "iOS y Android, con widgets y Live Activities",
+          "iOS and Android, with widgets and Live Activities"
+        ]
+      },
+      {
+        "k": [
+          "Idiomas",
+          "Languages"
+        ],
+        "v": [
+          "18 en la app, fichas en 19 idiomas",
+          "18 in the app, store listings in 19"
+        ]
+      },
+      {
+        "k": [
+          "En tiendas",
+          "In the stores"
+        ],
+        "v": [
+          "Desde 2024",
+          "Since 2024"
+        ]
+      }
+    ],
+    "metricas": [
+      {
+        "v": "75,685",
+        "n": 75685,
+        "l": [
+          "Instalaciones",
+          "Installs"
+        ],
+        "d": [
+          "En Google Play",
+          "On Google Play"
+        ],
+        "s": [
+          "Play Console · sep 2026",
+          "Play Console · Sep 2026"
+        ],
+        "u": "https://play.google.com/store/apps/details?id=com.alekla0126.soccer24"
+      },
+      {
+        "v": "4.5★",
+        "n": 0,
+        "l": [
+          "Calificación",
+          "Rating"
+        ],
+        "d": [
+          "Pública, de usuarios",
+          "Public user rating"
+        ],
+        "s": [
+          "Google Play · oct 2026",
+          "Google Play · Oct 2026"
+        ],
+        "u": "https://play.google.com/store/apps/details?id=com.alekla0126.soccer24"
+      },
+      {
+        "v": "18",
+        "n": 18,
+        "l": [
+          "Idiomas",
+          "Languages"
+        ],
+        "d": [
+          "App, notificaciones y avisos",
+          "App, notifications and prompts"
+        ],
+        "s": [
+          "Código de la app",
+          "App source"
+        ],
+        "u": ""
+      },
+      {
+        "v": "1 min",
+        "n": 0,
+        "l": [
+          "Actualización en vivo",
+          "Live refresh"
+        ],
+        "d": [
+          "Una instantánea para todos los usuarios",
+          "One snapshot for every user"
+        ],
+        "s": [
+          "Cloud Functions",
+          "Cloud Functions"
+        ],
+        "u": ""
+      }
+    ],
+    "phones": [
+      "soccer24"
+    ],
+    "reto_h2": [
+      "Resultados al instante, con un límite diario de consultas",
+      "Instant results, on a daily request limit"
+    ],
+    "reto": [
+      [
+        "Una app de marcadores vive del segundo en que cae el gol. Los datos vienen de API-Football, que tiene un límite diario de consultas, y al principio cada teléfono pedía el marcador por su cuenta y gastaba parte de ese límite.",
+        "A live scores app lives on the second a goal goes in. The data comes from API-Football, which has a daily request limit, and at first every phone asked for the score on its own, spending part of that limit."
+      ],
+      [
+        "Además, la gente quiere ver el partido sin abrir la app: en el widget, en la pantalla de bloqueo y en la Dynamic Island del iPhone, y recibir la alerta de gol en su idioma, sin que le lleguen cuatro avisos por el mismo gol.",
+        "People also want to follow the match without opening the app: on the widget, the lock screen and the iPhone Dynamic Island, and get the goal alert in their own language, without four alerts for the same goal."
+      ]
+    ],
+    "decisiones": [
+      {
+        "t": [
+          "Una sola instantánea en vivo para todos",
+          "One live snapshot for everyone"
+        ],
+        "p": [
+          "Una función en la nube consulta los partidos cada minuto y publica una sola instantánea en Firestore que leen todos los teléfonos. Solo se reescribe cuando algo cambia: en una muestra, 761 de 1,172 consultas no traían nada nuevo.",
+          "A cloud function polls the matches every minute and publishes one snapshot in Firestore that every phone reads. It is only rewritten when something changes: in one sample, 761 of 1,172 polls brought nothing new."
+        ]
+      },
+      {
+        "t": [
+          "Menos consultas cuando no hay fútbol",
+          "Fewer requests when there is no football"
+        ],
+        "p": [
+          "Sin partidos en vivo, la consulta pasa de cada minuto a cada 2 y luego 3 minutos. Así dejó de agotarse el límite diario de la API.",
+          "With no live matches, polling slows from every minute to every 2 and then 3 minutes. That stopped the daily API limit from running out."
+        ]
+      },
+      {
+        "t": [
+          "Flutter, y nativo donde el sistema lo exige",
+          "Flutter, and native where the OS requires it"
+        ],
+        "p": [
+          "La app está en Flutter con flutter_bloc. Los widgets y las Live Activities del iPhone están en Swift (WidgetKit y ActivityKit), y el widget de Android, en Kotlin.",
+          "The app is in Flutter with flutter_bloc. The iPhone widgets and Live Activities are in Swift (WidgetKit and ActivityKit), and the Android widget is in Kotlin."
+        ]
+      },
+      {
+        "t": [
+          "Alertas sin avalanchas",
+          "Alerts without floods"
+        ],
+        "p": [
+          "Las alertas salen como mensajes de datos de FCM por partido, liga y equipo, combinados en una sola condición para no repetir el mismo gol. Por defecto solo se avisan las 8 ligas principales.",
+          "Alerts go out as FCM data messages per match, league and team, combined into one condition so the same goal is never repeated. By default only the top 8 leagues send alerts."
+        ]
+      }
+    ],
+    "operacion_h2": [
+      "Cómo se opera todos los días",
+      "How it runs day to day"
+    ],
+    "operacion": [
+      {
+        "t": [
+          "Lanzamientos escalonados",
+          "Staged rollouts"
+        ],
+        "p": [
+          "fastlane publica en las dos tiendas. En Google Play cada versión sale primero a una parte de los usuarios: la 2.3.1, al 20 %.",
+          "fastlane ships to both stores. On Google Play each release first goes to a share of users: version 2.3.1 to 20%."
+        ]
+      },
+      {
+        "t": [
+          "Pruebas antes de cada envío",
+          "Tests before every upload"
+        ],
+        "p": [
+          "Una verificación de las fichas de tienda corre antes de subir. El proyecto tiene 61 archivos de pruebas entre la app y las funciones.",
+          "A store-listing check runs before each upload. The project has 61 test files across the app and the functions."
+        ]
+      },
+      {
+        "t": [
+          "En el idioma de cada persona",
+          "In each person's language"
+        ],
+        "p": [
+          "Las notificaciones y la invitación a calificar llegan en el idioma del teléfono, en 18 idiomas.",
+          "Notifications and the rating prompt arrive in the phone's language, in 18 languages."
+        ]
+      },
+      {
+        "t": [
+          "Caché que no congela el marcador",
+          "A cache that never freezes the score"
+        ],
+        "p": [
+          "Las respuestas se guardan en caché, pero los datos en vivo nunca: la instantánea vence a los 3 minutos y la app vuelve a consultar.",
+          "Responses are cached, but live data never is: the snapshot expires after 3 minutes and the app asks again."
+        ]
+      }
+    ],
+    "stack": [
+      "Flutter",
+      "Dart",
+      "flutter_bloc",
+      "Firebase Auth",
+      "Cloud Firestore",
+      "Cloud Functions",
+      "FCM",
+      "Crashlytics",
+      "API-Football",
+      "Swift · WidgetKit · ActivityKit",
+      "Kotlin",
+      "fastlane"
+    ]
+  },
+  "komodo": {
+    "nombre": "Komodo VPN",
+    "app": "komodo",
+    "categoria": "UtilitiesApplication",
+    "so": "Android, iOS",
+    "servicio": "infra",
+    "slug": "komodo-vpn",
+    "seo_title": [
+      "Caso Komodo VPN: app y red de servidores propia",
+      "Komodo VPN Case Study: App and Our Own Server Network"
+    ],
+    "seo_desc": [
+      "Cómo hicimos y operamos Komodo VPN: Flutter sobre OpenVPN, nodos propios en Europa, credenciales que vencen, monitoreo cada hora y 30,566 instalaciones.",
+      "How we built and run Komodo VPN: Flutter on OpenVPN, our own nodes in Europe, expiring credentials, hourly monitoring and 30,566 Google Play installs."
+    ],
+    "tipo": [
+      "Caso · Producto propio",
+      "Case study · Own product"
+    ],
+    "h1": [
+      "Komodo VPN: una app de VPN sobre una red de servidores que operamos nosotros",
+      "Komodo VPN: a VPN app on a server network we run ourselves"
+    ],
+    "resumen": [
+      "App de VPN para Android e iOS hecha en Flutter sobre OpenVPN, con nodos propios en Europa, credenciales que vencen solas, un canal en Telegram y monitoreo automático de cada servidor. Tiene 30,566 instalaciones en Google Play.",
+      "A VPN app for Android and iOS built in Flutter on OpenVPN, with our own nodes in Europe, credentials that expire on their own, a Telegram channel and automatic monitoring of every server. It has 30,566 Google Play installs."
+    ],
+    "meta": [
+      {
+        "k": [
+          "Rol",
+          "Role"
+        ],
+        "v": [
+          "Producto propio: app, servidores y operación",
+          "Own product: app, servers and operations"
+        ]
+      },
+      {
+        "k": [
+          "Plataformas",
+          "Platforms"
+        ],
+        "v": [
+          "Android, iOS y Telegram",
+          "Android, iOS and Telegram"
+        ]
+      },
+      {
+        "k": [
+          "Servidores",
+          "Servers"
+        ],
+        "v": [
+          "OpenVPN en Estonia y Chipre",
+          "OpenVPN in Estonia and Cyprus"
+        ]
+      },
+      {
+        "k": [
+          "Desde",
+          "Since"
+        ],
+        "v": [
+          "2024",
+          "2024"
+        ]
+      }
+    ],
+    "metricas": [
+      {
+        "v": "30,566",
+        "n": 30566,
+        "l": [
+          "Instalaciones",
+          "Installs"
+        ],
+        "d": [
+          "En Google Play",
+          "On Google Play"
+        ],
+        "s": [
+          "Play Console · sep 2026",
+          "Play Console · Sep 2026"
+        ],
+        "u": "https://play.google.com/store/apps/details?id=com.alekla0126.vpn"
+      },
+      {
+        "v": "TLS 1.3",
+        "n": 0,
+        "l": [
+          "Cifrado",
+          "Encryption"
+        ],
+        "d": [
+          "AES-256-GCM en cada nodo",
+          "AES-256-GCM on every node"
+        ],
+        "s": [
+          "Prueba real · 3 oct 2026",
+          "Live test · Oct 3, 2026"
+        ],
+        "u": ""
+      },
+      {
+        "v": [
+          "Cada hora",
+          "Hourly"
+        ],
+        "n": 0,
+        "l": [
+          "Revisión de nodos",
+          "Node checks"
+        ],
+        "d": [
+          "Handshake TLS real contra cada servidor",
+          "A real TLS handshake against each server"
+        ],
+        "s": "GitHub Actions",
+        "u": ""
+      },
+      {
+        "v": "< 1 ¢",
+        "n": 0,
+        "l": [
+          "Infraestructura por usuario",
+          "Infrastructure per user"
+        ],
+        "d": [
+          "Al mes, a escala, según nuestro modelo",
+          "Per month at scale, per our cost model"
+        ],
+        "s": [
+          "Modelo de costos · oct 2026",
+          "Cost model · Oct 2026"
+        ],
+        "u": ""
+      }
+    ],
+    "phones": [
+      "komodo"
+    ],
+    "reto_h2": [
+      "Conectar en cualquier red, con servidores que pagamos nosotros",
+      "Connect on any network, on servers we pay for"
+    ],
+    "reto": [
+      [
+        "Las reseñas negativas de una VPN casi siempre dicen lo mismo: \"no conecta\". Hay redes que bloquean UDP, operadores que cortan conexiones largas y países donde ciertos proveedores de nube van lentos.",
+        "Negative VPN reviews almost always say the same thing: \"won't connect\". Some networks block UDP, some carriers drop long connections, and in some countries certain cloud providers are slow."
+      ],
+      [
+        "Además, cada usuario gratuito consume tráfico en servidores que pagamos nosotros. Antes de crecer había que saber cuánto cuesta cada usuario y cuándo conviene agregar servidores.",
+        "On top of that, every free user consumes traffic on servers we pay for. Before growing, we needed to know what each user costs and when adding servers actually pays off."
+      ]
+    ],
+    "decisiones": [
+      {
+        "t": [
+          "Motor OpenVPN recompilado",
+          "A rebuilt OpenVPN engine"
+        ],
+        "p": [
+          "Usamos una versión propia del paquete openvpn_flutter con las librerías nativas recompiladas desde ics-openvpn (OpenVPN 2.7), para cumplir con las páginas de memoria de 16 KB que exige Google Play.",
+          "We use our own fork of the openvpn_flutter package with the native libraries rebuilt from ics-openvpn (OpenVPN 2.7), to meet the 16 KB memory page requirement on Google Play."
+        ]
+      },
+      {
+        "t": [
+          "Más de una ruta para conectar",
+          "More than one way to connect"
+        ],
+        "p": [
+          "Cada nodo acepta UDP 1194 y también TCP 443, el puerto de las páginas web. La app ahora prueba todas las direcciones del servidor en lugar de quedarse solo con la primera.",
+          "Each node accepts UDP 1194 and also TCP 443, the port websites use. The app now tries every server address instead of sticking to the first one."
+        ]
+      },
+      {
+        "t": [
+          "Credenciales que vencen solas",
+          "Credentials that expire on their own"
+        ],
+        "p": [
+          "Un backend en Laravel entrega credenciales que vencen en 24 horas para el plan gratuito y en 30 días para Premium, y el servidor las valida en cada conexión.",
+          "A Laravel backend issues credentials that expire after 24 hours on the free plan and 30 days on Premium, and the server validates them on every connection."
+        ]
+      },
+      {
+        "t": [
+          "No autoescalar antes de tiempo",
+          "No autoscaling before it pays"
+        ],
+        "p": [
+          "Modelamos los costos: un servidor por hora cuesta unas 2.4 veces más que uno mensual, así que autoescalar Premium no ahorra nada hasta tener cerca de 300 usuarios conectados a la vez. Se dejó todo listo para escalar en minutos.",
+          "We modeled the costs: an hourly server costs about 2.4 times a monthly one, so autoscaling Premium saves nothing until roughly 300 users are connected at once. Everything is ready to scale in minutes instead."
+        ]
+      }
+    ],
+    "operacion_h2": [
+      "Cómo se opera todos los días",
+      "How it runs day to day"
+    ],
+    "operacion": [
+      {
+        "t": [
+          "Revisión de cada nodo cada hora",
+          "Every node checked hourly"
+        ],
+        "p": [
+          "Una tarea de GitHub Actions hace un handshake TLS real contra cada servidor cada hora. Si un nodo falla, abre un aviso; cuando se recupera, lo cierra solo.",
+          "A GitHub Actions job runs a real TLS handshake against each server every hour. If a node fails it opens an issue, and closes it on its own when the node recovers."
+        ]
+      },
+      {
+        "t": [
+          "Lanzamientos con freno automático",
+          "Releases with an automatic brake"
+        ],
+        "p": [
+          "Cada versión de Android sale primero al 20 % de los usuarios. Pasa al 100 % después de 48 horas solo si la calificación en los mercados principales no bajó.",
+          "Each Android release first goes to 20% of users. It moves to 100% after 48 hours only if the rating in the main markets has not dropped."
+        ]
+      },
+      {
+        "t": [
+          "Telegram como segundo canal",
+          "Telegram as a second channel"
+        ],
+        "p": [
+          "Un bot de Telegram entrega la configuración con credenciales temporales y cobra los planes, para quien no puede o no quiere usar las tiendas.",
+          "A Telegram bot delivers the configuration with temporary credentials and takes payments, for people who can't or won't use the app stores."
+        ]
+      },
+      {
+        "t": [
+          "Arreglar lo que dicen las reseñas",
+          "Fixing what reviews say"
+        ],
+        "p": [
+          "Analizamos las calificaciones por país y priorizamos lo que repiten las reseñas de una estrella: la app ya no muestra \"conectado\" sin tráfico y el límite de la sesión gratuita se respeta.",
+          "We analyze ratings by country and prioritize what 1-star reviews repeat: the app no longer shows \"connected\" with no traffic, and the free session limit is enforced."
+        ]
+      }
+    ],
+    "stack": [
+      "Flutter",
+      "OpenVPN 2.7 (ics-openvpn)",
+      "Laravel · PHP",
+      "Linux",
+      "Telegram Bot API",
+      "GitHub Actions",
+      [
+        "Suscripciones App Store y Google Play",
+        "App Store and Google Play subscriptions"
+      ]
+    ]
+  },
+  "pdfmaster": {
+    "nombre": "PDF Master",
+    "app": "pdfmaster",
+    "categoria": "BusinessApplication",
+    "so": "iOS, Android, Web",
+    "servicio": "ia",
+    "slug": "pdf-master",
+    "seo_title": [
+      "Caso PDF Master: OCR en el teléfono y web en Cloud Run",
+      "PDF Master Case Study: On-Device OCR and Cloud Run"
+    ],
+    "seo_desc": [
+      "Cómo hicimos PDF Master: escáner con OCR en el teléfono, sin subir documentos, y herramientas PDF en la web sobre Cloud Run que escala a cero, con Stripe.",
+      "How we built PDF Master: a scanner with on-device OCR that never uploads documents, and web PDF tools on Cloud Run that scale to zero, with Stripe."
+    ],
+    "tipo": [
+      "Caso · Producto propio",
+      "Case study · Own product"
+    ],
+    "h1": [
+      "PDF Master: OCR en el teléfono y herramientas PDF en la web que escalan a cero",
+      "PDF Master: on-device OCR and web PDF tools that scale to zero"
+    ],
+    "resumen": [
+      "Una app de escaneo para iOS y Android (\"Scan to PDF\" en las tiendas) donde el documento nunca sale del teléfono, y pdfmaster.guru, un sitio en 6 idiomas que une, divide, comprime y convierte PDF sobre Cloud Run, con pagos en Stripe.",
+      "A scanning app for iOS and Android (\"Scan to PDF\" in the stores) where documents never leave the phone, and pdfmaster.guru, a site in 6 languages that merges, splits, compresses and converts PDFs on Cloud Run, with Stripe payments."
+    ],
+    "meta": [
+      {
+        "k": [
+          "Rol",
+          "Role"
+        ],
+        "v": [
+          "Producto propio: app, web y operación",
+          "Own product: app, web and operations"
+        ]
+      },
+      {
+        "k": [
+          "Plataformas",
+          "Platforms"
+        ],
+        "v": [
+          "iOS, Android y web",
+          "iOS, Android and web"
+        ]
+      },
+      {
+        "k": [
+          "Idiomas",
+          "Languages"
+        ],
+        "v": [
+          "13 en la app, 6 en la web",
+          "13 in the app, 6 on the web"
+        ]
+      },
+      {
+        "k": [
+          "Desde",
+          "Since"
+        ],
+        "v": [
+          "2025 (app) · 2026 (web)",
+          "2025 (app) · 2026 (web)"
+        ]
+      }
+    ],
+    "metricas": [
+      {
+        "v": "0.31 s",
+        "n": 0,
+        "l": [
+          "Arranque en frío",
+          "Cold start"
+        ],
+        "d": [
+          "Antes 7.4 s, con CPU boost",
+          "Down from 7.4 s with CPU boost"
+        ],
+        "s": [
+          "Prueba de carga del proyecto",
+          "Project load test"
+        ],
+        "u": ""
+      },
+      {
+        "v": "½",
+        "n": 0,
+        "l": [
+          "Costo por instancia",
+          "Cost per instance"
+        ],
+        "d": [
+          "1 vCPU rinde igual que 2 en estas herramientas",
+          "1 vCPU performs like 2 for these tools"
+        ],
+        "s": [
+          "Prueba de carga del proyecto",
+          "Project load test"
+        ],
+        "u": ""
+      },
+      {
+        "v": "1 día",
+        "n": 0,
+        "l": [
+          "Vida de los archivos",
+          "File lifetime"
+        ],
+        "d": [
+          "Se borran solos del almacenamiento",
+          "Deleted automatically from storage"
+        ],
+        "s": [
+          "Regla de Cloud Storage",
+          "Cloud Storage rule"
+        ],
+        "u": ""
+      },
+      {
+        "v": "0",
+        "n": 0,
+        "l": [
+          "Documentos subidos",
+          "Documents uploaded"
+        ],
+        "d": [
+          "El OCR de la app corre en el teléfono",
+          "The app runs OCR on the phone"
+        ],
+        "s": [
+          "ML Kit en el dispositivo",
+          "On-device ML Kit"
+        ],
+        "u": ""
+      }
+    ],
+    "phones": [
+      "pdfmaster"
+    ],
+    "reto_h2": [
+      "Documentos privados y servidores que cuestan aunque nadie los use",
+      "Private documents, and servers that cost money even when idle"
+    ],
+    "reto": [
+      [
+        "La gente escanea identificaciones, contratos y facturas. No quiere que esos documentos viajen a un servidor para leer el texto.",
+        "People scan IDs, contracts and invoices. They don't want those documents traveling to a server just to read the text."
+      ],
+      [
+        "Y una web de herramientas PDF tiene picos y horas muertas: un servidor encendido todo el día cuesta aunque nadie lo use, y convertir un PDF grande no puede tardar una eternidad.",
+        "And a PDF tools website has peaks and dead hours: a server running all day costs money even when nobody uses it, and converting a large PDF can't take forever."
+      ]
+    ],
+    "decisiones": [
+      {
+        "t": [
+          "OCR en el dispositivo",
+          "On-device OCR"
+        ],
+        "p": [
+          "La app reconoce el texto con ML Kit en el propio teléfono. Los documentos escaneados no se suben a ningún servidor y no hace falta crear una cuenta.",
+          "The app recognizes text with ML Kit on the phone itself. Scanned documents are never uploaded to a server and no account is needed."
+        ]
+      },
+      {
+        "t": [
+          "Cloud Run que escala a cero",
+          "Cloud Run that scales to zero"
+        ],
+        "p": [
+          "La API de la web, en FastAPI, corre en Cloud Run con cero instancias mínimas: sin visitas, no hay costo de cómputo. Firebase Hosting sirve el sitio desde su CDN.",
+          "The web API, in FastAPI, runs on Cloud Run with zero minimum instances: no traffic, no compute cost. Firebase Hosting serves the site from its CDN."
+        ]
+      },
+      {
+        "t": [
+          "Medir antes de pagar más",
+          "Measure before paying more"
+        ],
+        "p": [
+          "Las pruebas de carga mostraron que 1 vCPU rinde igual que 2 para estas herramientas, que trabajan en un solo hilo: mitad de costo. Activar CPU boost bajó el arranque en frío de 7.4 a 0.31 segundos.",
+          "Load tests showed 1 vCPU performs like 2 for these single-threaded tools: half the cost. Turning on CPU boost cut the cold start from 7.4 to 0.31 seconds."
+        ]
+      },
+      {
+        "t": [
+          "Archivos que se borran solos",
+          "Files that delete themselves"
+        ],
+        "p": [
+          "Los archivos de la web van a Cloud Storage con una regla que los borra al día siguiente, y los resultados se entregan con enlaces firmados que vencen en una hora.",
+          "Web files go to Cloud Storage with a rule that deletes them after a day, and results are delivered through signed links that expire in an hour."
+        ]
+      }
+    ],
+    "operacion_h2": [
+      "Cómo se opera todos los días",
+      "How it runs day to day"
+    ],
+    "operacion": [
+      {
+        "t": [
+          "Pruebas reales automáticas",
+          "Real automated checks"
+        ],
+        "p": [
+          "Nuestro monitor revisa la web y la API, une dos PDF reales y abre un pago de prueba en Stripe para confirmar que el cobro funciona, sin cobrar nada.",
+          "Our monitor checks the site and the API, merges two real PDFs and opens a Stripe test checkout to confirm payments work, without charging anything."
+        ]
+      },
+      {
+        "t": [
+          "Pruebas en cada cambio",
+          "Tests on every change"
+        ],
+        "p": [
+          "GitHub Actions corre las pruebas del backend y del frontend en cada cambio, y cada versión aprobada se publica sola en Firebase y Cloud Run.",
+          "GitHub Actions runs backend and frontend tests on every change, and each approved version deploys itself to Firebase and Cloud Run."
+        ]
+      },
+      {
+        "t": [
+          "SEO desde el código",
+          "SEO built in"
+        ],
+        "p": [
+          "Cada publicación regenera canonical, hreflang, sitemap y datos estructurados en los 6 idiomas del sitio.",
+          "Every deploy regenerates canonical tags, hreflang, the sitemap and structured data in all 6 site languages."
+        ]
+      },
+      {
+        "t": [
+          "Al día con las tiendas",
+          "Up to date with the stores"
+        ],
+        "p": [
+          "La app usa Play Billing 8, el que exige Google, y se quitó un permiso de fotos que Google Play había rechazado.",
+          "The app uses Play Billing 8, as Google requires, and a photo permission Google Play had rejected was removed."
+        ]
+      }
+    ],
+    "stack": [
+      "Flutter",
+      "ML Kit (OCR)",
+      "FastAPI · Python",
+      "React · Vite",
+      "LibreOffice",
+      "Ghostscript",
+      "Tesseract",
+      "Cloud Run",
+      "Firebase Hosting",
+      "Cloud Storage",
+      "Stripe",
+      "GitHub Actions"
+    ]
+  }
+}

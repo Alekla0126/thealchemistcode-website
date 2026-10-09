@@ -94,5 +94,13 @@
   "costo|en": {
     "title": "How Much Does It Cost to Build an App? What Drives the Price",
     "description": "What drives the cost of an app: platforms, features, integrations, AI and maintenance. Outline your project in two minutes and get a written price at no cost."
+  },
+  "casos|es": {
+    "title": "Casos de Estudio de Apps y Software | The Alchemist Code",
+    "description": "Casos de estudio de apps en producción: Soccer24, Komodo VPN y PDF Master. Qué problema había, qué decidimos y qué resultó, con cifras y su fuente."
+  },
+  "casos|en": {
+    "title": "App and Software Case Studies | The Alchemist Code",
+    "description": "Case studies of apps in production: Soccer24, Komodo VPN and PDF Master. The problem, the decisions and the results, with sourced figures."
   }
 }

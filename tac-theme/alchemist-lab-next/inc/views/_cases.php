@@ -104,6 +104,7 @@ $casos = array(
       <?php endif; ?>
       <div class="tac-case-foot">
         <ul class="tac-stack"><?php foreach ($c['stack'] as $s) : ?><li><?php echo esc_html($s); ?></li><?php endforeach; ?></ul>
+        <?php if ($caso_url = tac_caso_url($c['k'])) : ?><a class="tac-case-link tac-case-full" href="<?php echo esc_url($caso_url); ?>"><?php tac_e('Caso completo', 'Full case study'); ?> <span aria-hidden="true">→</span></a><?php endif; ?>
         <a class="tac-case-link" href="<?php echo esc_url($c['link'][0]); ?>"<?php echo strpos($c['link'][0], home_url()) === 0 ? '' : ' target="_blank" rel="noopener"'; ?>><?php echo esc_html($c['link'][1][$L]); ?> <span aria-hidden="true">→</span></a>
       </div>
     </div>

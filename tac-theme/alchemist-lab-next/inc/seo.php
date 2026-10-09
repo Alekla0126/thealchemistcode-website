@@ -24,6 +24,17 @@ add_action('wp_head', function () {
     if (!$view) {
         return;
     }
+    if ($view === 'caso') {
+        $k = (string) get_post_meta(get_queried_object_id(), 'tac_caso', true);
+        $es = tac_caso_url($k, 'es');
+        $en = tac_caso_url($k, 'en');
+        if ($es && $en) {
+            echo '<link rel="alternate" hreflang="es-MX" href="' . esc_url($es) . "\">\n";
+            echo '<link rel="alternate" hreflang="en" href="' . esc_url($en) . "\">\n";
+            echo '<link rel="alternate" hreflang="x-default" href="' . esc_url($es) . "\">\n";
+        }
+        return;
+    }
     if ($view === 'app') {
         $k = (string) get_post_meta(get_queried_object_id(), 'tac_app', true);
         $es = tac_app_url($k, 'es');
@@ -232,7 +243,7 @@ add_action('transition_post_status', function ($nuevo, $viejo, $post) {
     }
     $urls = array(get_permalink($post));
     $view = (string) get_post_meta($post->ID, 'tac_view', true);
-    if ($view && $view !== 'app') {
+    if ($view && !in_array($view, array('app', 'caso'), true)) {
         $otro = get_post_meta($post->ID, 'tac_lang', true) === 'en' ? 'es' : 'en';
         $urls[] = tac_url($view, $otro);
     }
@@ -295,6 +306,7 @@ function tac_llms_txt() {
     $s[] = '- [Infraestructura y redes](' . $u('infra', 'es') . ')';
     $s[] = '';
     $s[] = '## More';
+    $s[] = '- [Case studies: Soccer24, Komodo VPN, PDF Master](' . $u('casos', 'en') . ')';
     $s[] = '- [Our 17 apps](' . $u('apps', 'en') . ')';
     $s[] = '- [How much does an app cost? What drives the price](' . $u('costo', 'en') . ') · [¿Cuánto cuesta una app en México?](' . $u('costo', 'es') . ')';
     $s[] = '- [How to engage, FAQ](' . $u('faq', 'en') . ')';

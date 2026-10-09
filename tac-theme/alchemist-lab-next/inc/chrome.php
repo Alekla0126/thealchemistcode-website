@@ -133,7 +133,7 @@ function tac_menu_items() {
     $home = tac_url('home');
     return array(
         array(tac_t('Soluciones', 'Solutions'), tac_url('solutions'), 'solutions'),
-        array(tac_t('Casos', 'Work'), $home . '#' . tac_t('casos', 'work'), ''),
+        array(tac_t('Casos', 'Work'), !empty(tac_page_map()['casos'][tac_lang()]) ? tac_url('casos') : $home . '#' . tac_t('casos', 'work'), 'casos'),
         array('Apps', tac_url('apps'), 'apps'),
         array(tac_t('Cómo trabajamos', 'How we work'), $home . '#' . tac_t('proceso', 'process'), ''),
         array(tac_t('Nosotros', 'About'), tac_url('about'), 'about'),
@@ -148,6 +148,9 @@ function tac_render_header() {
     }
     if ($view === 'app') {
         $view = 'apps';
+    }
+    if ($view === 'caso') {
+        $view = 'casos';
     }
     $lang = tac_lang();
     ob_start(); ?>
@@ -199,7 +202,7 @@ function tac_render_footer() {
       </ul></div>
       <div><h2><?php tac_e('Estudio', 'Studio'); ?></h2><ul>
         <li><a href="<?php echo esc_url(tac_url('solutions')); ?>"><?php tac_e('Soluciones', 'Solutions'); ?></a></li>
-        <li><a href="<?php echo esc_url(tac_url('home') . '#' . tac_t('casos', 'work')); ?>"><?php tac_e('Casos', 'Work'); ?></a></li>
+        <li><a href="<?php echo esc_url(!empty(tac_page_map()['casos'][tac_lang()]) ? tac_url('casos') : tac_url('home') . '#' . tac_t('casos', 'work')); ?>"><?php tac_e('Casos de estudio', 'Case studies'); ?></a></li>
         <li><a href="<?php echo esc_url(tac_url('apps')); ?>">Apps</a></li>
         <li><a href="<?php echo esc_url(tac_url('about')); ?>"><?php tac_e('Nosotros', 'About'); ?></a></li>
       </ul></div>
