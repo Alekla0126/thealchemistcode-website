@@ -13,7 +13,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('TAC_VERSION', '4.2.3');
+define('TAC_VERSION', '4.3.0');
 define('TAC_WA', '522221085511');
 define('TAC_WA_HUMAN', '+52 222 108 5511');
 define('TAC_MAIL', 'contact@thealchemistcode.org');

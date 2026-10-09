@@ -161,7 +161,8 @@ function tac_render_footer() {
         <li><a href="<?php echo esc_url(tac_url('about')); ?>"><?php tac_e('Nosotros', 'About'); ?></a></li>
       </ul></div>
       <div><h2><?php tac_e('Recursos', 'Resources'); ?></h2><ul>
-        <li><a href="<?php echo esc_url(tac_url('blog')); ?>">Blog</a></li>
+        <li><a href="<?php echo esc_url(tac_url('costo')); ?>"><?php tac_e('¿Cuánto cuesta una app?', 'How much does an app cost?'); ?></a></li>
+        <li><a href="<?php echo esc_url(tac_url('blog')); ?>"><?php tac_e('Blog y guías', 'Blog and guides'); ?></a></li>
         <li><a href="<?php echo esc_url(tac_url('faq')); ?>"><?php tac_e('Preguntas frecuentes', 'FAQ'); ?></a></li>
         <li><a href="<?php echo esc_url(tac_url('contact')); ?>"><?php tac_e('Contacto', 'Contact'); ?></a></li>
       </ul></div>

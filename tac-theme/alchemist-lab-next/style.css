@@ -3,7 +3,7 @@ Theme Name: Alchemist Lab
 Theme URI: https://thealchemistcode.org
 Author: The Alchemist Code
 Description: Tema de thealchemistcode.org: el azul del matraz, tipografía Plus Jakarta Sans y animaciones suaves (respetan "reducir movimiento"). Las páginas de marca se pintan desde inc/views; el blog usa bloques.
-Version: 4.2.3
+Version: 4.3.0
 Requires at least: 6.6
 Requires PHP: 8.0
 License: GPL-2.0-or-later
@@ -1240,3 +1240,31 @@ html.tac-js .tac-infra[data-reveal]{clip-path:none}
 .tac-fbottom{color:#8796AE}
 .tac-fgrid h2{line-height:1.4;letter-spacing:.08em}
 .tac-single .entry-content p a,.tac-single .entry-content li a,.tac-single .entry-content td a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+
+/* armador de proyecto (página de costos) */
+.tac-brief{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,.85fr);gap:28px;align-items:start}
+.tac-brief-form{display:grid;gap:14px}
+.tac-brief fieldset{border:1px solid var(--line);border-radius:20px;padding:20px 22px;margin:0;background:var(--white)}
+.tac-brief legend{padding:0 6px;margin-left:-6px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--azul)}
+.tac-brief .opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.tac-brief .opts label{cursor:pointer;position:relative}
+.tac-brief .opts input{position:absolute;opacity:0;pointer-events:none}
+.tac-brief .opts span{display:inline-block;padding:9px 14px;border-radius:999px;border:1px solid var(--line-2);font-size:14.5px;font-weight:600;color:var(--ink-2);background:var(--bg);transition:border-color .2s,background .2s,color .2s}
+.tac-brief .opts label:hover span{border-color:var(--azul)}
+.tac-brief .opts input:checked+span{background:var(--azul);border-color:var(--azul);color:#fff}
+.tac-brief .opts input:focus-visible+span{outline:2px solid var(--cian);outline-offset:2px}
+.tac-brief-out{position:sticky;top:100px;display:grid;gap:14px;padding:26px;border-radius:22px;background:var(--navy);color:#E9EEF6;border:1px solid rgba(125,190,240,.16);box-shadow:var(--shadow-lg)}
+.tac-brief-out .tac-label{color:#7DBEF0}
+.tac-brief-out .nivel{display:grid;gap:10px;font-size:20px;font-weight:750;color:#fff}
+.tac-brief-out .nivel i{display:block;height:8px;border-radius:99px;background:rgba(255,255,255,.08);overflow:hidden}
+.tac-brief-out .nivel b{display:block;height:100%;width:0;border-radius:99px;background:var(--grad);transition:width .5s var(--ease)}
+.tac-brief[data-nivel="alta"] .nivel b{background:linear-gradient(90deg,#16B5E8,#E08A57)}
+.tac-brief-out ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:14.5px;color:#C5D6EA}
+.tac-brief-out ul b{color:#fff;font-weight:650}
+.tac-brief-out .nota{font-size:13.5px;color:#93A9C6;margin:0}
+.tac-brief-out .tac-btn{justify-content:center}
+.tac-brief-out .tac-btn[disabled]{opacity:.45;pointer-events:none}
+@media (max-width:900px){
+  .tac-brief{grid-template-columns:1fr}
+  .tac-brief-out{position:static}
+}

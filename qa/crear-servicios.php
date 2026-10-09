@@ -11,6 +11,7 @@ $paginas = array(
     'movil'   => array('es' => array('Desarrollo de aplicaciones móviles', 'desarrollo-de-aplicaciones-moviles'), 'en' => array('Mobile app development company in Mexico', 'mobile-app-development-company-mexico')),
     'ia'      => array('es' => array('Inteligencia artificial para empresas', 'inteligencia-artificial-para-empresas'), 'en' => array('AI development company in Mexico', 'ai-development-company-mexico')),
     'flutter' => array('es' => array('Desarrollo en Flutter en México', 'desarrollo-flutter-mexico'), 'en' => array('Flutter development company in Mexico', 'flutter-development-company-mexico')),
+    'costo'   => array('es' => array('¿Cuánto cuesta una app en México?', 'cuanto-cuesta-una-app-en-mexico'), 'en' => array('How much does an app cost?', 'app-development-cost')),
 );
 foreach ($paginas as $vista => $idiomas) {
     foreach ($idiomas as $lang => $p) {

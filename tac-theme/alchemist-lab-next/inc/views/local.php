@@ -140,6 +140,7 @@ $casos = array(
     <p class="tac-sub" data-reveal style="--d:120ms"><?php tac_e('El precio depende del alcance, las plataformas (iOS, Android, web, escritorio), las integraciones con tus sistemas y si lleva IA. Lo fijamos por escrito antes de empezar, en uno de estos tres modelos.', 'Price depends on scope, platforms (iOS, Android, web, desktop), integrations with your systems and whether AI is involved. We set it in writing before we start, in one of three models.'); ?></p>
   </div>
   <?php include __DIR__ . '/_engage.php'; ?>
+  <p class="tac-local-more" data-reveal><a href="<?php echo esc_url(tac_url('costo')); ?>"><?php tac_e('¿Cuánto cuesta una app? Qué mueve el precio y arma tu proyecto', 'How much does an app cost? What drives the price, and outline your project'); ?></a></p>
 </div></section>
 
 <section class="tac-sec" style="padding-top:40px"><div class="tac-wrap">

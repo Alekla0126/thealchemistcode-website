@@ -288,6 +288,7 @@ function tac_llms_txt() {
     $s[] = '';
     $s[] = '## More';
     $s[] = '- [Our 17 apps](' . $u('apps', 'en') . ')';
+    $s[] = '- [How much does an app cost? What drives the price](' . $u('costo', 'en') . ') · [¿Cuánto cuesta una app en México?](' . $u('costo', 'es') . ')';
     $s[] = '- [How to engage, FAQ](' . $u('faq', 'en') . ')';
     $s[] = '- [Contact / start a project](' . $u('contact', 'en') . ')';
     $s[] = '- [Blog and guides](' . tac_url('blog') . ')';

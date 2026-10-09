@@ -163,7 +163,8 @@ $bloque = $S['bloque'] ?? array();
 <section class="tac-sec" style="padding-top:40px"><div class="tac-wrap">
   <div class="tac-sec-head">
     <div data-reveal><div class="tac-label"><b><?php echo esc_html($num()); ?></b> — <?php tac_e('Costos', 'Pricing'); ?></div><h2><?php tac_e('Precio y plazos por escrito, antes de empezar', 'Price and timeline in writing, before we start'); ?></h2></div>
-    <p class="tac-sub" data-reveal style="--d:120ms"><?php tac_e('La primera llamada y la propuesta no tienen costo. Elige el modelo que mejor encaje con tu proyecto.', 'The first call and the proposal are free. Pick the model that best fits your project.'); ?></p>
+    <div data-reveal style="--d:120ms"><p class="tac-sub"><?php tac_e('La primera llamada y la propuesta no tienen costo. Elige el modelo que mejor encaje con tu proyecto.', 'The first call and the proposal are free. Pick the model that best fits your project.'); ?></p>
+      <a class="tac-more" href="<?php echo esc_url(tac_url('costo')); ?>"><?php tac_e('Qué mueve el precio y arma tu proyecto', 'What drives the price, and outline your project'); ?> <span aria-hidden="true">→</span></a></div>
   </div>
   <?php include __DIR__ . '/_engage.php'; ?>
 </div></section>

@@ -223,6 +223,78 @@
     })();
   }
 
+  /* ---------- armador de proyecto (página de costos): complejidad orientativa y resumen para el contacto ---------- */
+  d.querySelectorAll('[data-brief]').forEach(function (box) {
+    var form = box.querySelector('form'), lista = box.querySelector('[data-resumen]'), txt = box.querySelector('[data-nivel-txt]'),
+      bar = box.querySelector('[data-nivel-bar]'), nota = box.querySelector('[data-nivel-nota]'), btn = box.querySelector('[data-enviar]'),
+      tpl = box.querySelector('[data-niveles]'), niv = {}, texto = '', nec = [];
+    try { niv = JSON.parse(tpl.content ? tpl.content.textContent : tpl.textContent); } catch (e) {}
+    function pintar() {
+      var peso = 0, plataformas = 0, lineas = [];
+      nec = [];
+      lista.innerHTML = '';
+      form.querySelectorAll('fieldset').forEach(function (fs) {
+        var marcadas = [].slice.call(fs.querySelectorAll('input:checked'));
+        if (!marcadas.length) return;
+        var nombres = marcadas.map(function (i) {
+          peso += +i.getAttribute('data-peso') || 0;
+          if (fs.getAttribute('data-grupo') === 'plataformas') plataformas++;
+          var n = i.getAttribute('data-nec');
+          if (n && nec.indexOf(n) < 0) nec.push(n);
+          return i.getAttribute('data-txt');
+        });
+        var li = d.createElement('li'), b = d.createElement('b');
+        b.textContent = fs.querySelector('legend').textContent + ': ';
+        li.appendChild(b);
+        li.appendChild(d.createTextNode(nombres.join(', ')));
+        lista.appendChild(li);
+        lineas.push('- ' + b.textContent + nombres.join(', '));
+      });
+      var nivel = peso <= 5 ? 'baja' : (peso <= 12 ? 'media' : 'alta');
+      btn.disabled = !plataformas;
+      box.setAttribute('data-nivel', plataformas ? nivel : '');
+      if (!plataformas) { bar.style.width = '0%'; nota.textContent = ''; texto = ''; return; }
+      txt.textContent = niv[nivel] ? niv[nivel][0] : nivel;
+      nota.textContent = niv[nivel] ? niv[nivel][1] : '';
+      bar.style.width = Math.min(100, Math.round(peso / 20 * 100)) + '%';
+      texto = (niv.intro || '') + '\n' + lineas.join('\n') + '\n- ' + txt.textContent;
+    }
+    form.addEventListener('change', pintar);
+    pintar();
+    btn.addEventListener('click', function () {
+      if (!texto) return;
+      try { sessionStorage.setItem('tac-brief', JSON.stringify({ t: texto, n: nec })); } catch (e) {}
+      if (navigator.sendBeacon) navigator.sendBeacon('/wp-admin/admin-ajax.php?action=tac_evt&t=armador&p=' + encodeURIComponent(location.pathname));
+      location.href = box.getAttribute('data-contact') + '#formulario';
+    });
+  });
+
+  /* contacto: si viene del armador, el mensaje y las necesidades llegan ya llenos */
+  var msj = d.querySelector('form.tac-form textarea[name="mensaje"]');
+  if (msj) {
+    try {
+      var brief = JSON.parse(sessionStorage.getItem('tac-brief') || 'null');
+      if (brief && !msj.value) {
+        msj.value = brief.t;
+        (brief.n || []).forEach(function (v) {
+          var c = d.querySelector('form.tac-form input[name="necesidad[]"][value="' + v + '"]');
+          if (c) c.checked = true;
+        });
+        sessionStorage.removeItem('tac-brief');
+      }
+    } catch (e) {}
+  }
+
+  /* intención de contacto: clics a WhatsApp, correo y teléfono. Sin cookies ni datos personales:
+     solo queda una línea en el registro del servidor, que lee qa/trafico.py */
+  d.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="mailto:"],a[href*="wa.me/"],a[href^="tel:"]');
+    if (!a || !navigator.sendBeacon) return;
+    var t = /^mailto:/.test(a.href) ? 'correo' : (/^tel:/.test(a.href) ? 'telefono' : 'whatsapp');
+    navigator.sendBeacon('/wp-admin/admin-ajax.php?action=tac_evt&t=' + t + '&p=' + encodeURIComponent(location.pathname));
+  }, true);
+
+  /* lo que sigue es solo para ratón y sin "reducir movimiento" */
   if (reduce || !fine) return;
 
   /* ---------- efectos de cursor (solo con ratón) ---------- */
@@ -295,12 +367,4 @@
     b.addEventListener('pointerleave', function () { b.style.setProperty('--mgx', '0px'); b.style.setProperty('--mgy', '0px'); });
   });
 
-  /* intención de contacto: clics a WhatsApp, correo y teléfono. Sin cookies ni datos personales:
-     solo queda una línea en el registro del servidor, que lee qa/trafico.py */
-  d.addEventListener('click', function (e) {
-    var a = e.target.closest && e.target.closest('a[href^="mailto:"],a[href*="wa.me/"],a[href^="tel:"]');
-    if (!a || !navigator.sendBeacon) return;
-    var t = /^mailto:/.test(a.href) ? 'correo' : (/^tel:/.test(a.href) ? 'telefono' : 'whatsapp');
-    navigator.sendBeacon('/wp-admin/admin-ajax.php?action=tac_evt&t=' + t + '&p=' + encodeURIComponent(location.pathname));
-  }, true);
 })();

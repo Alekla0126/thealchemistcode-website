@@ -86,5 +86,13 @@
   "flutter|en": {
     "title": "Flutter Development Company in Mexico | The Alchemist Code",
     "description": "Nearshore Flutter developers in Mexico: most of our 17 apps are Flutter, including Soccer24 with 75,685 Google Play installs. US hours, USD contracts."
+  },
+  "costo|es": {
+    "title": "¿Cuánto Cuesta una App en México? Qué Mueve el Precio",
+    "description": "Qué mueve el precio de una app en México: plataformas, funciones, integraciones, IA y mantenimiento. Arma tu proyecto y recibe precio por escrito, sin costo."
+  },
+  "costo|en": {
+    "title": "How Much Does It Cost to Build an App? What Drives the Price",
+    "description": "What drives the cost of an app: platforms, features, integrations, AI and maintenance. Outline your project in two minutes and get a written price at no cost."
   }
 }
