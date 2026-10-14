@@ -29,6 +29,7 @@ function tac_need_options() {
         'ia'         => array('Inteligencia artificial', 'Artificial intelligence'),
         'integracion'=> array('Integración con mi sistema', 'Integrate my system'),
         'infra'      => array('Infraestructura', 'Infrastructure'),
+        'seguridad'  => array('Cámaras y monitoreo', 'Cameras and monitoring'),
         'soporte'    => array('Soporte', 'Support'),
     );
 }

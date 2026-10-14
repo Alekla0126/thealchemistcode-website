@@ -7,7 +7,8 @@
 $en_home = get_posts(array('post_type' => 'page', 'numberposts' => 1, 'fields' => 'ids', 'meta_query' => array(array('key' => 'tac_view', 'value' => 'home'), array('key' => 'tac_lang', 'value' => 'en'))));
 $en_padre = $en_home ? (int) $en_home[0] : 0;
 $paginas = array(
-    'infra'   => array('es' => array('Infraestructura y redes', 'infraestructura-y-redes'), 'en' => array('Cloud and network infrastructure', 'cloud-and-network-infrastructure')),
+    'infra'   => array('es' => array('Infraestructura empresarial y redes', 'infraestructura-y-redes'), 'en' => array('Enterprise infrastructure and networks', 'cloud-and-network-infrastructure')),
+    'seguridad' => array('es' => array('Cámaras de seguridad y monitoreo', 'camaras-de-seguridad-y-monitoreo'), 'en' => array('Security cameras and monitoring', 'security-cameras-and-monitoring')),
     'movil'   => array('es' => array('Desarrollo de aplicaciones móviles', 'desarrollo-de-aplicaciones-moviles'), 'en' => array('Mobile app development company in Mexico', 'mobile-app-development-company-mexico')),
     'ia'      => array('es' => array('Inteligencia artificial para empresas', 'inteligencia-artificial-para-empresas'), 'en' => array('AI development company in Mexico', 'ai-development-company-mexico')),
     'flutter' => array('es' => array('Desarrollo en Flutter en México', 'desarrollo-flutter-mexico'), 'en' => array('Flutter development company in Mexico', 'flutter-development-company-mexico')),

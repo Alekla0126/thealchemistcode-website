@@ -62,7 +62,8 @@ function tac_servicios() {
         'movil'   => array('Desarrollo de apps móviles', 'Mobile app development'),
         'flutter' => array('Desarrollo en Flutter', 'Flutter development'),
         'ia'      => array('Inteligencia artificial para empresas', 'AI development'),
-        'infra'   => array('Infraestructura y redes', 'Infrastructure and networks'),
+        'infra'   => array('Infraestructura empresarial', 'Enterprise infrastructure'),
+        'seguridad' => array('Cámaras de seguridad y monitoreo', 'Security cameras and monitoring'),
     );
 }
 
@@ -198,7 +199,8 @@ function tac_render_footer() {
         <li><a href="<?php echo esc_url(tac_url('movil')); ?>"><?php tac_e('Apps móviles', 'Mobile apps'); ?></a></li>
         <li><a href="<?php echo esc_url(tac_url('flutter')); ?>">Flutter</a></li>
         <li><a href="<?php echo esc_url(tac_url('ia')); ?>"><?php tac_e('Inteligencia artificial', 'AI development'); ?></a></li>
-        <li><a href="<?php echo esc_url(tac_url('infra')); ?>"><?php tac_e('Infraestructura y redes', 'Infrastructure and networks'); ?></a></li>
+        <li><a href="<?php echo esc_url(tac_url('infra')); ?>"><?php tac_e('Infraestructura empresarial', 'Enterprise infrastructure'); ?></a></li>
+        <li><a href="<?php echo esc_url(tac_url('seguridad')); ?>"><?php tac_e('Cámaras y monitoreo 24/7', 'Cameras and 24/7 monitoring'); ?></a></li>
       </ul></div>
       <div><h2><?php tac_e('Estudio', 'Studio'); ?></h2><ul>
         <li><a href="<?php echo esc_url(tac_url('solutions')); ?>"><?php tac_e('Soluciones', 'Solutions'); ?></a></li>

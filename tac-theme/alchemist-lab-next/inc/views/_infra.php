@@ -2,7 +2,7 @@
 /*
  * Infraestructura y redes: topología animada, lo que operamos hoy y seis capacidades.
  * Datos de nuestra propia infraestructura (App Monitor y plan de servidores de Komodo, 3 y 7-oct-2026).
- * Sin instalación física (cableado, Wi-Fi, conmutadores): el dueño no la ha confirmado como servicio.
+ * El dueño confirmó (14-oct-2026) instalación de cámaras y su red en todo México y monitoreo 24/7 con personas: ver la vista seguridad.
  */
 $L = tac_lang() === 'en' ? 1 : 0;
 // nodos de la topología: x, y, etiqueta, detalle
@@ -31,9 +31,9 @@ $capacidades = array(
     array('lock', 'Seguridad', 'Security',
         'HTTPS automático, cifrado en tránsito, firewall, accesos mínimos y llaves fuera del código. Las llaves de IA viven en el servidor, nunca dentro de la app.',
         'Automatic HTTPS, encryption in transit, firewalls, least-privilege access and secrets kept out of the code. AI keys live on the server, never inside the app.'),
-    array('pulse', 'Monitoreo y alertas', 'Monitoring and alerts',
-        'Revisamos servidores, APIs, tiendas y facturación de la nube de forma automática. Si algo falla, lo sabemos antes que tus clientes.',
-        'We check servers, APIs, app stores and cloud billing automatically. If something breaks, we know before your customers do.'),
+    array('pulse', 'Monitoreo y alertas 24/7', '24/7 monitoring and alerts',
+        'Revisamos servidores, redes, APIs y cámaras de forma automática, y un centro de monitoreo con personas vigila las cámaras día y noche. Si algo falla, lo sabemos antes que tus clientes.',
+        'We check servers, networks, APIs and cameras automatically, and a monitoring center with people watches the cameras day and night. If something breaks, we know before your customers do.'),
     array('stack', 'Despliegue automático', 'Automated deployment',
         'Docker y GitHub Actions: cada versión se construye, se prueba y se publica igual, sin pasos a mano ni "en mi máquina sí funcionaba".',
         'Docker and GitHub Actions: every release is built, tested and shipped the same way, with no manual steps and no "it worked on my machine".'),

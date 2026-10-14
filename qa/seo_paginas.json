@@ -56,12 +56,12 @@
     "description": "Founder-led nearshore software studio in Puebla, Mexico: iOS and Android apps, custom systems and AI. US hours, USD contracts, you own the IP."
   },
   "infra|es": {
-    "title": "Infraestructura, Nube y Redes en Puebla | The Alchemist Code",
-    "description": "Servidores Linux, Google Cloud y Firebase, VPN para sucursales y personal remoto, seguridad y monitoreo. Operamos nuestra propia red de servidores VPN."
+    "title": "Infraestructura Empresarial, Redes y Nube | The Alchemist Code",
+    "description": "Infraestructura empresarial: redes y VPN para sucursales, servidores Linux, Google Cloud y Firebase, seguridad, respaldos y monitoreo 24/7. Puebla y todo México."
   },
   "infra|en": {
-    "title": "Cloud & Network Infrastructure, Mexico | The Alchemist Code",
-    "description": "Linux servers, Google Cloud and Firebase, VPNs for branches and remote staff, security and monitoring, from a nearshore team in Mexico on US hours."
+    "title": "Enterprise IT Infrastructure in Mexico | The Alchemist Code",
+    "description": "Enterprise infrastructure from Mexico: networks and VPNs for branches, Linux servers, Google Cloud and Firebase, security, backups and 24/7 monitoring."
   },
   "movil|es": {
     "title": "Desarrollo de Aplicaciones Móviles en México | The Alchemist Code",
@@ -102,5 +102,13 @@
   "casos|en": {
     "title": "App and Software Case Studies | The Alchemist Code",
     "description": "Case studies of apps in production: Soccer24, Komodo VPN and PDF Master. The problem, the decisions and the results, with sourced figures."
+  },
+  "seguridad|es": {
+    "title": "Cámaras de Seguridad y Monitoreo 24/7 para Empresas",
+    "description": "Instalamos cámaras de seguridad IP con grabador y red en todo México, con monitoreo 24/7 con personas y alertas automáticas. Acceso seguro desde el celular."
+  },
+  "seguridad|en": {
+    "title": "Security Cameras & 24/7 Monitoring for Businesses in Mexico",
+    "description": "We install IP security cameras, recorders and networks anywhere in Mexico, with a 24/7 monitoring center and automatic alerts. Secure access from your phone."
   }
 }

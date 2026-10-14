@@ -50,10 +50,11 @@ $bars = array(38, 52, 46, 64, 72, 92); ?>
         <circle class="nd" cx="520" cy="160" r="16"/><text x="520" y="196" text-anchor="middle"><?php tac_e('Escritorio', 'Desktop'); ?></text>
       </svg>
     </div>
-    <div class="k">D</div><h3><?php tac_e('Infraestructura, redes y seguridad', 'Infrastructure, networks and security'); ?></h3>
-    <p><?php tac_e('Servidores y nube, VPN para sucursales y personal remoto, monitoreo, backend y apps de escritorio para macOS, Windows y Linux.', 'Servers and cloud, VPNs for branches and remote staff, monitoring, backend and desktop apps for macOS, Windows and Linux.'); ?></p>
-    <ul><li><?php tac_e('Servidores y nube', 'Servers and cloud'); ?></li><li><?php tac_e('APIs y notificaciones', 'APIs and notifications'); ?></li><li><?php tac_e('VPN y redes privadas', 'VPN and private networks'); ?></li><li><?php tac_e('Apps de escritorio', 'Desktop apps'); ?></li></ul>
-    <a class="tac-card-more" href="<?php echo esc_url(tac_url('infra')); ?>"><?php tac_e('Infraestructura y redes', 'Infrastructure and networks'); ?> <span aria-hidden="true">→</span></a>
+    <div class="k">D</div><h3><?php tac_e('Infraestructura empresarial y seguridad', 'Enterprise infrastructure and security'); ?></h3>
+    <p><?php tac_e('Redes y VPN para sucursales, servidores y nube, cámaras de seguridad con monitoreo 24/7, backend y apps de escritorio. Instalamos en todo México.', 'Networks and VPNs for branches, servers and cloud, security cameras with 24/7 monitoring, backend and desktop apps. We install anywhere in Mexico.'); ?></p>
+    <ul><li><?php tac_e('Cámaras y monitoreo 24/7', 'Cameras and 24/7 monitoring'); ?></li><li><?php tac_e('Servidores y nube', 'Servers and cloud'); ?></li><li><?php tac_e('APIs y notificaciones', 'APIs and notifications'); ?></li><li><?php tac_e('VPN y redes privadas', 'VPN and private networks'); ?></li><li><?php tac_e('Apps de escritorio', 'Desktop apps'); ?></li></ul>
+    <a class="tac-card-more" href="<?php echo esc_url(tac_url('infra')); ?>"><?php tac_e('Infraestructura empresarial', 'Enterprise infrastructure'); ?> <span aria-hidden="true">→</span></a>
+    <a class="tac-card-more" href="<?php echo esc_url(tac_url('seguridad')); ?>"><?php tac_e('Cámaras de seguridad y monitoreo', 'Security cameras and monitoring'); ?> <span aria-hidden="true">→</span></a>
     <div class="ex"><img src="<?php echo esc_url(tac_icon('komodo')); ?>" alt="" width="32" height="32"><span><?php tac_e('Hecho por nosotros:', 'Built by us:'); ?> <b>Komodo VPN</b>, <b>Alchemist Coder</b></span></div>
   </div>
 </div>

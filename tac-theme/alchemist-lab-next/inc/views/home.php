@@ -80,9 +80,10 @@ $tac_home = true; ?>
 <section class="tac-sec tac-infra-sec" id="<?php tac_e('infraestructura', 'infrastructure'); ?>" style="padding-top:60px">
   <div class="tac-wrap">
     <div class="tac-sec-head">
-      <div data-reveal><div class="tac-label"><b>03</b> — <?php tac_e('Infraestructura y redes', 'Infrastructure and networks'); ?></div><h2><?php tac_e('Servidores, nube y redes que operamos todos los días', 'Servers, cloud and networks we run every day'); ?></h2></div>
-      <div data-reveal style="--d:120ms"><p class="tac-sub"><?php tac_e('La app es lo que se ve. Detrás hay servidores, redes y monitoreo que tienen que funcionar a las tres de la mañana: los diseñamos, los montamos y los operamos.', 'The app is the part people see. Behind it are servers, networks and monitoring that have to work at 3 a.m.: we design them, set them up and run them.'); ?></p>
-        <a class="tac-more" href="<?php echo esc_url(tac_url('infra')); ?>"><?php tac_e('Infraestructura y redes para empresas', 'Infrastructure and networks for businesses'); ?> <span aria-hidden="true">→</span></a></div>
+      <div data-reveal><div class="tac-label"><b>03</b> — <?php tac_e('Infraestructura y seguridad', 'Infrastructure and security'); ?></div><h2><?php tac_e('Servidores, nube y redes que operamos todos los días', 'Servers, cloud and networks we run every day'); ?></h2></div>
+      <div data-reveal style="--d:120ms"><p class="tac-sub"><?php tac_e('La app es lo que se ve. Detrás hay servidores, redes, cámaras y monitoreo que tienen que funcionar a las tres de la mañana: los diseñamos, los instalamos y los operamos, con monitoreo 24/7.', 'The app is the part people see. Behind it are servers, networks, cameras and monitoring that have to work at 3 a.m.: we design them, install them and run them, with 24/7 monitoring.'); ?></p>
+        <a class="tac-more" href="<?php echo esc_url(tac_url('infra')); ?>"><?php tac_e('Infraestructura empresarial', 'Enterprise infrastructure'); ?> <span aria-hidden="true">→</span></a>
+        <a class="tac-more" href="<?php echo esc_url(tac_url('seguridad')); ?>" style="margin-left:18px"><?php tac_e('Cámaras de seguridad y monitoreo 24/7', 'Security cameras and 24/7 monitoring'); ?> <span aria-hidden="true">→</span></a></div>
     </div>
     <?php include __DIR__ . '/_infra.php'; ?>
   </div>

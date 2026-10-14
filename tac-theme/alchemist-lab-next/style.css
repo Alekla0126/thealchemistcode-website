@@ -3,7 +3,7 @@ Theme Name: Alchemist Lab
 Theme URI: https://thealchemistcode.org
 Author: The Alchemist Code
 Description: Tema de thealchemistcode.org: el azul del matraz, tipografía Plus Jakarta Sans y animaciones suaves (respetan "reducir movimiento"). Las páginas de marca se pintan desde inc/views; el blog usa bloques.
-Version: 4.4.0
+Version: 4.5.0
 Requires at least: 6.6
 Requires PHP: 8.0
 License: GPL-2.0-or-later
@@ -1312,3 +1312,41 @@ html.tac-js .tac-infra[data-reveal]{clip-path:none}
   .tac-caso-card .media .tac-phone{--w:min(56vw,210px)}
 }
 .tac-case-foot .tac-case-full{margin-left:auto;margin-right:16px}
+
+/* panel ilustrativo de cámaras (página de cámaras y monitoreo) */
+.tac-cams{position:relative;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);border-radius:28px;overflow:hidden;background:radial-gradient(120% 90% at 20% 0%,#0E2A52 0%,#071A33 45%,#040B17 100%);border:1px solid rgba(125,190,240,.16);box-shadow:var(--shadow-lg);color:#E9EEF6}
+.tac-cams-tag{position:absolute;top:14px;right:16px;z-index:2;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#93A9C6;border:1px solid rgba(125,190,240,.25);border-radius:999px;padding:3px 10px;background:rgba(4,11,23,.6)}
+.tac-cams-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding:22px}
+.tac-cams .cam{position:relative;aspect-ratio:16/10;border-radius:12px;overflow:hidden;background:linear-gradient(160deg,#1b2a3d,#0b1522 60%,#111c2b);border:1px solid rgba(125,190,240,.14);display:flex;flex-direction:column;justify-content:space-between;padding:9px 10px}
+.tac-cams .cam::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 50% at calc(30% + var(--i) * 9%) 70%,rgba(125,190,240,.16),transparent 70%),repeating-linear-gradient(0deg,rgba(255,255,255,.025) 0 1px,transparent 1px 3px)}
+.tac-cams .cam .scan{position:absolute;left:0;right:0;height:30%;top:-30%;background:linear-gradient(180deg,transparent,rgba(125,190,240,.08),transparent);animation:tac-scan 4.5s linear infinite;animation-delay:calc(var(--i) * -.7s)}
+@keyframes tac-scan{to{top:100%}}
+.tac-cams .cam .zona{position:absolute;left:38%;top:34%;width:26%;height:44%;border:1.5px solid #E08A57;border-radius:4px;animation:tac-zona 2.4s ease-in-out infinite}
+@keyframes tac-zona{0%,100%{opacity:.35}50%{opacity:1}}
+.tac-cams .cam .top,.tac-cams .cam .bot{position:relative;display:flex;align-items:center;justify-content:space-between;gap:6px;font-family:var(--mono);font-size:10.5px;color:#C5D6EA}
+.tac-cams .cam .top b{font-weight:600;color:#fff}
+.tac-cams .cam .rec{font-style:normal;font-size:9.5px;color:#ff6b6b;display:inline-flex;align-items:center;gap:4px}
+.tac-cams .cam .rec::before{content:"";width:6px;height:6px;border-radius:50%;background:#ff4d4d;animation:tac-ping-r 1.6s ease-in-out infinite}
+@keyframes tac-ping-r{50%{opacity:.25}}
+.tac-cams .cam .bot{font-family:var(--sans);font-size:11.5px;font-weight:600;color:#E9EEF6;flex-wrap:wrap}
+.tac-cams .cam .st{display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);font-size:9.5px;font-weight:500;color:#9fe3b9}
+.tac-cams .cam .st i{width:6px;height:6px;border-radius:50%;background:#2BD67B}
+.tac-cams .cam.mov .st{color:#f3b68e}.tac-cams .cam.mov .st i{background:#E08A57}
+.tac-cams .cam.off{background:repeating-linear-gradient(45deg,#121c29 0 8px,#0d1520 8px 16px)}
+.tac-cams .cam.off .st{color:#ff8f8f}.tac-cams .cam.off .st i{background:#ff4d4d}
+.tac-cams-side{display:flex;flex-direction:column;gap:12px;padding:26px 24px;border-left:1px solid rgba(125,190,240,.14);background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,0))}
+.tac-cams-side ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.tac-cams-side .sitios li{display:grid;gap:2px;padding:10px 12px;border-radius:12px;border:1px solid rgba(125,190,240,.12);background:rgba(255,255,255,.02)}
+.tac-cams-side .sitios b{font-size:14px;color:#fff}
+.tac-cams-side .sitios span{font-family:var(--mono);font-size:11px;color:#9fe3b9}
+.tac-cams-side .sitios li.warn span{color:#f3b68e}
+.tac-cams-side .alertas-h{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:#7DBEF0;margin-top:6px}
+.tac-cams-side .alertas li{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;font-size:13px;color:#C5D6EA;padding-left:10px;border-left:2px solid #2BD67B}
+.tac-cams-side .alertas li.off{border-color:#ff4d4d}.tac-cams-side .alertas li.mov{border-color:#E08A57}.tac-cams-side .alertas li.warn{border-color:#f3c35b}
+.tac-cams-side code{font-family:var(--mono);font-size:11px;color:#93A9C6}
+@media (max-width:900px){
+  .tac-cams{grid-template-columns:1fr}
+  .tac-cams-grid{grid-template-columns:repeat(2,minmax(0,1fr));padding:48px 16px 16px;gap:8px}
+  .tac-cams-side{border-left:0;border-top:1px solid rgba(125,190,240,.14)}
+}
+@media (prefers-reduced-motion:reduce){.tac-cams .scan,.tac-cams .zona,.tac-cams .rec::before{animation:none}}

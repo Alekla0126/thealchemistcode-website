@@ -2,20 +2,20 @@
   "_nota": "Páginas de servicio (vista = clave). Cada texto es [es, en]. Cifras comprobadas el 7-oct-2026: Play Console, fichas públicas, App Monitor, plan de servidores de Komodo y Crossref. Enlaces: app:<clave>, view:<vista> o URL completa.",
   "infra": {
     "label": [
-      "Infraestructura y redes",
-      "Infrastructure and networks"
+      "Infraestructura empresarial",
+      "Enterprise infrastructure"
     ],
     "h1": [
-      "Infraestructura de TI, nube y redes para empresas en Puebla y México",
-      "Cloud and network infrastructure for companies in the US and Mexico"
+      "Infraestructura empresarial: redes, servidores, nube y monitoreo",
+      "Enterprise infrastructure: networks, servers, cloud and monitoring"
     ],
     "intro": [
-      "Diseñamos, montamos y operamos la infraestructura que sostiene tu operación: servidores Linux, Google Cloud y Firebase, redes privadas y VPN para sucursales y personal remoto, seguridad, monitoreo y respaldos. No es teoría: operamos nuestra propia red de servidores VPN en Europa y los backends de nuestras apps en producción, todos los días.",
-      "We design, set up and run the infrastructure your operation depends on: Linux servers, Google Cloud and Firebase, private networks and VPNs for branches and remote staff, security, monitoring and backups. This isn't theory: we run our own VPN server network in Europe and the backends of our apps in production, every day."
+      "Diseñamos, montamos y operamos la infraestructura de tu empresa: redes y VPN para sucursales y personal remoto, servidores Linux, Google Cloud y Firebase, seguridad, respaldos y monitoreo. También instalamos cámaras de seguridad con monitoreo 24/7. No es teoría: operamos nuestra propia red de servidores VPN en Europa y los backends de nuestras apps en producción, todos los días.",
+      "We design, set up and run your company's infrastructure: networks and VPNs for branches and remote staff, Linux servers, Google Cloud and Firebase, security, backups and monitoring. We also install security cameras with 24/7 monitoring. This isn't theory: we run our own VPN server network in Europe and the backends of our apps in production, every day."
     ],
     "tipo": [
-      "Infraestructura de TI, nube y redes",
-      "IT infrastructure, cloud and network services"
+      "Infraestructura empresarial, redes y monitoreo",
+      "Enterprise infrastructure, networks and monitoring"
     ],
     "prueba": [
       {
@@ -155,6 +155,16 @@
         "p": [
           "Inventario de computadoras, licencias y asignaciones en un sistema propio desplegado en tu servidor, por ejemplo Snipe-IT.",
           "Inventory of computers, licenses and assignments in a self-hosted system on your server, such as Snipe-IT."
+        ]
+      },
+      {
+        "t": [
+          "Seguridad y videovigilancia",
+          "Security and video surveillance"
+        ],
+        "p": [
+          "Cámaras IP, grabadores y la red que las conecta, con monitoreo 24/7. Ver cámaras de seguridad y monitoreo.",
+          "IP cameras, recorders and the network that connects them, with 24/7 monitoring. See security cameras and monitoring."
         ]
       }
     ],
@@ -346,11 +356,406 @@
     ],
     "guias": {
       "es": [
+        "camaras-de-seguridad-para-empresas-como-elegir",
         "vpn-para-empresas-con-sucursales"
       ],
       "en": [
         "nearshore-software-development-mexico-guide"
       ]
+    }
+  },
+  "seguridad": {
+    "label": [
+      "Cámaras y monitoreo",
+      "Security cameras and monitoring"
+    ],
+    "h1": [
+      "Cámaras de seguridad y monitoreo 24/7 para empresas en todo México",
+      "Security cameras and 24/7 monitoring for businesses across Mexico"
+    ],
+    "intro": [
+      "Diseñamos, instalamos y configuramos sistemas de videovigilancia con cámaras IP, grabadores y la red que los conecta, en cualquier parte de México. Después los vigilamos de dos formas: monitoreo técnico automático, que avisa si una cámara se desconecta o deja de grabar, y un centro de monitoreo 24/7 con personas que ven las cámaras y reaccionan ante incidentes.",
+      "We design, install and configure video surveillance systems with IP cameras, recorders and the network that connects them, anywhere in Mexico. Then we watch them two ways: automatic technical monitoring that alerts us when a camera drops or stops recording, and a 24/7 monitoring center with people who watch the cameras and respond to incidents."
+    ],
+    "tipo": [
+      "Instalación de cámaras de seguridad y monitoreo 24/7",
+      "Security camera installation and 24/7 monitoring"
+    ],
+    "prueba": [
+      {
+        "v": "24/7",
+        "n": 0,
+        "l": [
+          "Centro de monitoreo",
+          "Monitoring center"
+        ],
+        "d": [
+          "Personas que ven las cámaras y reaccionan",
+          "People watching cameras and responding"
+        ],
+        "s": [
+          "Servicio del estudio",
+          "Studio service"
+        ],
+        "u": "view:contact"
+      },
+      {
+        "v": [
+          "Todo México",
+          "All of Mexico"
+        ],
+        "n": 0,
+        "l": [
+          "Instalación en sitio",
+          "On-site installation"
+        ],
+        "d": [
+          "Levantamiento, cableado y configuración",
+          "Site survey, cabling and setup"
+        ],
+        "s": [
+          "Desde Puebla",
+          "Based in Puebla"
+        ],
+        "u": "view:contact"
+      },
+      {
+        "v": [
+          "Cada hora",
+          "Hourly"
+        ],
+        "n": 0,
+        "l": [
+          "Revisión automática",
+          "Automatic checks"
+        ],
+        "d": [
+          "El mismo tipo de monitoreo que usamos en nuestros servidores",
+          "The same kind of monitoring we run on our own servers"
+        ],
+        "s": [
+          "Infraestructura propia",
+          "Our own infrastructure"
+        ],
+        "u": "view:infra"
+      },
+      {
+        "v": "2025",
+        "n": 0,
+        "l": [
+          "Ciberseguridad con IA",
+          "AI for cybersecurity"
+        ],
+        "d": [
+          "Capítulo sobre detección de phishing",
+          "Chapter on phishing detection"
+        ],
+        "s": "Springer Nature · LNNS",
+        "u": "https://doi.org/10.1007/978-3-031-85363-0_21"
+      }
+    ],
+    "bloque": {
+      "tipo": "camaras",
+      "label": [
+        "Cómo se ve",
+        "What it looks like"
+      ],
+      "h2": [
+        "Todas tus cámaras, en un solo lugar",
+        "All your cameras, in one place"
+      ],
+      "sub": [
+        "Ejemplo ilustrativo de un panel de monitoreo: cámaras por sitio, estado de cada equipo y alertas. No son imágenes de un cliente real.",
+        "An illustrative example of a monitoring dashboard: cameras by site, the status of each device and alerts. These are not images from a real client."
+      ]
+    },
+    "items_h2": [
+      "Qué incluye",
+      "What's included"
+    ],
+    "items": [
+      {
+        "t": [
+          "Levantamiento y diseño",
+          "Site survey and design"
+        ],
+        "p": [
+          "Visitamos el lugar, definimos dónde va cada cámara para cubrir accesos, cajas y zonas críticas sin puntos ciegos, y te entregamos el plano de cobertura con el presupuesto.",
+          "We visit the site, decide where each camera goes to cover entrances, registers and critical areas with no blind spots, and give you the coverage plan with the budget."
+        ]
+      },
+      {
+        "t": [
+          "Instalación y configuración",
+          "Installation and setup"
+        ],
+        "p": [
+          "Cámaras IP de interior y exterior, grabadores (NVR), discos, switches PoE, cableado y energía de respaldo, configurados y probados en sitio.",
+          "Indoor and outdoor IP cameras, recorders (NVR), drives, PoE switches, cabling and backup power, configured and tested on site."
+        ]
+      },
+      {
+        "t": [
+          "Acceso seguro desde el teléfono",
+          "Secure access from your phone"
+        ],
+        "p": [
+          "Ves las cámaras en vivo y las grabaciones desde el celular o la computadora, con cuentas por persona y acceso cifrado, sin dejar los equipos expuestos a internet.",
+          "You watch live and recorded video from your phone or computer, with per-person accounts and encrypted access, without leaving the devices exposed to the internet."
+        ]
+      },
+      {
+        "t": [
+          "Centro de monitoreo 24/7",
+          "24/7 monitoring center"
+        ],
+        "p": [
+          "Personas vigilan las cámaras de día y de noche y, si ven algo, actúan según el protocolo que definimos contigo: avisarte, llamar a seguridad o a las autoridades.",
+          "People watch the cameras day and night and, if they see something, act on the protocol we agree with you: notify you, call security or call the authorities."
+        ]
+      },
+      {
+        "t": [
+          "Monitoreo técnico automático",
+          "Automatic technical monitoring"
+        ],
+        "p": [
+          "Revisamos de forma automática que cada cámara esté en línea, que el grabador esté grabando y que los discos tengan espacio. Si algo falla, lo sabemos antes que tú.",
+          "We automatically check that each camera is online, the recorder is recording and the drives have space. If something fails, we know before you do."
+        ]
+      },
+      {
+        "t": [
+          "Mantenimiento",
+          "Maintenance"
+        ],
+        "p": [
+          "Limpieza y ajuste de cámaras, actualizaciones de los equipos, cambio de discos y reportes de lo que pasó cada mes.",
+          "Camera cleaning and alignment, device updates, drive replacement and a monthly report of what happened."
+        ]
+      }
+    ],
+    "usos_h2": [
+      "Para quién",
+      "Who it's for"
+    ],
+    "usos": [
+      {
+        "t": [
+          "Empresas con varias sucursales",
+          "Companies with several locations"
+        ],
+        "p": [
+          "Todas las sucursales en un solo panel, con permisos por persona: cada gerente ve solo su tienda.",
+          "Every location in one dashboard, with per-person permissions: each manager sees only their store."
+        ]
+      },
+      {
+        "t": [
+          "Bodegas, naves y parques industriales",
+          "Warehouses and industrial sites"
+        ],
+        "p": [
+          "Accesos, andenes y perímetro, con alertas fuera de horario y grabación continua.",
+          "Gates, loading docks and perimeter, with after-hours alerts and continuous recording."
+        ]
+      },
+      {
+        "t": [
+          "Comercios y oficinas",
+          "Retail and offices"
+        ],
+        "p": [
+          "Cajas, entradas y áreas de clientes, con acceso desde el celular del dueño.",
+          "Registers, entrances and customer areas, with access from the owner's phone."
+        ]
+      },
+      {
+        "t": [
+          "Instituciones y seguridad pública",
+          "Institutions and public security"
+        ],
+        "p": [
+          "Hemos desarrollado sistemas para instituciones de seguridad pública en Puebla, así que conocemos el manejo de evidencias, permisos y confidencialidad.",
+          "We have built systems for public-security institutions in Puebla, so we know how evidence, permissions and confidentiality have to be handled."
+        ]
+      },
+      {
+        "t": [
+          "Empresas de EE. UU. con planta en México",
+          "US companies with facilities in Mexico"
+        ],
+        "p": [
+          "Instalamos y monitoreamos en México y te reportamos en inglés, en tu horario.",
+          "We install and monitor in Mexico and report to you in English, on your hours."
+        ]
+      }
+    ],
+    "enfoque_h2": [
+      "Cómo lo hacemos",
+      "How we do it"
+    ],
+    "enfoque": [
+      {
+        "t": [
+          "Equipos que no quedan expuestos",
+          "Devices that aren't exposed"
+        ],
+        "p": [
+          "Las cámaras y grabadores no se abren directo a internet: el acceso remoto va cifrado y con cuentas por persona. Es la falla más común en sistemas de cámaras.",
+          "Cameras and recorders are never opened straight to the internet: remote access is encrypted and per person. It is the most common flaw in camera systems."
+        ]
+      },
+      {
+        "t": [
+          "Grabación que sirve cuando se necesita",
+          "Recordings that work when you need them"
+        ],
+        "p": [
+          "Hora sincronizada, días de grabación definidos contigo y una forma sencilla de exportar un video cuando haya que entregarlo.",
+          "Synchronized time, retention days agreed with you, and a simple way to export a clip when you need to hand it over."
+        ]
+      },
+      {
+        "t": [
+          "Privacidad desde el diseño",
+          "Privacy by design"
+        ],
+        "p": [
+          "Cámaras solo donde se justifican, accesos mínimos y avisos de videovigilancia visibles en el lugar.",
+          "Cameras only where justified, least-privilege access and visible video surveillance notices on site."
+        ]
+      },
+      {
+        "t": [
+          "Un solo responsable",
+          "One accountable partner"
+        ],
+        "p": [
+          "El mismo equipo diseña, instala, monitorea y da mantenimiento: no hay que coordinar a tres proveedores cuando algo falla.",
+          "The same team designs, installs, monitors and maintains the system: no juggling three vendors when something breaks."
+        ]
+      }
+    ],
+    "pasos": [
+      {
+        "t": [
+          "Levantamiento",
+          "Site survey"
+        ],
+        "p": [
+          "Visita, recorrido y necesidades de cada zona. Sin costo en la primera llamada.",
+          "A visit, a walkthrough and the needs of each area. The first call is free."
+        ]
+      },
+      {
+        "t": [
+          "Propuesta",
+          "Proposal"
+        ],
+        "p": [
+          "Plano de cobertura, equipos y presupuesto por escrito.",
+          "Coverage plan, equipment and budget in writing."
+        ]
+      },
+      {
+        "t": [
+          "Instalación",
+          "Installation"
+        ],
+        "p": [
+          "Cableado, montaje, configuración y pruebas en sitio.",
+          "Cabling, mounting, configuration and on-site testing."
+        ]
+      },
+      {
+        "t": [
+          "Entrega",
+          "Handover"
+        ],
+        "p": [
+          "Accesos por persona, capacitación y protocolo de monitoreo.",
+          "Per-person access, training and the monitoring protocol."
+        ]
+      },
+      {
+        "t": [
+          "Monitoreo",
+          "Monitoring"
+        ],
+        "p": [
+          "24/7 con personas y alertas automáticas, más mantenimiento.",
+          "24/7 with people plus automatic alerts, and maintenance."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": [
+          "¿Instalan cámaras de seguridad en todo México?",
+          "Do you install security cameras anywhere in Mexico?"
+        ],
+        "a": [
+          "Sí. Estamos en Puebla e instalamos en cualquier parte de México: hacemos el levantamiento, la instalación y la configuración en sitio.",
+          "Yes. We are based in Puebla and install anywhere in Mexico: site survey, installation and configuration on site."
+        ]
+      },
+      {
+        "q": [
+          "¿Ofrecen monitoreo 24/7?",
+          "Do you offer 24/7 monitoring?"
+        ],
+        "a": [
+          "Sí, de dos formas: un centro de monitoreo con personas que ven las cámaras y actúan según un protocolo acordado, y un monitoreo técnico automático que avisa si una cámara se desconecta o el grabador deja de grabar.",
+          "Yes, two ways: a monitoring center with people who watch the cameras and act on an agreed protocol, and automatic technical monitoring that alerts us when a camera drops or the recorder stops recording."
+        ]
+      },
+      {
+        "q": [
+          "¿Puedo ver mis cámaras desde el celular?",
+          "Can I watch my cameras from my phone?"
+        ],
+        "a": [
+          "Sí, en vivo y las grabaciones, con una cuenta para cada persona y acceso cifrado. Los equipos no quedan abiertos a internet.",
+          "Yes, live and recorded, with an account for each person and encrypted access. The devices are not left open to the internet."
+        ]
+      },
+      {
+        "q": [
+          "¿Pueden trabajar con las cámaras que ya tengo?",
+          "Can you work with the cameras I already have?"
+        ],
+        "a": [
+          "En muchos casos sí. Revisamos marca, modelo y grabador; si son compatibles, los integramos al monitoreo y te decimos qué conviene cambiar y qué no.",
+          "Often, yes. We check the brand, model and recorder; if they are compatible we bring them into monitoring and tell you what is worth replacing and what isn't."
+        ]
+      },
+      {
+        "q": [
+          "¿Cuántos días se guardan las grabaciones?",
+          "How many days of recording are kept?"
+        ],
+        "a": [
+          "Lo que tu operación necesite. Lo definimos en el diseño, porque depende del número de cámaras, la calidad de imagen y el tamaño de los discos.",
+          "Whatever your operation needs. We set it during design, because it depends on the number of cameras, the image quality and the drive size."
+        ]
+      },
+      {
+        "q": [
+          "¿Qué pasa si se va la luz o el internet?",
+          "What happens if power or internet goes down?"
+        ],
+        "a": [
+          "El grabador sigue guardando el video en el sitio aunque no haya internet, y con energía de respaldo aguanta los cortes de luz. El monitoreo técnico nos avisa cuando un sitio se desconecta.",
+          "The recorder keeps storing video on site even without internet, and backup power carries it through outages. Technical monitoring alerts us when a site goes offline."
+        ]
+      }
+    ],
+    "guias": {
+      "es": [
+        "camaras-de-seguridad-para-empresas-como-elegir"
+      ],
+      "en": []
     }
   },
   "movil": {

@@ -259,7 +259,10 @@ SERVICIOS = {
     'ia': {'es': ('Inteligencia artificial', 'IA aplicada', 'que ahorra trabajo.', (('2025', 'investigación en Springer'), ('OCR', 'en el teléfono')), 'Documentos, imágenes, asistentes y detección de fraude.'),
            'en': ('AI development', 'Applied AI', 'that saves real work.', (('2025', 'Springer research'), ('OCR', 'on the device')), 'Documents, images, assistants and fraud detection.'),
            'pantallas': ('pdfmaster.png', 'caltracker.png', 'pdfmaster.png')},
-    'infra': {'es': ('Infraestructura y redes', 'Servidores, nube', 'y redes que operamos.', (('2', 'nodos VPN propios'), ('TLS 1.3', 'en cada nodo')), 'Google Cloud, Firebase, VPN, seguridad y monitoreo.'),
+    'seguridad': {'es': ('Cámaras y monitoreo', 'Cámaras de seguridad', 'y monitoreo 24/7.', (('24/7', 'centro de monitoreo'), ('Todo México', 'instalación en sitio')), 'Cámaras IP, grabador, red y alertas automáticas.'),
+                  'en': ('Security cameras and monitoring', 'Security cameras', 'and 24/7 monitoring.', (('24/7', 'monitoring center'), ('All of Mexico', 'on-site installation')), 'IP cameras, recorders, networks and automatic alerts.'),
+                  'pantallas': 'camaras'},
+    'infra': {'es': ('Infraestructura empresarial', 'Servidores, nube', 'y redes que operamos.', (('2', 'nodos VPN propios'), ('TLS 1.3', 'en cada nodo')), 'Google Cloud, Firebase, VPN, seguridad y monitoreo.'),
               'en': ('Infrastructure and networks', 'Servers, cloud and', 'networks we run.', (('2', 'VPN nodes we run'), ('TLS 1.3', 'on every node')), 'Google Cloud, Firebase, VPNs, security and monitoring.'),
               'pantallas': None},
 }
@@ -280,11 +283,35 @@ def red(im):
     d.ellipse((cx - 58, cy - 58, cx + 58, cy + 58), fill=(10, 95, 180), outline=CIAN, width=4)
 
 
+def camaras(im):
+    """Muro de cámaras ilustrativo (sin imágenes reales), como el panel de la página."""
+    d = ImageDraw.Draw(im)
+    x0, y0, w, h, g = 740, 120, 140, 92, 12
+    for i in range(6):
+        x = x0 + (i % 3) * (w + g)
+        y = y0 + (i // 3) * (h + g)
+        d.rounded_rectangle((x, y, x + w, y + h), radius=10, fill=(16, 30, 48), outline=(52, 82, 128), width=2)
+        for yy in range(y + 4, y + h - 4, 4):
+            d.line((x + 4, yy, x + w - 4, yy), fill=(20, 36, 56))
+        d.text((x + 10, y + 8), f'CAM 0{i + 1}', font=fuente(14, 'Medium', MONO), fill=INK)
+        col = (255, 77, 77) if i == 4 else ((224, 138, 87) if i == 3 else (43, 214, 123))
+        d.ellipse((x + w - 20, y + 10, x + w - 10, y + 20), fill=col)
+        if i == 3:
+            d.rectangle((x + 56, y + 36, x + 96, y + 80), outline=(224, 138, 87), width=2)
+    y = y0 + 2 * (h + g) + 20
+    for txt, col in (('CAM 05 sin señal · aviso enviado', (255, 77, 77)), ('Movimiento fuera de horario', (224, 138, 87)), ('12 cámaras · grabando', (43, 214, 123))):
+        d.rectangle((x0, y, x0 + 4, y + 24), fill=col)
+        d.text((x0 + 16, y + 2), txt, font=fuente(17, 'Medium'), fill=GRIS)
+        y += 38
+
+
 def servicio_og(clave, lang):
     cfg = SERVICIOS[clave]
     pill, l1, l2, cifras, sub = cfg[lang]
     im = fondo().convert('RGBA')
-    if cfg['pantallas']:
+    if cfg['pantallas'] == 'camaras':
+        camaras(im)
+    elif cfg['pantallas']:
         pantallas = RAIZ / 'research/phones'  # sin hora ni batería, como en el sitio (qa/phones.py)
         a, b, c = cfg['pantallas']
         for archivo, alto, x, y, giro in ((a, 440, 700, 150, 7), (c, 440, 990, 160, -7), (b, 500, 835, 70, 0)):

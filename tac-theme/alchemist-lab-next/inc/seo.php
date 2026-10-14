@@ -138,7 +138,8 @@ add_filter('aioseo_schema_output', function ($graphs) {
                 'movil'   => tac_t('Desarrollo de aplicaciones móviles', 'Mobile app development'),
                 'flutter' => tac_t('Desarrollo en Flutter', 'Flutter development'),
                 'ia'      => tac_t('Inteligencia artificial para empresas', 'AI development'),
-                'infra'   => tac_t('Infraestructura de TI, nube y redes', 'Cloud and network infrastructure'),
+                'infra'   => tac_t('Infraestructura empresarial, redes y nube', 'Enterprise infrastructure, networks and cloud'),
+                'seguridad' => tac_t('Instalación de cámaras de seguridad y monitoreo 24/7', 'Security camera installation and 24/7 monitoring'),
             );
             $map = tac_page_map();
             $ofertas = array();
@@ -296,14 +297,16 @@ function tac_llms_txt() {
     $s[] = '- [Mobile app development](' . $u('movil', 'en') . '): iOS and Android apps in Flutter, Swift and Kotlin, from design to store release and maintenance.';
     $s[] = '- [Flutter development](' . $u('flutter', 'en') . '): most of our 17 apps are built in Flutter.';
     $s[] = '- [AI development](' . $u('ia', 'en') . '): document reading (OCR), image recognition, assistants and fraud detection.';
-    $s[] = '- [Cloud and network infrastructure](' . $u('infra', 'en') . '): Linux servers, Google Cloud, Firebase, VPNs, security and monitoring.';
+    $s[] = '- [Enterprise infrastructure](' . $u('infra', 'en') . '): networks and VPNs, Linux servers, Google Cloud, Firebase, security, backups and monitoring.';
+    $s[] = '- [Security cameras and 24/7 monitoring](' . $u('seguridad', 'en') . '): IP camera systems installed anywhere in Mexico, a 24/7 monitoring center with people, and automatic technical alerts.';
     $s[] = '';
     $s[] = '## Servicios (español)';
     $s[] = '- [Desarrollo de software en Puebla](' . $u('local', 'es') . '): software a la medida, apps móviles, IA e infraestructura.';
     $s[] = '- [Desarrollo de aplicaciones móviles](' . $u('movil', 'es') . '): apps iOS y Android en Flutter, Swift y Kotlin.';
     $s[] = '- [Desarrollo en Flutter](' . $u('flutter', 'es') . ')';
     $s[] = '- [Inteligencia artificial para empresas](' . $u('ia', 'es') . ')';
-    $s[] = '- [Infraestructura y redes](' . $u('infra', 'es') . ')';
+    $s[] = '- [Infraestructura empresarial](' . $u('infra', 'es') . ')';
+    $s[] = '- [Cámaras de seguridad y monitoreo 24/7](' . $u('seguridad', 'es') . '): instalación en todo México.';
     $s[] = '';
     $s[] = '## More';
     $s[] = '- [Case studies: Soccer24, Komodo VPN, PDF Master](' . $u('casos', 'en') . ')';

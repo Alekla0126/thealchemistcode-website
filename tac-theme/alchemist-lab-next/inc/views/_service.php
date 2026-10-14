@@ -67,6 +67,8 @@ $bloque = $S['bloque'] ?? array();
   </div>
   <?php if ($bloque['tipo'] === 'infra') : ?>
     <?php include __DIR__ . '/_infra.php'; ?>
+  <?php elseif ($bloque['tipo'] === 'camaras') : ?>
+    <?php include __DIR__ . '/_camaras.php'; ?>
   <?php elseif ($bloque['tipo'] === 'phones') : ?>
     <div class="tac-srv-phones n<?php echo (int) count($bloque['apps']); ?>" data-reveal>
       <?php foreach ($bloque['apps'] as $i => $k) : ?>

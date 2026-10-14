@@ -17,10 +17,14 @@ $servicios = array(
         'IA donde ahorra trabajo de verdad: OCR de documentos en el dispositivo, reconocimiento de fotos, asistentes de redacción y automatización de procesos, con los costos por uso bajo control y sin enviar datos que no hace falta.',
         'AI where it actually saves work: on-device document OCR, photo recognition, writing assistants and process automation, with usage costs under control and no data sent that does not need to be.',
         array('pdfmaster', 'PDF Master')),
-    array('Infraestructura y redes', 'Infrastructure and networks',
+    array('Infraestructura empresarial', 'Enterprise infrastructure',
         'Servidores Linux, Google Cloud y Firebase, VPN para sucursales y personal remoto, APIs, monitoreo y respaldos. Operamos nuestra propia infraestructura en producción todos los días.',
         'Linux servers, Google Cloud and Firebase, VPNs for branches and remote staff, APIs, monitoring and backups. We run our own infrastructure in production every day.',
         array('komodo', 'Komodo VPN')),
+    array('Cámaras de seguridad y monitoreo', 'Security cameras and monitoring',
+        'Diseñamos, instalamos y configuramos cámaras IP, grabadores y la red que los conecta, en todo México, con monitoreo 24/7: un centro con personas que vigilan las cámaras y alertas automáticas si un equipo falla.',
+        'We design, install and configure IP cameras, recorders and the network that connects them, anywhere in Mexico, with 24/7 monitoring: a center with people watching the cameras and automatic alerts if a device fails.',
+        null, 'seguridad'),
 );
 $usos = $L ? array(
     array('US startups and product teams', 'A senior engineer who leads your app from first call to launch, on your hours and in English.'),
@@ -77,16 +81,17 @@ $casos = array(
     <p class="tac-sub" data-reveal style="--d:120ms"><?php tac_e('Cada servicio se apoya en un producto que ya construimos y operamos en producción.', 'Every service builds on a product we already built and run in production.'); ?></p>
   </div>
   <div class="tac-local-grid">
-    <?php foreach ($servicios as $i => $s) : $url = tac_app_url($s[4][0]); ?>
+    <?php foreach ($servicios as $i => $s) : $url = $s[4] ? tac_app_url($s[4][0]) : ''; ?>
       <article class="tac-local-card" data-reveal style="--d:<?php echo (int) ($i * 80); ?>ms">
         <span class="k"><?php echo esc_html(sprintf('%02d', $i + 1)); ?></span>
         <h3><?php echo esc_html($L ? $s[1] : $s[0]); ?></h3>
         <p><?php echo esc_html($L ? $s[3] : $s[2]); ?></p>
-        <a class="ex" href="<?php echo esc_url($url ?: tac_url('apps')); ?>"><img src="<?php echo esc_url(tac_icon($s[4][0])); ?>" alt="" width="28" height="28" loading="lazy"><span><?php tac_e('Hecho por nosotros:', 'Built by us:'); ?> <b><?php echo esc_html($s[4][1]); ?></b></span></a>
+        <?php if ($s[4]) : ?><a class="ex" href="<?php echo esc_url($url ?: tac_url('apps')); ?>"><img src="<?php echo esc_url(tac_icon($s[4][0])); ?>" alt="" width="28" height="28" loading="lazy"><span><?php tac_e('Hecho por nosotros:', 'Built by us:'); ?> <b><?php echo esc_html($s[4][1]); ?></b></span></a>
+        <?php else : ?><a class="ex" href="<?php echo esc_url(tac_url($s[5])); ?>"><span><?php tac_e('Ver el servicio', 'See the service'); ?> <b>→</b></span></a><?php endif; ?>
       </article>
     <?php endforeach; ?>
   </div>
-  <p class="tac-local-more" data-reveal><?php tac_e('Detalle por servicio:', 'Service details:'); ?> <a href="<?php echo esc_url(tac_url('movil')); ?>"><?php tac_e('apps móviles', 'mobile apps'); ?></a> · <a href="<?php echo esc_url(tac_url('flutter')); ?>">Flutter</a> · <a href="<?php echo esc_url(tac_url('ia')); ?>"><?php tac_e('inteligencia artificial', 'AI'); ?></a> · <a href="<?php echo esc_url(tac_url('infra')); ?>"><?php tac_e('infraestructura y redes', 'infrastructure and networks'); ?></a></p>
+  <p class="tac-local-more" data-reveal><?php tac_e('Detalle por servicio:', 'Service details:'); ?> <a href="<?php echo esc_url(tac_url('movil')); ?>"><?php tac_e('apps móviles', 'mobile apps'); ?></a> · <a href="<?php echo esc_url(tac_url('flutter')); ?>">Flutter</a> · <a href="<?php echo esc_url(tac_url('ia')); ?>"><?php tac_e('inteligencia artificial', 'AI'); ?></a> · <a href="<?php echo esc_url(tac_url('infra')); ?>"><?php tac_e('infraestructura empresarial', 'enterprise infrastructure'); ?></a> · <a href="<?php echo esc_url(tac_url('seguridad')); ?>"><?php tac_e('cámaras y monitoreo', 'cameras and monitoring'); ?></a></p>
 </div></section>
 
 <section class="tac-sec" style="padding-top:40px"><div class="tac-wrap">
