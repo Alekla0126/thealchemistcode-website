@@ -77,10 +77,21 @@ $tac_home = true; ?>
   </div>
 </section>
 
+<section class="tac-sec tac-ia-sec" id="<?php tac_e('inteligencia-artificial', 'artificial-intelligence'); ?>" style="padding-top:60px">
+  <div class="tac-wrap">
+    <div class="tac-sec-head">
+      <div data-reveal><div class="tac-label"><b>03</b> — <?php tac_e('Inteligencia artificial', 'Artificial intelligence'); ?></div><h2><?php tac_e('IA que ahorra trabajo de verdad', 'AI that saves real work'); ?></h2></div>
+      <div data-reveal style="--d:120ms"><p class="tac-sub"><?php tac_e('Leemos documentos, reconocemos fotos, respondemos con los datos de tu empresa y detectamos fraude. Empezamos con una prueba pequeña con tus datos y medimos si funciona antes de invertir más.', 'We read documents, recognize photos, answer from your company\'s data and detect fraud. We start with a small test on your data and measure whether it works before you invest more.'); ?></p>
+        <a class="tac-more" href="<?php echo esc_url(tac_url('ia')); ?>"><?php tac_e('Inteligencia artificial para empresas', 'AI development for businesses'); ?> <span aria-hidden="true">→</span></a></div>
+    </div>
+    <?php include __DIR__ . '/_ia.php'; ?>
+  </div>
+</section>
+
 <section class="tac-sec tac-infra-sec" id="<?php tac_e('infraestructura', 'infrastructure'); ?>" style="padding-top:60px">
   <div class="tac-wrap">
     <div class="tac-sec-head">
-      <div data-reveal><div class="tac-label"><b>03</b> — <?php tac_e('Infraestructura y seguridad', 'Infrastructure and security'); ?></div><h2><?php tac_e('Servidores, nube y redes que operamos todos los días', 'Servers, cloud and networks we run every day'); ?></h2></div>
+      <div data-reveal><div class="tac-label"><b>04</b> — <?php tac_e('Infraestructura y seguridad', 'Infrastructure and security'); ?></div><h2><?php tac_e('Servidores, nube y redes que operamos todos los días', 'Servers, cloud and networks we run every day'); ?></h2></div>
       <div data-reveal style="--d:120ms"><p class="tac-sub"><?php tac_e('La app es lo que se ve. Detrás hay servidores, redes, cámaras y monitoreo que tienen que funcionar a las tres de la mañana: los diseñamos, los instalamos y los operamos, con monitoreo 24/7.', 'The app is the part people see. Behind it are servers, networks, cameras and monitoring that have to work at 3 a.m.: we design them, install them and run them, with 24/7 monitoring.'); ?></p>
         <a class="tac-more" href="<?php echo esc_url(tac_url('infra')); ?>"><?php tac_e('Infraestructura empresarial', 'Enterprise infrastructure'); ?> <span aria-hidden="true">→</span></a>
         <a class="tac-more" href="<?php echo esc_url(tac_url('seguridad')); ?>" style="margin-left:18px"><?php tac_e('Cámaras de seguridad y monitoreo 24/7', 'Security cameras and 24/7 monitoring'); ?> <span aria-hidden="true">→</span></a></div>
@@ -92,7 +103,7 @@ $tac_home = true; ?>
 <section class="tac-sec" id="<?php tac_e('proceso', 'process'); ?>" style="padding-top:60px">
   <div class="tac-wrap">
     <div class="tac-sec-head">
-      <div data-reveal><div class="tac-label"><b>04</b> — <?php tac_e('Cómo trabajamos', 'How we work'); ?></div><h2><?php tac_e('De la idea a la tienda, y después', 'From idea to store, and beyond'); ?></h2></div>
+      <div data-reveal><div class="tac-label"><b>05</b> — <?php tac_e('Cómo trabajamos', 'How we work'); ?></div><h2><?php tac_e('De la idea a la tienda, y después', 'From idea to store, and beyond'); ?></h2></div>
       <p class="tac-sub" data-reveal style="--d:120ms"><?php tac_e('Un proceso corto y visible. Ves avances en tu teléfono, no informes.', 'A short, visible process. You see progress on your phone, not in reports.'); ?></p>
     </div>
     <?php include __DIR__ . '/_process.php'; ?>
@@ -102,7 +113,7 @@ $tac_home = true; ?>
 <section class="tac-sec" id="<?php tac_e('contratacion', 'engagement'); ?>" style="padding-top:40px">
   <div class="tac-wrap">
     <div class="tac-sec-head">
-      <div data-reveal><div class="tac-label"><b>05</b> — <?php tac_e('Cómo contratarnos', 'How to engage'); ?></div><h2><?php tac_e('Tres formas de trabajar, todas por escrito', 'Three ways to work together, all in writing'); ?></h2></div>
+      <div data-reveal><div class="tac-label"><b>06</b> — <?php tac_e('Cómo contratarnos', 'How to engage'); ?></div><h2><?php tac_e('Tres formas de trabajar, todas por escrito', 'Three ways to work together, all in writing'); ?></h2></div>
       <p class="tac-sub" data-reveal style="--d:120ms"><?php tac_e('La primera llamada y la propuesta no tienen costo. El precio y los plazos quedan en el contrato antes de escribir una línea de código.', 'The first call and the proposal are free. Price and timeline go into the contract before we write a line of code.'); ?></p>
     </div>
     <?php include __DIR__ . '/_engage.php'; ?>
@@ -112,7 +123,7 @@ $tac_home = true; ?>
 <section class="tac-sec tac-near-sec" id="<?php tac_e('estados-unidos', 'us-teams'); ?>" style="padding-top:40px">
   <div class="tac-wrap">
     <div class="tac-sec-head">
-      <div data-reveal><div class="tac-label"><b>06</b> — <?php tac_e('Para equipos en Estados Unidos', 'For US teams'); ?></div><h2><?php tac_e('Tan cerca como un equipo en tu ciudad', 'As close as a team in your city'); ?></h2></div>
+      <div data-reveal><div class="tac-label"><b>07</b> — <?php tac_e('Para equipos en Estados Unidos', 'For US teams'); ?></div><h2><?php tac_e('Tan cerca como un equipo en tu ciudad', 'As close as a team in your city'); ?></h2></div>
       <p class="tac-sub" data-reveal style="--d:120ms"><?php tac_e('Trabajamos con empresas de México y Estados Unidos con las mismas reglas: horario compartido, inglés directo y la propiedad del código de tu lado.', 'We work with companies in the US and Mexico under the same rules: shared hours, direct English and the IP on your side.'); ?></p>
     </div>
     <?php include __DIR__ . '/_nearshore.php'; ?>
@@ -122,7 +133,7 @@ $tac_home = true; ?>
 <section class="tac-sec" id="<?php tac_e('investigacion', 'research'); ?>" style="padding-top:40px">
   <div class="tac-wrap">
     <div class="tac-sec-head">
-      <div data-reveal><div class="tac-label"><b>07</b> — <?php tac_e('Investigación e impacto', 'Research and impact'); ?></div><h2><?php tac_e('IA con respaldo de investigación', 'AI backed by research'); ?></h2></div>
+      <div data-reveal><div class="tac-label"><b>08</b> — <?php tac_e('Investigación e impacto', 'Research and impact'); ?></div><h2><?php tac_e('IA con respaldo de investigación', 'AI backed by research'); ?></h2></div>
       <p class="tac-sub" data-reveal style="--d:120ms"><?php tac_e('Antes de ponerle IA a tu producto, la hemos publicado, aplicado en finanzas y llevado a apps que la gente usa.', 'Before we put AI in your product, we have published on it, applied it in finance and shipped it in apps people use.'); ?></p>
     </div>
     <?php include __DIR__ . '/_research.php'; ?>
@@ -136,7 +147,7 @@ if ($guias) : ?>
 <section class="tac-sec" id="<?php tac_e('guias', 'guides'); ?>" style="padding-top:40px">
   <div class="tac-wrap">
     <div class="tac-sec-head">
-      <div data-reveal><div class="tac-label"><b>08</b> — <?php tac_e('Guías', 'Guides'); ?></div><h2><?php tac_e('Para decidir con información', 'Read before you decide'); ?></h2></div>
+      <div data-reveal><div class="tac-label"><b>09</b> — <?php tac_e('Guías', 'Guides'); ?></div><h2><?php tac_e('Para decidir con información', 'Read before you decide'); ?></h2></div>
       <div data-reveal style="--d:120ms"><p class="tac-sub"><?php tac_e('Lo que preguntan las empresas antes de contratar software, respondido con lo que aprendimos al publicar nuestras apps.', 'What companies ask before hiring a software team, answered with what we learned shipping our own apps.'); ?></p>
         <a class="tac-more" href="<?php echo esc_url(tac_url('blog')); ?>"><?php tac_e('Todas las guías', 'All guides'); ?> <span aria-hidden="true">→</span></a></div>
     </div>

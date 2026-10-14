@@ -294,6 +294,31 @@
     navigator.sendBeacon('/wp-admin/admin-ajax.php?action=tac_evt&t=' + t + '&p=' + encodeURIComponent(location.pathname));
   }, true);
 
+  /* ---------- demostración de IA: pestañas (documentos, fotos, asistente); rota sola hasta que alguien elige ---------- */
+  d.querySelectorAll('[data-ia-demo]').forEach(function (box) {
+    var tabs = [].slice.call(box.querySelectorAll('[data-tab]')), panes = [].slice.call(box.querySelectorAll('[data-pane]')), cur = 0, timer = 0, visto = false;
+    function ver(i) {
+      cur = i;
+      tabs.forEach(function (t, k) { t.setAttribute('aria-selected', k === i ? 'true' : 'false'); });
+      panes.forEach(function (p, k) {
+        var on = k === i;
+        p.hidden = !on;
+        p.classList.remove('on');
+        if (on) { void p.offsetWidth; p.classList.add('on'); }
+      });
+    }
+    tabs.forEach(function (t, k) { t.addEventListener('click', function () { clearInterval(timer); timer = -1; ver(k); }); });
+    if (!reduce && 'IntersectionObserver' in w) {
+      new IntersectionObserver(function (es) {
+        if (es[0].isIntersecting && !visto && timer !== -1) {
+          visto = true;
+          ver(0);
+          timer = setInterval(function () { ver((cur + 1) % tabs.length); }, 7000);
+        }
+      }, { threshold: 0.4 }).observe(box);
+    }
+  });
+
   /* lo que sigue es solo para ratón y sin "reducir movimiento" */
   if (reduce || !fine) return;
 

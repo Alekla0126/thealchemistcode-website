@@ -67,6 +67,8 @@ $bloque = $S['bloque'] ?? array();
   </div>
   <?php if ($bloque['tipo'] === 'infra') : ?>
     <?php include __DIR__ . '/_infra.php'; ?>
+  <?php elseif ($bloque['tipo'] === 'ia') : ?>
+    <?php $tac_ia_modo = 'demo'; include __DIR__ . '/_ia.php'; ?>
   <?php elseif ($bloque['tipo'] === 'camaras') : ?>
     <?php include __DIR__ . '/_camaras.php'; ?>
   <?php elseif ($bloque['tipo'] === 'phones') : ?>

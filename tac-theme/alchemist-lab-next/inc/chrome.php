@@ -134,6 +134,7 @@ function tac_menu_items() {
     $home = tac_url('home');
     return array(
         array(tac_t('Soluciones', 'Solutions'), tac_url('solutions'), 'solutions'),
+        array(tac_t('IA', 'AI'), tac_url('ia'), 'ia'),
         array(tac_t('Casos', 'Work'), !empty(tac_page_map()['casos'][tac_lang()]) ? tac_url('casos') : $home . '#' . tac_t('casos', 'work'), 'casos'),
         array('Apps', tac_url('apps'), 'apps'),
         array(tac_t('Cómo trabajamos', 'How we work'), $home . '#' . tac_t('proceso', 'process'), ''),

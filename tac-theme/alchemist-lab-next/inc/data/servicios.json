@@ -1129,22 +1129,18 @@
       }
     ],
     "bloque": {
-      "tipo": "phones",
-      "apps": [
-        "pdfmaster",
-        "caltracker"
-      ],
+      "tipo": "ia",
       "label": [
-        "IA en producción",
-        "AI in production"
+        "IA en acción",
+        "AI in action"
       ],
       "h2": [
-        "IA que ya usan personas reales",
-        "AI that real people already use"
+        "Qué hace la IA con tus documentos, fotos y datos",
+        "What AI does with your documents, photos and data"
       ],
       "sub": [
-        "PDF Master lee y procesa documentos; CalTracker AI estima calorías a partir de una foto.",
-        "PDF Master reads and processes documents; CalTracker AI estimates calories from a photo."
+        "Ejemplos ilustrativos de tres usos que ya funcionan. El de fotos es como trabaja CalTracker AI, nuestra app de nutrición.",
+        "Illustrative examples of three uses that already work. The photo one is how CalTracker AI, our nutrition app, works."
       ]
     },
     "items_h2": [
